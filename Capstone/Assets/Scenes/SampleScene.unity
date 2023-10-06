@@ -374,7 +374,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriterenderer: {fileID: 0}
-  Speed: 5
+  animator: {fileID: 0}
+  Speed: 10
+  RollingPower: 1.5
+  RollingTime: 0.8
+  RollingCooldown: 1.25
 --- !u!212 &1446839776
 SpriteRenderer:
   m_ObjectHideFlags: 0
