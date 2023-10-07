@@ -37,14 +37,16 @@ public class PlayerController : MonoBehaviour {
         Velocity.y = Direction.y * Speed;
 
         // Rolling
-        if (Input.GetKeyDown(KeyCode.E) && CanRoll) {
-            animator.SetTrigger("Roll");
+        if (Input.GetKeyDown(KeyCode.LeftShift) && CanRoll) {
+            Debug.Log("Rolling");
+            //animator.SetTrigger("Roll");
             //SoundManager.Instance.PlaySound(RollSound);
             StartCoroutine(Roll());
         }
 
-        // move character
+        // Move player
         RB.velocity = Velocity;
+        //RB.MovePosition(RB.position + Speed * Time.fixedDeltaTime * Velocity);
 
         // Rotate character to face direction of movement
         //if (Velocity.x > 0 && !FaceRight) Flip();
@@ -55,7 +57,8 @@ public class PlayerController : MonoBehaviour {
         CanRoll = false;
         IsRolling = true;
         Physics2D.IgnoreLayerCollision(3, 6, true);
-        Velocity.x += transform.localScale.x * RollingPower;
+        Velocity = RB.velocity * RollingPower;
+        //Velocity.y += transform.localScale.y * RollingPower;
         yield return new WaitForSeconds(RollingTime);
         IsRolling = false;
         yield return new WaitForSeconds(RollingCooldown);
