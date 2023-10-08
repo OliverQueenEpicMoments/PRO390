@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D RB;
 
     Vector2 Velocity = Vector2.zero;
-    //bool FaceRight = true;
+    bool FaceRight = true;
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
@@ -46,11 +46,14 @@ public class PlayerController : MonoBehaviour {
 
         // Move player
         RB.velocity = Velocity;
-        //RB.MovePosition(RB.position + Speed * Time.fixedDeltaTime * Velocity);
 
         // Rotate character to face direction of movement
-        //if (Velocity.x > 0 && !FaceRight) Flip();
-        //if (Velocity.x < 0 && FaceRight) Flip();
+        if (Velocity.x > 0 && !FaceRight) Flip();
+        if (Velocity.x < 0 && FaceRight) Flip();
+
+        animator.SetFloat("Horizontal", Direction.x);
+        animator.SetFloat("Vertical", Direction.y);
+        animator.SetFloat("Speed", Direction.sqrMagnitude);
     }
 
     IEnumerator Roll() {
@@ -64,5 +67,13 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(RollingCooldown);
         Physics2D.IgnoreLayerCollision(3, 6, false);
         CanRoll = true;
+    }
+
+    private void Flip() {
+        Vector3 CurrentScale = gameObject.transform.localScale;
+        CurrentScale.x *= -1;
+        gameObject.transform.localScale = CurrentScale;
+
+        FaceRight = !FaceRight;
     }
 }
