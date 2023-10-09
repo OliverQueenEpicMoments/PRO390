@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
         // Rolling
         if (Input.GetKeyDown(KeyCode.LeftShift) && CanRoll) {
             Debug.Log("Rolling");
-            //animator.SetTrigger("Roll");
+            animator.SetTrigger("Roll");
             //SoundManager.Instance.PlaySound(RollSound);
             StartCoroutine(Roll());
         }
