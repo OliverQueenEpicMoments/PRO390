@@ -23,7 +23,6 @@ public class EnemyStateAI : MonoBehaviour {
     Rigidbody2D RB;
     Vector2 Velocity = Vector2.zero;
     bool FaceRight = true;
-    float GroundAngle = 0;
     Transform TargetWaypoint = null;
     GameObject Enemy = null;
 
@@ -46,18 +45,16 @@ public class EnemyStateAI : MonoBehaviour {
 
     void Update() {
         // Update AI
-        CheckEnemySeen();
+        Vector2 Direction = Vector2.zero;
+
         if (EnemyHealth.CurrentHealth <= 0) state = State.DEATH;
 
-        Vector2 Direction = Vector2.zero;
-        switch (state)
-        {
+        switch (state) {
             case State.IDLE:
                 if (Enemy != null) state = State.CHASE;
 
                 StateTimer -= Time.deltaTime;
-                if (StateTimer <= 0)
-                {
+                if (StateTimer <= 0) {
                     SetNewWaypointTarget();
                     state = State.PATROL;
                 }
@@ -66,10 +63,10 @@ public class EnemyStateAI : MonoBehaviour {
                 {
                     if (Enemy != null) state = State.CHASE;
 
-                    Direction.x = Mathf.Sign(TargetWaypoint.position.x - transform.position.x);
+                    Direction = TargetWaypoint.position - transform.position;
                     float DX = Mathf.Abs(TargetWaypoint.position.x - transform.position.x);
-                    if (DX <= 0.25f)
-                    {
+                    float DY = Mathf.Abs(TargetWaypoint.position.x - transform.position.x);
+                    if (DX <= 0.25f && DY <= 0.25f) {
                         state = State.IDLE;
                         StateTimer = 1;
                     }
@@ -77,37 +74,30 @@ public class EnemyStateAI : MonoBehaviour {
                 break;
             case State.CHASE:
                 {
-                    if (Enemy == null)
-                    {
-                        state = State.IDLE;
-                        StateTimer = 1;
-                        break;
-                    }
+                    //if (Enemy == null) {
+                    //    state = State.IDLE;
+                    //    StateTimer = 1;
+                    //    break;
+                    //}
 
-                    float DX = Mathf.Abs(Enemy.transform.position.x - transform.position.x);
-                    if (DX <= 0.9f)
-                    {
-                        state = State.ATTACK;
-                        if (AttackSwap)
-                        {
+                    float DX = Mathf.Abs(PlayerLocation.position.x - transform.position.x);
+                    float DY = Mathf.Abs(PlayerLocation.position.y - transform.position.y);
+                    if (DX <= 0.9f && DY <= 0.9f) {
+                        //state = State.ATTACK;
+                        if (AttackSwap) {
+                            //StartCoroutine(HitStun(AttackSwap));
+                            break;
+                        } else if (AttackSwap == false) {
                             //StartCoroutine(HitStun(AttackSwap));
                             break;
                         }
-                        else if (AttackSwap == false)
-                        {
-                            //StartCoroutine(HitStun(AttackSwap));
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        Direction.x = Mathf.Sign(Enemy.transform.position.x - transform.position.x);
+                    } else {
+                        Direction = PlayerLocation.position - transform.position;
                     }
                 }
                 break;
             case State.ATTACK:
-                if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0))
-                {
+                if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0)) {
                     state = State.CHASE;
                 }
                 break;
@@ -119,14 +109,12 @@ public class EnemyStateAI : MonoBehaviour {
         }
 
         // Transform direction to slope space
-        Direction = Quaternion.AngleAxis(GroundAngle, Vector3.forward) * Direction;
+        Direction.Normalize();
+        CheckEnemySeen(Direction);
         Debug.DrawRay(transform.position, Direction, Color.green);
 
         Velocity.x = Direction.x * Speed;
-
-        // set velocity
-        //if (Velocity.y < 0) Velocity.y = 0;
-        //Velocity.y += Physics.gravity.y * GravityMultiplier * Time.deltaTime;
+        Velocity.y = Direction.y * Speed;
 
         // Move character
         RB.velocity = Velocity;
@@ -136,7 +124,7 @@ public class EnemyStateAI : MonoBehaviour {
         if (Velocity.x < 0 && FaceRight) Flip();
 
         // Update the animator
-        animator.SetFloat("Speed", Mathf.Abs(Velocity.x));
+        //animator.SetFloat("Speed", Mathf.Abs(Velocity.x));
     }
 
     private void Flip() {
@@ -155,12 +143,12 @@ public class EnemyStateAI : MonoBehaviour {
         TargetWaypoint = Waypoint;
     }
 
-    private void CheckEnemySeen() {
+    private void CheckEnemySeen(Vector2 direction) {
         Enemy = null;
-        RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, ((FaceRight) ? Vector2.right : Vector2.left), RayDistance, RaycastLayerMask);
+        RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, direction, RayDistance, RaycastLayerMask);
         if (raycastHit.collider != null && raycastHit.collider.gameObject.CompareTag(EnemyTag)) {
             Enemy = raycastHit.collider.gameObject;
-            Debug.DrawRay(RaycastLocation.position, ((FaceRight) ? Vector2.right : Vector2.left) * RayDistance, Color.red);
+            Debug.DrawRay(RaycastLocation.position, direction * RayDistance, Color.red);
         }
     }
 
