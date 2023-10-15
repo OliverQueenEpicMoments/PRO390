@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private AudioClip RollSound;
 
     Rigidbody2D RB;
-
     Vector2 Velocity = Vector2.zero;
     bool FaceRight = true;
 
@@ -63,8 +62,8 @@ public class PlayerController : MonoBehaviour {
         Velocity = RB.velocity * RollingPower;
         yield return new WaitForSeconds(RollingTime);
         IsRolling = false;
-        yield return new WaitForSeconds(RollingCooldown);
         Physics2D.IgnoreLayerCollision(3, 6, false);
+        yield return new WaitForSeconds(RollingCooldown);
         CanRoll = true;
     }
 
