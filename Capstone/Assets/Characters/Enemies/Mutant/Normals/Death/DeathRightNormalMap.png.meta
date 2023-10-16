@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1992897e588d5e747b08dcd8e1591f93
+guid: cc329b91da0992a4a8ae0fcf6c477f68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decorative_0
+      name: DeathRightNormalMap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 16
-        height: 16
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,167 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e31a6da435d864c9bfda7437878015
-      internalID: -1052977979
+      spriteID: 6ee16833b6a23d54197167675d55aea4
+      internalID: 1762169605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c109a60248d9bf14e859c2c517f196c3
-      internalID: 1279521791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0aa3d8b3b6db6946a0e5da20ee4f41c
-      internalID: 986246113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13ed0071c5f502f41894a220dadb0366
-      internalID: 389386129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f3a0d80a7c0b474c99c6f59f3118977
-      internalID: 731922578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d5f72129367bd645aa7b008ae224635
-      internalID: 135544300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 075ea1da5f167a8429226941c5c543f6
-      internalID: -1868201045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c9d0cadfbde3c04a8df04bbbb48e2eb
-      internalID: -1452441231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_8
+      name: DeathRightNormalMap_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
-        width: 16
-        height: 16
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be6a2a97143d07d47b19fca69f1ae479
-      internalID: -1910504428
+      spriteID: 71129c7fd53be1d4b8daa9e2e4de7826
+      internalID: 1824914879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_9
+      name: DeathRightNormalMap_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
-        width: 16
-        height: 16
+        x: 256
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04f0c178f3667ac47b1eeb53f6291e02
-      internalID: -969107429
+      spriteID: b8be8317e82110649acff195609a944c
+      internalID: 1262335442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_10
+      name: DeathRightNormalMap_3
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
-        width: 16
-        height: 16
+        x: 384
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e778dfcf2f47ef24198db8787dea5328
-      internalID: 251272518
+      spriteID: b2b2ddb41dfa4e049892f8fe225b03d9
+      internalID: 1965762433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_11
+      name: DeathRightNormalMap_4
       rect:
         serializedVersion: 2
-        x: 176
-        y: 224
-        width: 16
-        height: 16
+        x: 512
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4eedee353bcd4940b04ac642faaacb0
-      internalID: -1842962072
+      spriteID: 40410b9a861a57e448450d4fc21107d6
+      internalID: -626490844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_12
+      name: DeathRightNormalMap_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 16
+        x: 640
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8120542a25af3e348ad218466c61c642
-      internalID: -1889159292
+      spriteID: 559e2ae6b9cc0a1499caa46500c5133d
+      internalID: 811582239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_13
+      name: DeathRightNormalMap_6
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
-        width: 16
-        height: 16
+        x: 768
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +250,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25cceaa2ff0842d4280a58112cea2e95
-      internalID: -334540043
+      spriteID: 655658520f8a80c45928fd642f956d45
+      internalID: -102109931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_14
+      name: DeathRightNormalMap_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e661e435543fb488116eefeadb1a17
+      internalID: 1328161513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f961092743591a94a928d72c5e9dc480
+      internalID: 584967816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b6b40bf41027e488aea44de325bb5c
+      internalID: 1242433741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1445c0dc1c652374e86bbded44293fe3
+      internalID: 1041007534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef749c4418b2a684dbc8aa17244f1752
+      internalID: 900131596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
-        width: 16
-        height: 16
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,167 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703239a13886b9f4a932efe4432e9794
-      internalID: 384906830
+      spriteID: 88c4e23b226db3640ba1c626a63deefc
+      internalID: 385422624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_15
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfad0eca7ccab94478e5939a0fe2b5b4
-      internalID: -833978371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc0bddc3d838bc84c9903291c183d861
-      internalID: 1503642898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_17
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16f6c2c0d7655e74ca2fe11279cd43c9
-      internalID: 1468410331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_18
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2209e679bde99884c8e6280d0984a832
-      internalID: 1078289021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_19
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10b72a6d84da346419d4e99da19c5e36
-      internalID: -1310299446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_20
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfd1792fb6dcacc41920d2b98d1a2ac5
-      internalID: 1109424391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_21
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c72986bfc115aaa428e37b3dfb2d9a7d
-      internalID: 1164866005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_22
+      name: DeathRightNormalMap_13
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
-        width: 16
-        height: 16
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 439da26821912824d96703f5fcb2a71a
-      internalID: -247212280
+      spriteID: 248b05799d92347478ddae349ecb0c67
+      internalID: -1151001655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_23
+      name: DeathRightNormalMap_14
       rect:
         serializedVersion: 2
-        x: 144
-        y: 208
-        width: 16
-        height: 16
+        x: 256
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,20 +418,209 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbec3922e386a014da3202134090455c
-      internalID: -156009116
+      spriteID: c2bcc1d3b1c233a48b11a09c8aead315
+      internalID: -1340884273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_24
+      name: DeathRightNormalMap_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be767f437ea4a8148b71b76f92240df2
+      internalID: -102196679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61395e79bd05344d97b3ff38c75fe87
+      internalID: -825502033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bbcfae60ee9ea42be3b8ca7de648b5
+      internalID: 1159048068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081b12042904fae4686ab1d66687401d
+      internalID: -937180390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cf8106f91eea543b9c94d55f0c2fe7
+      internalID: -512657504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b180b9412ecbce44881d389c880838f7
+      internalID: -508290859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa305af3d6d73540a8ac20d21510b3a
+      internalID: -1781415274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fc24cee7ac0034fbbbcb3b461caff0
+      internalID: 389025762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa2e40a4302d4c4886927dc8cb6cb6f
+      internalID: 1269868953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 16
-        height: 16
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,251 +628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d9b6f21765bedb4da50deef51c8b047
-      internalID: 1607810694
+      spriteID: 4baccc699e0d78a43bc3b89f0cfbf277
+      internalID: -605127086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_25
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 852b4147375913c40809110a330b337a
-      internalID: 1355061744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_26
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bbc7569a65977d4c8be1fee512da81f
-      internalID: -1135328473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_27
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4714450fbd782a43b5f7c72d25f8f49
-      internalID: -1835188962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_28
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98295e0226c2a8b4c9c5a71d42409c36
-      internalID: 390919791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_29
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 438e2a93e69945a44a2cd02f82548b88
-      internalID: -836215418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_30
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74190f8de569caa46bd7693bd756600d
-      internalID: -1623243338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_31
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc65b54196540994889cc459b61427ca
-      internalID: 733682825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_32
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84660f8f8676efb4aa0af0763c74f73a
-      internalID: -1316936543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_33
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e3c6c25dc03b074a9d3bffbf39d67ad
-      internalID: -544274005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_34
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a224668d315ea374aa28e532aaaa9597
-      internalID: -441239743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_35
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a7ce804ff1a7b249816fdf141832380
-      internalID: 1248431355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_36
+      name: DeathRightNormalMap_25
       rect:
         serializedVersion: 2
         x: 128
-        y: 176
-        width: 16
-        height: 16
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,20 +649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f68f82a6f7a6e429774448e2fe4d25
-      internalID: 1072821482
+      spriteID: 1f595eeccf2053347a1bc80f7b8acdd2
+      internalID: -2096426539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_37
+      name: DeathRightNormalMap_26
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
-        width: 16
-        height: 16
+        x: 256
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0bba9a7144abf64fa0f05230551ccf8
-      internalID: 1927680853
+      spriteID: a94f462323f94a347a46f4dcb7c8a6b3
+      internalID: -1246406432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_38
+      name: DeathRightNormalMap_27
       rect:
         serializedVersion: 2
-        x: 160
-        y: 176
-        width: 16
-        height: 16
+        x: 384
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +691,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68b537ade7cc7f64fa263dd4343a69d0
-      internalID: 2054076432
+      spriteID: 8b0044b6f4f0a4b4386902752ff34413
+      internalID: 131572474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_39
+      name: DeathRightNormalMap_28
       rect:
         serializedVersion: 2
-        x: 176
-        y: 176
-        width: 16
-        height: 16
+        x: 512
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,20 +712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6710b89b44ebdf6409f37c34d72512be
-      internalID: -1905869305
+      spriteID: a971dcbcdf6e9d1448f2c1a286a2e6cb
+      internalID: -1772189229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_40
+      name: DeathRightNormalMap_29
       rect:
         serializedVersion: 2
-        x: 192
-        y: 176
-        width: 16
-        height: 16
+        x: 640
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,20 +733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6dad3193280bd4db8fc54d466171c9
-      internalID: -1545450436
+      spriteID: 6e3fbc0dff68e394c9e481a6dbe856c7
+      internalID: 699627312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_41
+      name: DeathRightNormalMap_30
       rect:
         serializedVersion: 2
-        x: 208
-        y: 176
-        width: 16
-        height: 16
+        x: 768
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,20 +754,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf3167732012634cbf60e35934d269d
-      internalID: -1880684732
+      spriteID: c33bfde6eb783a342905f85a5b4e2c17
+      internalID: -2117628403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_42
+      name: DeathRightNormalMap_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91736d9b64423844ca1b8984b904d4e3
+      internalID: -1911562220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26f69d5b61cf9244ad663678e86d68f
+      internalID: -1723084181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ef5eaa5b910ab4bba4ba7369ce6119
+      internalID: 963797858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273bd769c5f00be4fa0d5f09c091f12a
+      internalID: 1530827505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_35
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb8fe243e0d04744903ceb9a006cef3
+      internalID: -1190913985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_36
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 16
-        height: 16
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,146 +880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c39b1f096098546b6e2be7c05007b2
-      internalID: 2013788268
+      spriteID: 7fa83d768ca67f74990090fb6123b03d
+      internalID: 1247752432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_43
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb48b462cba398142a09c792ae229004
-      internalID: 1446776384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_44
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f00c75fa24f1e8848bd2473a0e63f48c
-      internalID: 203272401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_45
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b4f614457b4bfc42ac7b6ce47733705
-      internalID: -1933589507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ea84ab9ca44c8e4a9137106986f3b5f
-      internalID: 943540733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_47
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b3c2c29395f1394d867d3e0ccc27242
-      internalID: 1855315862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_48
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d28b4d0a333da20458e92e43a9882441
-      internalID: -1965614895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_49
+      name: DeathRightNormalMap_37
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
-        width: 16
-        height: 16
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,20 +901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c571025dcc6b746a62e00df4b678b2
-      internalID: 661974526
+      spriteID: 0e1f40d3d17ac094282e507b664e9187
+      internalID: 688476025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_50
+      name: DeathRightNormalMap_38
       rect:
         serializedVersion: 2
-        x: 144
-        y: 160
-        width: 16
-        height: 16
+        x: 256
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,20 +922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff8d2b5c0dace649a3f6764a3d0245c
-      internalID: -2128118825
+      spriteID: c25c389df211e034a97a526522ce568c
+      internalID: 1911624107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_51
+      name: DeathRightNormalMap_39
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 16
-        height: 16
+        x: 384
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1195,20 +943,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb030a4c74d02e043a0d70b84f0689bd
-      internalID: 566466440
+      spriteID: a813a29b0f75aff41819ce1b46363ae3
+      internalID: -1755000917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_52
+      name: DeathRightNormalMap_40
       rect:
         serializedVersion: 2
-        x: 176
-        y: 160
-        width: 16
-        height: 16
+        x: 512
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1216,20 +964,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2854ddd2b7a6cf42a7049b5d130f4fe
-      internalID: -80383401
+      spriteID: bfd1fb95635bf86488193ddd099eb73b
+      internalID: -454769847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_53
+      name: DeathRightNormalMap_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
-        width: 16
-        height: 16
+        x: 640
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,20 +985,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9318a722fb69ce429fa6fe9ed63d461
-      internalID: -1958274656
+      spriteID: bbbc4ce8f97981e4482075f6879baeac
+      internalID: -1343308436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_54
+      name: DeathRightNormalMap_42
       rect:
         serializedVersion: 2
-        x: 208
-        y: 160
-        width: 16
-        height: 16
+        x: 768
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,20 +1006,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6cab1f1d1e88d4b909588933c5c583
-      internalID: 455740539
+      spriteID: db0992adb6d343e4f8116d317f5f595f
+      internalID: -1284155914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_55
+      name: DeathRightNormalMap_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e8c7d989360e0418b0974bbe81d9d2
+      internalID: -1462586687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1025b978a48ee324e89871a5300b3d19
+      internalID: 1795668626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043d78b8fe4fca044ab4aaa61b5687c1
+      internalID: -851890390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7c6ea898e9172498093f93f51d6c9b
+      internalID: 608982153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3daa2faff0d1c48b7ab47f33046b9b
+      internalID: 942890014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_48
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 16
-        height: 16
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1279,146 +1132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7334d5856424eda4c84e792c0f7b7588
-      internalID: 1702146577
+      spriteID: 9178ea49700baa041a6dabc1eb2e4131
+      internalID: 1694290689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_56
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c974d6c791939fe4e832d1e8ac61ac8e
-      internalID: 528322873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_57
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93f8c8a123bd29844803a3e863ea790d
-      internalID: -1144519659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_58
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98c0656b292702b49a6a2cdfa223e0e6
-      internalID: 1070391872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_59
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ac77576d1757648b76e7da6ab4d02d
-      internalID: 1691039085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_60
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48110c1a1f192124ea150c8e29066d08
-      internalID: -535094799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_61
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 857d67b50753f434c9d099d69f6d1b43
-      internalID: 213578653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_62
+      name: DeathRightNormalMap_49
       rect:
         serializedVersion: 2
         x: 128
-        y: 144
-        width: 16
-        height: 16
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1426,20 +1153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7c8b9028d53a7245aa70b1326c7d963
-      internalID: 567938895
+      spriteID: 8d458dc944a053348885efb23efd5723
+      internalID: -1404898601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_63
+      name: DeathRightNormalMap_50
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
-        width: 16
-        height: 16
+        x: 256
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1447,20 +1174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e138f6e1ebe75c429e1c79ea4270dfe
-      internalID: -1034656233
+      spriteID: 72180a0119a71b149820c5e49524b1ce
+      internalID: 1742442166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_64
+      name: DeathRightNormalMap_51
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 16
-        height: 16
+        x: 384
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,20 +1195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 944ec27de7455424f8c12638d3a40b13
-      internalID: -1883760387
+      spriteID: 94a2db530cf54d946b3ff5099a9c22f9
+      internalID: -1151956046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_65
+      name: DeathRightNormalMap_52
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
-        width: 16
-        height: 16
+        x: 512
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1489,20 +1216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6586aa275d45e8143959909d4cb9f647
-      internalID: 561331112
+      spriteID: 09aa62661b865e94ca80ebe80c7f1f57
+      internalID: 1904459277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_66
+      name: DeathRightNormalMap_53
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
-        width: 16
-        height: 16
+        x: 640
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1510,20 +1237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d59a83b63ad63ce45b49085999384430
-      internalID: -1140934110
+      spriteID: bdbcaf3604e3998418a79bffa669d17f
+      internalID: 29566016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_67
+      name: DeathRightNormalMap_54
       rect:
         serializedVersion: 2
-        x: 208
-        y: 144
-        width: 16
-        height: 16
+        x: 768
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1531,20 +1258,1385 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8183b58459b260d4088e7f34e4c10522
-      internalID: 1209552379
+      spriteID: 1c1bab480f2649740877d0a7b8f6924b
+      internalID: -708652338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_68
+      name: DeathRightNormalMap_55
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8ecc7dac195e34aa814773ca5b60bb
+      internalID: -1173547660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b53ff2e2f561c04f81217d909dc0865
+      internalID: -760476814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8577e124daa74b94084c30fa12efc8ed
+      internalID: 1212685628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04757e333695a894b90caefa14ee8914
+      internalID: -17208211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_59
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d212c8aff0c7c44bbc7a5efed56e286
+      internalID: 567590718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1270d8b133250a4e84526956845b69b
+      internalID: 1616206157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a84a6651781b048b6571a9926ea082
+      internalID: 584730154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4a88b52965065429fbec12f12a5162
+      internalID: -1276880825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115d7960ddd06e44cade40079c01bf57
+      internalID: -1073800715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fa370dc30e0634f8bb39da4a619a65
+      internalID: -957637770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27dd0bee4df822498cf775fdd42082e
+      internalID: -62557894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bd577712e23f24d9c28be5d41052be
+      internalID: -2103716902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e43c20ee307d0747bcb4cc16da6faa6
+      internalID: -924476495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2761193391f1f8144ad2ef6b4630af45
+      internalID: -142926957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd6655e8acd69549820f10d03723bef
+      internalID: 1269057256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cdbd245b0a9c64e83958bf4039a823
+      internalID: -635401701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e80753491e8ec48aacf6edeb7da767
+      internalID: -1593968419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178c7b824fff45447b59723970c5e9b4
+      internalID: 466417949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0905fbd32efe14da0b6b9d8dbd296e
+      internalID: 559783296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba52febfef7ab4a45b527dcff295794a
+      internalID: 1998075303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f815851533df03146bc87e31b50ae61c
+      internalID: -1909647723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5be83383af003e44b4f71c3804fad45
+      internalID: 1129993660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904203abd7b12664d88dcbfe94e223f7
+      internalID: -565811480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94f62228e6207b43812f1e594cda7c7
+      internalID: 395654232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad0ec190e5ee1d458296ee37df722b1
+      internalID: 1234595068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d707db3ac76e649b508db379f40524
+      internalID: -695439130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9375778ae050442abb3e4f5c537b44
+      internalID: -201998085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898e8ce5696d409438ba4c8dcb6126e6
+      internalID: 1704929261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13431cc95a0a94b448ebf3ed8b37f68b
+      internalID: 141902964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dc46bfe1535b6469597b9e89149fbc
+      internalID: -56990586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602376ddab59a2a4b82e08569f125b0f
+      internalID: 788772186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c486d1c6218870b479d721b8845bb47a
+      internalID: -1592774491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff45c94c6c1382419d5c0a59a86e830
+      internalID: -714002037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245ce5085eee5204c827ca906f608a6f
+      internalID: -1181332027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_89
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e302bf043931864ba0224889b3aec20
+      internalID: -327287038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad8402f7dd17ab4eae38b7482907715
+      internalID: -1584186935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156edc3b8afb8644c96085e5259eacb5
+      internalID: 1276671259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_92
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabc3b2acf557ec46b6f36c993f47cf2
+      internalID: -1009524904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_93
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b75ddce3f4df9244918d0240ef252a7
+      internalID: 1524499674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_94
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef97d42b3fff5a4582157a491b4a373
+      internalID: 2123654451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_95
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87358a4200919af4bb5e4638ee3018a7
+      internalID: -348802871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542683623deee2347afbea1e6c56ad3a
+      internalID: 2076993263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e460c3123fdd04f9a707a493d12e30
+      internalID: 238638747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ba3efd1b17eaf4ba02e2ead3716171
+      internalID: 537513271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25096b8432769b4bbc1fc5d345c4944
+      internalID: -1219569709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_100
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ad30baf8d5f3b44874d059d8923cf7
+      internalID: -135231072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_101
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263174f3e1fb74345a54d675b42f8db0
+      internalID: 2133612726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_102
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f4e9ad8f5da3547bb75e33ddff1518
+      internalID: -2131411005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_103
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b52cf0f0e8d19347bc75d9c06f70f0c
+      internalID: -2063859321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_104
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b56a3fa51792b47b8b09e1b935fc9a
+      internalID: -1647958332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_105
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4f049cbcda6104c8e7390a07f77734
+      internalID: -2124079127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_106
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c6379da90cb604089c55d9c3647d9e
+      internalID: 627645263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_107
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f847b11533b2b43841c7b3ffafeab4
+      internalID: -1602407119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f43dbbbc435f944bbf80bd61012bfc
+      internalID: 2120108491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5777c6d63ccb66d45ab461d83833fc35
+      internalID: -170062368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_110
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4271cf38a19ba4abce514fde1f4dd0
+      internalID: 706181723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3207134f9b435ab4bbb1ef96eaeaf25c
+      internalID: 520959639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_112
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130e1f43a97750844ae99e1e5d6ddc43
+      internalID: 62052294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c67d38299356ae4eb82cca7563bde75
+      internalID: -911387561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_114
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1411ff615fdf9249ac4e389f3661bdb
+      internalID: 506577938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_115
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fac0aa8f10dca43a8735478129ee47
+      internalID: -1050882363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b047e3a8dffed4e878327b308ca146
+      internalID: 1713636966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766750271e0b07f4ea5060a24f31195e
+      internalID: -1919620616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_118
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0cd4e7dcba5124baf7dff0b57e5195
+      internalID: -1267193955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_119
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a979773d41e5e9e42b13c77bca1837e5
+      internalID: 73832224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_120
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1552,20 +2644,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49b9973776cb1f4896b0cf401df8edd
-      internalID: -1942187626
+      spriteID: a4fe0e9e28265fb42b1db219fee14c3f
+      internalID: -725076827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_69
+      name: DeathRightNormalMap_121
       rect:
         serializedVersion: 2
-        x: 16
+        x: 128
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1573,20 +2665,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 544457f6f605eab43ae3e57e69600658
-      internalID: 1259147175
+      spriteID: aabc4cad07ced5d4aa5e92e98e2e811b
+      internalID: -1980151576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_70
+      name: DeathRightNormalMap_122
       rect:
         serializedVersion: 2
-        x: 32
+        x: 256
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,20 +2686,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c25dae6d4a6da4599798bc7a49628a
-      internalID: 2117886511
+      spriteID: 142d62ddc56ed63418bf7ee99c2f590c
+      internalID: 18265957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_71
+      name: DeathRightNormalMap_123
       rect:
         serializedVersion: 2
-        x: 80
+        x: 384
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1615,20 +2707,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 971e575e2b2d4cd4f9ab9f41542aff33
-      internalID: -2122362399
+      spriteID: 2531069070b39ec44ac9ad349786de0b
+      internalID: -702424208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_72
+      name: DeathRightNormalMap_124
       rect:
         serializedVersion: 2
-        x: 96
+        x: 512
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1636,20 +2728,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4bb2666d983b424284f1655fd8051be
-      internalID: -1875437865
+      spriteID: d7f7d803189d77445857086d83010e3f
+      internalID: 228133985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_73
+      name: DeathRightNormalMap_125
       rect:
         serializedVersion: 2
-        x: 144
+        x: 640
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1657,20 +2749,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cab88f2506914944ac77437facb491d
-      internalID: 786952576
+      spriteID: 455f06274aafb71419e8f5472c88b38e
+      internalID: 1978512255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_74
+      name: DeathRightNormalMap_126
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
-        width: 16
-        height: 16
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1678,20 +2770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 389b58ecbd3a2d343aa4ce819796ede5
-      internalID: 1036918362
+      spriteID: f269b96702dcadc409980849cd96bb90
+      internalID: -1170953513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_75
+      name: DeathRightNormalMap_127
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
-        width: 16
-        height: 16
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1699,20 +2791,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 054d36457a34e84478da06b33a75dcfb
-      internalID: 1041682303
+      spriteID: b2f124f8b3fa47542af920ad581d3d28
+      internalID: -662211733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_76
+      name: DeathRightNormalMap_128
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
-        width: 16
-        height: 16
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1720,20 +2812,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8502beb553a45064789dffe370442ee1
-      internalID: -1113670383
+      spriteID: d5c504afeff6c0d438943c9adbf569f1
+      internalID: -1724120955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_77
+      name: DeathRightNormalMap_129
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
-        width: 16
-        height: 16
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1741,20 +2833,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53d673cbef78e4140aacee1978226e8c
-      internalID: 51893568
+      spriteID: 22030b91464b3fe4cac377ad0ee20792
+      internalID: 1728593922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_78
+      name: DeathRightNormalMap_130
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1762,20 +2854,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1aae1c44ed95b5a42aab2f30fc76c50e
-      internalID: -459694530
+      spriteID: 67bdb6f4952a3444781d5e9d4c038783
+      internalID: -1416700792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_79
+      name: DeathRightNormalMap_131
       rect:
         serializedVersion: 2
-        x: 144
-        y: 112
-        width: 16
-        height: 16
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1783,860 +2875,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a653759999bf39f43a6826e2295b03b6
-      internalID: -185753730
+      spriteID: 3673909ca0f1f4640ac81d557f88fa9e
+      internalID: 355112450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_80
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29fea20c6f07d964b81f6834a504b5e4
-      internalID: 1011046113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_81
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d6aa660ef998e45b2086d1ce7c07b3
-      internalID: -1097188043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_82
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67de2798d5198f64093952e6a69a5014
-      internalID: -481559935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_83
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81d4429f1c437874782fff0ffa84f193
-      internalID: -2051341931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_84
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cafa9afa0ce09344891e300192fec47
-      internalID: -1374783391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_85
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 860923ff4a7c5d44ca2d1a2020cef4a9
-      internalID: 143478034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_86
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73839ac61406f2c4f8ef9d5177b2e9e9
-      internalID: 1068812638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_87
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3363ec0f9bc10064089cfb13c6b5dc3c
-      internalID: 297408306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_88
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbab13b97354a064e9624e467ebf5d15
-      internalID: 388653017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_89
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35c223ce3310f5a43bebfd5cfe00a1c0
-      internalID: 1063004468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_90
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 287fcbd39ddcdf045ba93f0d854aa2fe
-      internalID: -229500558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_91
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5c96fc56288d534087b1db3b8bc7fde
-      internalID: -1336483460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_92
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42423857af20be34bb3f147f47e0e762
-      internalID: 719813885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_93
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8b1fa8a35f4f834a8caa874eb8cb04f
-      internalID: 347957835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_94
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21593e338b60ed243a141aafef63c3d7
-      internalID: 1510998667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_95
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97ba3c0e208f3584fa770218d81ec751
-      internalID: 1839923401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_96
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d5349f5631e7ed45ac96ed0ed9d3d58
-      internalID: -1056827927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_97
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8283ceea0b64ddc4c86399cbbe92fd55
-      internalID: -1936585169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_98
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 561e0013c474ada48b3b722da9b0a264
-      internalID: -1103388057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_99
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6743bd319d2efb64484238b17b09e4cc
-      internalID: -1625822268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_100
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a21cf7ed9e3d9b94ba0e3b0a2c5991c6
-      internalID: -628226090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_101
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b110203e2831014e95d467f52eddcb4
-      internalID: -737150954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_102
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2540bcfe4f78c2a4baf7e07309c7819a
-      internalID: 637331993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_103
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42f88a36b75c9bc4f8401c8c16ac56e2
-      internalID: 450015645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_104
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 777f0082f1c56a54f9259d27e65e97ec
-      internalID: -1654935887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_105
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f6169b4cf607ef4f9b2a133cad54ed1
-      internalID: 1445815550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_106
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c480c856ea2615478e4e173037900cf
-      internalID: -308691016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_107
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a3564a1f8a3c07438a3bea4360d6b7c
-      internalID: -1985346306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_108
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d9047eeaae66684dad1956dd7862570
-      internalID: -457697965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_109
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bbfbff66d3f75240ba4059a1ad78eb5
-      internalID: -853636178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_110
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd341760da5163d4ba039dd644d31fa1
-      internalID: 1440328877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_111
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d16cbc6eb5ec2a4082a56f1dcbda554
-      internalID: -389650116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_112
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9cbf95c78dcb4c45a08fef2ede74094
-      internalID: 159753814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_113
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31cc27330cca49b43a2ff76f8daaf95a
-      internalID: 1822952848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_114
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eab113b05317d74e8730b6dd3a8105d
-      internalID: 882519939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_115
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 485168bf712131b4b969c87a948bb038
-      internalID: -1674355739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_116
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c298cca6c0d456e4e81a4c9853aad57f
-      internalID: 2072405715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_117
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f9632e924c67ba4ab3be532461e2598
-      internalID: -717706263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_118
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fe0b24dc775c274eae42a8de0bc4ccb
-      internalID: 51850462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_119
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2bbe3cdbc4c5864fb4279c236cf1bc7
-      internalID: 521999528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_120
+      name: DeathRightNormalMap_132
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2644,20 +2896,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffecd459e38ee644fbcc73468a2caee0
-      internalID: 76122486
+      spriteID: b2298fc16e8f7f243902de0107139a3a
+      internalID: 710877982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_121
+      name: DeathRightNormalMap_133
       rect:
         serializedVersion: 2
-        x: 16
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2665,20 +2917,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c75a32648e01b47add44c2cde9e75a
-      internalID: -28374231
+      spriteID: f7d7af4c0b05c1642aa8b91ddb3f6e12
+      internalID: -760377668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_122
+      name: DeathRightNormalMap_134
       rect:
         serializedVersion: 2
-        x: 32
+        x: 256
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2686,8 +2938,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fbf0ee5317cea94d97b0bf9eea9a6b5
-      internalID: 1297657328
+      spriteID: 9f75144480b2d974cbb8e13bc58fa231
+      internalID: -1969105619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_135
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fd616b5b294684b9def0cd229e4238
+      internalID: 1880088024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea77e2de9ab5f4398abcca172b6109
+      internalID: -93846769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathRightNormalMap_137
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab06e70e77141964489220f509f24feb
+      internalID: -2141197423
       vertices: []
       indices: 
       edges: []
@@ -2703,129 +3018,144 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      decorative_0: -1052977979
-      decorative_1: 1279521791
-      decorative_10: 251272518
-      decorative_100: -628226090
-      decorative_101: -737150954
-      decorative_102: 637331993
-      decorative_103: 450015645
-      decorative_104: -1654935887
-      decorative_105: 1445815550
-      decorative_106: -308691016
-      decorative_107: -1985346306
-      decorative_108: -457697965
-      decorative_109: -853636178
-      decorative_11: -1842962072
-      decorative_110: 1440328877
-      decorative_111: -389650116
-      decorative_112: 159753814
-      decorative_113: 1822952848
-      decorative_114: 882519939
-      decorative_115: -1674355739
-      decorative_116: 2072405715
-      decorative_117: -717706263
-      decorative_118: 51850462
-      decorative_119: 521999528
-      decorative_12: -1889159292
-      decorative_120: 76122486
-      decorative_121: -28374231
-      decorative_122: 1297657328
-      decorative_13: -334540043
-      decorative_14: 384906830
-      decorative_15: -833978371
-      decorative_16: 1503642898
-      decorative_17: 1468410331
-      decorative_18: 1078289021
-      decorative_19: -1310299446
-      decorative_2: 986246113
-      decorative_20: 1109424391
-      decorative_21: 1164866005
-      decorative_22: -247212280
-      decorative_23: -156009116
-      decorative_24: 1607810694
-      decorative_25: 1355061744
-      decorative_26: -1135328473
-      decorative_27: -1835188962
-      decorative_28: 390919791
-      decorative_29: -836215418
-      decorative_3: 389386129
-      decorative_30: -1623243338
-      decorative_31: 733682825
-      decorative_32: -1316936543
-      decorative_33: -544274005
-      decorative_34: -441239743
-      decorative_35: 1248431355
-      decorative_36: 1072821482
-      decorative_37: 1927680853
-      decorative_38: 2054076432
-      decorative_39: -1905869305
-      decorative_4: 731922578
-      decorative_40: -1545450436
-      decorative_41: -1880684732
-      decorative_42: 2013788268
-      decorative_43: 1446776384
-      decorative_44: 203272401
-      decorative_45: -1933589507
-      decorative_46: 943540733
-      decorative_47: 1855315862
-      decorative_48: -1965614895
-      decorative_49: 661974526
-      decorative_5: 135544300
-      decorative_50: -2128118825
-      decorative_51: 566466440
-      decorative_52: -80383401
-      decorative_53: -1958274656
-      decorative_54: 455740539
-      decorative_55: 1702146577
-      decorative_56: 528322873
-      decorative_57: -1144519659
-      decorative_58: 1070391872
-      decorative_59: 1691039085
-      decorative_6: -1868201045
-      decorative_60: -535094799
-      decorative_61: 213578653
-      decorative_62: 567938895
-      decorative_63: -1034656233
-      decorative_64: -1883760387
-      decorative_65: 561331112
-      decorative_66: -1140934110
-      decorative_67: 1209552379
-      decorative_68: -1942187626
-      decorative_69: 1259147175
-      decorative_7: -1452441231
-      decorative_70: 2117886511
-      decorative_71: -2122362399
-      decorative_72: -1875437865
-      decorative_73: 786952576
-      decorative_74: 1036918362
-      decorative_75: 1041682303
-      decorative_76: -1113670383
-      decorative_77: 51893568
-      decorative_78: -459694530
-      decorative_79: -185753730
-      decorative_8: -1910504428
-      decorative_80: 1011046113
-      decorative_81: -1097188043
-      decorative_82: -481559935
-      decorative_83: -2051341931
-      decorative_84: -1374783391
-      decorative_85: 143478034
-      decorative_86: 1068812638
-      decorative_87: 297408306
-      decorative_88: 388653017
-      decorative_89: 1063004468
-      decorative_9: -969107429
-      decorative_90: -229500558
-      decorative_91: -1336483460
-      decorative_92: 719813885
-      decorative_93: 347957835
-      decorative_94: 1510998667
-      decorative_95: 1839923401
-      decorative_96: -1056827927
-      decorative_97: -1936585169
-      decorative_98: -1103388057
-      decorative_99: -1625822268
+      DeathRightNormalMap_0: 1762169605
+      DeathRightNormalMap_1: 1824914879
+      DeathRightNormalMap_10: 1041007534
+      DeathRightNormalMap_100: -135231072
+      DeathRightNormalMap_101: 2133612726
+      DeathRightNormalMap_102: -2131411005
+      DeathRightNormalMap_103: -2063859321
+      DeathRightNormalMap_104: -1647958332
+      DeathRightNormalMap_105: -2124079127
+      DeathRightNormalMap_106: 627645263
+      DeathRightNormalMap_107: -1602407119
+      DeathRightNormalMap_108: 2120108491
+      DeathRightNormalMap_109: -170062368
+      DeathRightNormalMap_11: 900131596
+      DeathRightNormalMap_110: 706181723
+      DeathRightNormalMap_111: 520959639
+      DeathRightNormalMap_112: 62052294
+      DeathRightNormalMap_113: -911387561
+      DeathRightNormalMap_114: 506577938
+      DeathRightNormalMap_115: -1050882363
+      DeathRightNormalMap_116: 1713636966
+      DeathRightNormalMap_117: -1919620616
+      DeathRightNormalMap_118: -1267193955
+      DeathRightNormalMap_119: 73832224
+      DeathRightNormalMap_12: 385422624
+      DeathRightNormalMap_120: -725076827
+      DeathRightNormalMap_121: -1980151576
+      DeathRightNormalMap_122: 18265957
+      DeathRightNormalMap_123: -702424208
+      DeathRightNormalMap_124: 228133985
+      DeathRightNormalMap_125: 1978512255
+      DeathRightNormalMap_126: -1170953513
+      DeathRightNormalMap_127: -662211733
+      DeathRightNormalMap_128: -1724120955
+      DeathRightNormalMap_129: 1728593922
+      DeathRightNormalMap_13: -1151001655
+      DeathRightNormalMap_130: -1416700792
+      DeathRightNormalMap_131: 355112450
+      DeathRightNormalMap_132: 710877982
+      DeathRightNormalMap_133: -760377668
+      DeathRightNormalMap_134: -1969105619
+      DeathRightNormalMap_135: 1880088024
+      DeathRightNormalMap_136: -93846769
+      DeathRightNormalMap_137: -2141197423
+      DeathRightNormalMap_14: -1340884273
+      DeathRightNormalMap_15: -102196679
+      DeathRightNormalMap_16: -825502033
+      DeathRightNormalMap_17: 1159048068
+      DeathRightNormalMap_18: -937180390
+      DeathRightNormalMap_19: -512657504
+      DeathRightNormalMap_2: 1262335442
+      DeathRightNormalMap_20: -508290859
+      DeathRightNormalMap_21: -1781415274
+      DeathRightNormalMap_22: 389025762
+      DeathRightNormalMap_23: 1269868953
+      DeathRightNormalMap_24: -605127086
+      DeathRightNormalMap_25: -2096426539
+      DeathRightNormalMap_26: -1246406432
+      DeathRightNormalMap_27: 131572474
+      DeathRightNormalMap_28: -1772189229
+      DeathRightNormalMap_29: 699627312
+      DeathRightNormalMap_3: 1965762433
+      DeathRightNormalMap_30: -2117628403
+      DeathRightNormalMap_31: -1911562220
+      DeathRightNormalMap_32: -1723084181
+      DeathRightNormalMap_33: 963797858
+      DeathRightNormalMap_34: 1530827505
+      DeathRightNormalMap_35: -1190913985
+      DeathRightNormalMap_36: 1247752432
+      DeathRightNormalMap_37: 688476025
+      DeathRightNormalMap_38: 1911624107
+      DeathRightNormalMap_39: -1755000917
+      DeathRightNormalMap_4: -626490844
+      DeathRightNormalMap_40: -454769847
+      DeathRightNormalMap_41: -1343308436
+      DeathRightNormalMap_42: -1284155914
+      DeathRightNormalMap_43: -1462586687
+      DeathRightNormalMap_44: 1795668626
+      DeathRightNormalMap_45: -851890390
+      DeathRightNormalMap_46: 608982153
+      DeathRightNormalMap_47: 942890014
+      DeathRightNormalMap_48: 1694290689
+      DeathRightNormalMap_49: -1404898601
+      DeathRightNormalMap_5: 811582239
+      DeathRightNormalMap_50: 1742442166
+      DeathRightNormalMap_51: -1151956046
+      DeathRightNormalMap_52: 1904459277
+      DeathRightNormalMap_53: 29566016
+      DeathRightNormalMap_54: -708652338
+      DeathRightNormalMap_55: -1173547660
+      DeathRightNormalMap_56: -760476814
+      DeathRightNormalMap_57: 1212685628
+      DeathRightNormalMap_58: -17208211
+      DeathRightNormalMap_59: 567590718
+      DeathRightNormalMap_6: -102109931
+      DeathRightNormalMap_60: 1616206157
+      DeathRightNormalMap_61: 584730154
+      DeathRightNormalMap_62: -1276880825
+      DeathRightNormalMap_63: -1073800715
+      DeathRightNormalMap_64: -957637770
+      DeathRightNormalMap_65: -62557894
+      DeathRightNormalMap_66: -2103716902
+      DeathRightNormalMap_67: -924476495
+      DeathRightNormalMap_68: -142926957
+      DeathRightNormalMap_69: 1269057256
+      DeathRightNormalMap_7: 1328161513
+      DeathRightNormalMap_70: -635401701
+      DeathRightNormalMap_71: -1593968419
+      DeathRightNormalMap_72: 466417949
+      DeathRightNormalMap_73: 559783296
+      DeathRightNormalMap_74: 1998075303
+      DeathRightNormalMap_75: -1909647723
+      DeathRightNormalMap_76: 1129993660
+      DeathRightNormalMap_77: -565811480
+      DeathRightNormalMap_78: 395654232
+      DeathRightNormalMap_79: 1234595068
+      DeathRightNormalMap_8: 584967816
+      DeathRightNormalMap_80: -695439130
+      DeathRightNormalMap_81: -201998085
+      DeathRightNormalMap_82: 1704929261
+      DeathRightNormalMap_83: 141902964
+      DeathRightNormalMap_84: -56990586
+      DeathRightNormalMap_85: 788772186
+      DeathRightNormalMap_86: -1592774491
+      DeathRightNormalMap_87: -714002037
+      DeathRightNormalMap_88: -1181332027
+      DeathRightNormalMap_89: -327287038
+      DeathRightNormalMap_9: 1242433741
+      DeathRightNormalMap_90: -1584186935
+      DeathRightNormalMap_91: 1276671259
+      DeathRightNormalMap_92: -1009524904
+      DeathRightNormalMap_93: 1524499674
+      DeathRightNormalMap_94: 2123654451
+      DeathRightNormalMap_95: -348802871
+      DeathRightNormalMap_96: 2076993263
+      DeathRightNormalMap_97: 238638747
+      DeathRightNormalMap_98: 537513271
+      DeathRightNormalMap_99: -1219569709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

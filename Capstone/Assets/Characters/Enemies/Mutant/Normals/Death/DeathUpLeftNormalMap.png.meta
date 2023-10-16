@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1992897e588d5e747b08dcd8e1591f93
+guid: 6069e7b2d623e0547a83b649cb1e0608
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decorative_0
+      name: DeathUpLeftNormalMap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 16
-        height: 16
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,167 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e31a6da435d864c9bfda7437878015
-      internalID: -1052977979
+      spriteID: 6239777a08b76514da79597423466912
+      internalID: 259587661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c109a60248d9bf14e859c2c517f196c3
-      internalID: 1279521791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0aa3d8b3b6db6946a0e5da20ee4f41c
-      internalID: 986246113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13ed0071c5f502f41894a220dadb0366
-      internalID: 389386129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f3a0d80a7c0b474c99c6f59f3118977
-      internalID: 731922578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d5f72129367bd645aa7b008ae224635
-      internalID: 135544300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 075ea1da5f167a8429226941c5c543f6
-      internalID: -1868201045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c9d0cadfbde3c04a8df04bbbb48e2eb
-      internalID: -1452441231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_8
+      name: DeathUpLeftNormalMap_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
-        width: 16
-        height: 16
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be6a2a97143d07d47b19fca69f1ae479
-      internalID: -1910504428
+      spriteID: 2b615cc8f06054443ad7f6d9923a3591
+      internalID: -1708796205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_9
+      name: DeathUpLeftNormalMap_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
-        width: 16
-        height: 16
+        x: 256
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04f0c178f3667ac47b1eeb53f6291e02
-      internalID: -969107429
+      spriteID: b40addac4965f064184833447a2d54eb
+      internalID: -1291546335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_10
+      name: DeathUpLeftNormalMap_3
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
-        width: 16
-        height: 16
+        x: 384
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e778dfcf2f47ef24198db8787dea5328
-      internalID: 251272518
+      spriteID: 337596c2c0b47fa4f903f8a1fd9cd436
+      internalID: 493815967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_11
+      name: DeathUpLeftNormalMap_4
       rect:
         serializedVersion: 2
-        x: 176
-        y: 224
-        width: 16
-        height: 16
+        x: 512
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4eedee353bcd4940b04ac642faaacb0
-      internalID: -1842962072
+      spriteID: 8c8b0245911d0e948afee0989946fc42
+      internalID: -950688696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_12
+      name: DeathUpLeftNormalMap_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 16
+        x: 640
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8120542a25af3e348ad218466c61c642
-      internalID: -1889159292
+      spriteID: 82368eddd75ff60428cf4992eafb3777
+      internalID: -49200519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_13
+      name: DeathUpLeftNormalMap_6
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
-        width: 16
-        height: 16
+        x: 768
+        y: 1408
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +250,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25cceaa2ff0842d4280a58112cea2e95
-      internalID: -334540043
+      spriteID: 3ff5e1e5bffbff445834fb49d47b5dcb
+      internalID: 903658152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_14
+      name: DeathUpLeftNormalMap_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f75276499bb5a6498b2e8f78c0ce569
+      internalID: 1078340081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bcd6a522717334a8ab076059c81347
+      internalID: 160513591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28c6779c7297ef45a5ff03b4a829187
+      internalID: -1731603933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1dc8312541f944d98258a20f81816d
+      internalID: 1536880756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1408
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cfb82d66b86f5498343444ae0d02b7
+      internalID: 335497005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
-        width: 16
-        height: 16
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,167 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703239a13886b9f4a932efe4432e9794
-      internalID: 384906830
+      spriteID: 22b989d3031b34240950d41ba00b9c0d
+      internalID: 2029339488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_15
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfad0eca7ccab94478e5939a0fe2b5b4
-      internalID: -833978371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc0bddc3d838bc84c9903291c183d861
-      internalID: 1503642898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_17
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16f6c2c0d7655e74ca2fe11279cd43c9
-      internalID: 1468410331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_18
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2209e679bde99884c8e6280d0984a832
-      internalID: 1078289021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_19
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10b72a6d84da346419d4e99da19c5e36
-      internalID: -1310299446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_20
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfd1792fb6dcacc41920d2b98d1a2ac5
-      internalID: 1109424391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_21
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c72986bfc115aaa428e37b3dfb2d9a7d
-      internalID: 1164866005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_22
+      name: DeathUpLeftNormalMap_13
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
-        width: 16
-        height: 16
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 439da26821912824d96703f5fcb2a71a
-      internalID: -247212280
+      spriteID: 2b1d1bd7b8df7ee49b8267554b3b0364
+      internalID: -756350832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_23
+      name: DeathUpLeftNormalMap_14
       rect:
         serializedVersion: 2
-        x: 144
-        y: 208
-        width: 16
-        height: 16
+        x: 256
+        y: 1280
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,20 +418,209 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbec3922e386a014da3202134090455c
-      internalID: -156009116
+      spriteID: cca78481f24603443a48b7c8b87d034d
+      internalID: -1634484753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_24
+      name: DeathUpLeftNormalMap_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69828b53c4f6bc41b36a930d7dbc227
+      internalID: -659774191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f632b3bccbcfea4c8d4f04dbe9b30a9
+      internalID: -878118790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb0d21ef82f5264baa78a40186112a0
+      internalID: 142047408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4252b78db1fcb48b374464ef3f1008
+      internalID: 208561716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_19
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439842e0484370c4d8d6e41d11112681
+      internalID: 1342930392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78f3db8f23b61a439592ec213ffcdc4
+      internalID: 41707317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045fb89d30e03e94082eba5075ad3c29
+      internalID: 201434348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fa814a95562704f904d8c6e879f79c
+      internalID: -949176704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1280
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a0a711e0c98364da677d3707bf9727
+      internalID: 850677710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 16
-        height: 16
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,251 +628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d9b6f21765bedb4da50deef51c8b047
-      internalID: 1607810694
+      spriteID: 0e74005419a1fe04fb1a72aa496c7874
+      internalID: 2050545038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_25
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 852b4147375913c40809110a330b337a
-      internalID: 1355061744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_26
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bbc7569a65977d4c8be1fee512da81f
-      internalID: -1135328473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_27
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4714450fbd782a43b5f7c72d25f8f49
-      internalID: -1835188962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_28
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98295e0226c2a8b4c9c5a71d42409c36
-      internalID: 390919791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_29
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 438e2a93e69945a44a2cd02f82548b88
-      internalID: -836215418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_30
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74190f8de569caa46bd7693bd756600d
-      internalID: -1623243338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_31
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc65b54196540994889cc459b61427ca
-      internalID: 733682825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_32
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84660f8f8676efb4aa0af0763c74f73a
-      internalID: -1316936543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_33
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e3c6c25dc03b074a9d3bffbf39d67ad
-      internalID: -544274005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_34
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a224668d315ea374aa28e532aaaa9597
-      internalID: -441239743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_35
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a7ce804ff1a7b249816fdf141832380
-      internalID: 1248431355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_36
+      name: DeathUpLeftNormalMap_25
       rect:
         serializedVersion: 2
         x: 128
-        y: 176
-        width: 16
-        height: 16
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,20 +649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48f68f82a6f7a6e429774448e2fe4d25
-      internalID: 1072821482
+      spriteID: 103889e6cc194414d9a3dcc8be621415
+      internalID: -662899205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_37
+      name: DeathUpLeftNormalMap_26
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
-        width: 16
-        height: 16
+        x: 256
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0bba9a7144abf64fa0f05230551ccf8
-      internalID: 1927680853
+      spriteID: d8683d534366cc34bbb5f81be196e735
+      internalID: 179363780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_38
+      name: DeathUpLeftNormalMap_27
       rect:
         serializedVersion: 2
-        x: 160
-        y: 176
-        width: 16
-        height: 16
+        x: 384
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +691,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68b537ade7cc7f64fa263dd4343a69d0
-      internalID: 2054076432
+      spriteID: e89314ddb5aecaf4bb0d1ed345ae959e
+      internalID: 1991677534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_39
+      name: DeathUpLeftNormalMap_28
       rect:
         serializedVersion: 2
-        x: 176
-        y: 176
-        width: 16
-        height: 16
+        x: 512
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,20 +712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6710b89b44ebdf6409f37c34d72512be
-      internalID: -1905869305
+      spriteID: c691987354db1d94e8e52be5051b8171
+      internalID: 256879167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_40
+      name: DeathUpLeftNormalMap_29
       rect:
         serializedVersion: 2
-        x: 192
-        y: 176
-        width: 16
-        height: 16
+        x: 640
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,20 +733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6dad3193280bd4db8fc54d466171c9
-      internalID: -1545450436
+      spriteID: 90df3dcc5eb4c8b4481042c35df412ee
+      internalID: -548229743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_41
+      name: DeathUpLeftNormalMap_30
       rect:
         serializedVersion: 2
-        x: 208
-        y: 176
-        width: 16
-        height: 16
+        x: 768
+        y: 1152
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,20 +754,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf3167732012634cbf60e35934d269d
-      internalID: -1880684732
+      spriteID: bcc49136594435243a9883f62108e1ec
+      internalID: 1144117231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_42
+      name: DeathUpLeftNormalMap_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70304d884ebd8694d906c712c25a7c0b
+      internalID: 445819770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e0d3f3f897d14697661ea21c922e6
+      internalID: 760545752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86ccc05273f2784aaa976b10884b248
+      internalID: -682341678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d382f304870854ca25eae33719b627
+      internalID: 104076847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_35
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1152
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b082bb87aec1749810474dd2de381e
+      internalID: -1979160898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_36
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 16
-        height: 16
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,146 +880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c39b1f096098546b6e2be7c05007b2
-      internalID: 2013788268
+      spriteID: 580b373c78eef6d4d8ecf1ee6437dd2b
+      internalID: 338364257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_43
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb48b462cba398142a09c792ae229004
-      internalID: 1446776384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_44
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f00c75fa24f1e8848bd2473a0e63f48c
-      internalID: 203272401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_45
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b4f614457b4bfc42ac7b6ce47733705
-      internalID: -1933589507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ea84ab9ca44c8e4a9137106986f3b5f
-      internalID: 943540733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_47
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b3c2c29395f1394d867d3e0ccc27242
-      internalID: 1855315862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_48
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d28b4d0a333da20458e92e43a9882441
-      internalID: -1965614895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_49
+      name: DeathUpLeftNormalMap_37
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
-        width: 16
-        height: 16
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,20 +901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c571025dcc6b746a62e00df4b678b2
-      internalID: 661974526
+      spriteID: 66c854fef51557f46af2f78464c38f5d
+      internalID: -178794215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_50
+      name: DeathUpLeftNormalMap_38
       rect:
         serializedVersion: 2
-        x: 144
-        y: 160
-        width: 16
-        height: 16
+        x: 256
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,20 +922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff8d2b5c0dace649a3f6764a3d0245c
-      internalID: -2128118825
+      spriteID: 19777c0f014634848bc722b40718a6c9
+      internalID: -987838227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_51
+      name: DeathUpLeftNormalMap_39
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 16
-        height: 16
+        x: 384
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1195,20 +943,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb030a4c74d02e043a0d70b84f0689bd
-      internalID: 566466440
+      spriteID: 183f11df2f843cc488159b9a4379e3c0
+      internalID: -1559488757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_52
+      name: DeathUpLeftNormalMap_40
       rect:
         serializedVersion: 2
-        x: 176
-        y: 160
-        width: 16
-        height: 16
+        x: 512
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1216,20 +964,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2854ddd2b7a6cf42a7049b5d130f4fe
-      internalID: -80383401
+      spriteID: fb48d49524b589e4aa8c68f2fcaa8162
+      internalID: -325357852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_53
+      name: DeathUpLeftNormalMap_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
-        width: 16
-        height: 16
+        x: 640
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,20 +985,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9318a722fb69ce429fa6fe9ed63d461
-      internalID: -1958274656
+      spriteID: a2396c7cdb334cf46a740d713e19581e
+      internalID: 1793277394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_54
+      name: DeathUpLeftNormalMap_42
       rect:
         serializedVersion: 2
-        x: 208
-        y: 160
-        width: 16
-        height: 16
+        x: 768
+        y: 1024
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,20 +1006,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6cab1f1d1e88d4b909588933c5c583
-      internalID: 455740539
+      spriteID: 0eae7f121737d664fa5ec42e1a065bcc
+      internalID: -1888679701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_55
+      name: DeathUpLeftNormalMap_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a38f4da820d5f44829562a4d3c7624
+      internalID: 1837952052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4093974d3dafe18468fa5d5ab83b362d
+      internalID: -971468142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5bb85510f7cc7448949661a5701d95
+      internalID: -1461790933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060fc943495765c44867d8094fc4bcce
+      internalID: -86872556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1166f82633ca14c829843642d1028d
+      internalID: -1877970648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_48
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 16
-        height: 16
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1279,146 +1132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7334d5856424eda4c84e792c0f7b7588
-      internalID: 1702146577
+      spriteID: 81f8c9814dd7a174b9c4255b27cba27e
+      internalID: -325216823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_56
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c974d6c791939fe4e832d1e8ac61ac8e
-      internalID: 528322873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_57
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93f8c8a123bd29844803a3e863ea790d
-      internalID: -1144519659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_58
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98c0656b292702b49a6a2cdfa223e0e6
-      internalID: 1070391872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_59
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ac77576d1757648b76e7da6ab4d02d
-      internalID: 1691039085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_60
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48110c1a1f192124ea150c8e29066d08
-      internalID: -535094799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_61
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 857d67b50753f434c9d099d69f6d1b43
-      internalID: 213578653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_62
+      name: DeathUpLeftNormalMap_49
       rect:
         serializedVersion: 2
         x: 128
-        y: 144
-        width: 16
-        height: 16
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1426,20 +1153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7c8b9028d53a7245aa70b1326c7d963
-      internalID: 567938895
+      spriteID: ebc4fe5fe1cc1964f8cda639c13fa0d0
+      internalID: -2141838473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_63
+      name: DeathUpLeftNormalMap_50
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
-        width: 16
-        height: 16
+        x: 256
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1447,20 +1174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e138f6e1ebe75c429e1c79ea4270dfe
-      internalID: -1034656233
+      spriteID: 88b78feaf1d508646b13ac3ec00b4692
+      internalID: 1745008405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_64
+      name: DeathUpLeftNormalMap_51
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 16
-        height: 16
+        x: 384
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,20 +1195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 944ec27de7455424f8c12638d3a40b13
-      internalID: -1883760387
+      spriteID: 8c9dc1e755865a1488abdb2462b3c153
+      internalID: 1969024187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_65
+      name: DeathUpLeftNormalMap_52
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
-        width: 16
-        height: 16
+        x: 512
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1489,20 +1216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6586aa275d45e8143959909d4cb9f647
-      internalID: 561331112
+      spriteID: 1b4d60187de2a4040be9239547c4d274
+      internalID: 423945374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_66
+      name: DeathUpLeftNormalMap_53
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
-        width: 16
-        height: 16
+        x: 640
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1510,20 +1237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d59a83b63ad63ce45b49085999384430
-      internalID: -1140934110
+      spriteID: acb1094c4b593b547bb32348927da8f3
+      internalID: -815339620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_67
+      name: DeathUpLeftNormalMap_54
       rect:
         serializedVersion: 2
-        x: 208
-        y: 144
-        width: 16
-        height: 16
+        x: 768
+        y: 896
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1531,20 +1258,1385 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8183b58459b260d4088e7f34e4c10522
-      internalID: 1209552379
+      spriteID: f9be69bcfae498849affb7e3578c1bc2
+      internalID: 1985355412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_68
+      name: DeathUpLeftNormalMap_55
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc6d83de75065a4a9963cdaf35313cf
+      internalID: 1417336302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4a112c2197c054ab549ea3cd802088
+      internalID: -1517077433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ec21bfd0b5fe148bbfea093d4a53c0
+      internalID: 1315116074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cd654b3fc0132408c3d03506a6ca9e
+      internalID: 1379277519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_59
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae79e58e4fc73c048a160dadc687b452
+      internalID: -2090778542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03cd248878c5ef4abd027fb780474ad
+      internalID: 823956187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f814afd9f909ea3479fb755959a42a9f
+      internalID: 1208501482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39618548fdc0bd3489f7de9e1c7499de
+      internalID: -1080930159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668579c81e0c89a45ab8300e3a3b97cd
+      internalID: -7260467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88f9e6ca504cf945a7167c337b0f1ed
+      internalID: -505109540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934d0ac04c0bfe1489f9582a5e9e783c
+      internalID: -1888838188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607508c984348f343b25a1621f77c5b4
+      internalID: -387178072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23d30217a130d04890c8fc96b63d296
+      internalID: -1688700416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08479d730f70284d8fa855f74a668f0
+      internalID: -2052016358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7828550955c6a644852c0368258b5d1
+      internalID: 1584683619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da47f4dfdf771b24f8265a4d4e23f083
+      internalID: 1104538571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159190d7c12225642a43ae877f358c1d
+      internalID: -1936217964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba500dae9209e36428cf938c4d960ea6
+      internalID: 729849480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c54856566dfa9429542604649b59a8
+      internalID: 2013709145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ee7f0abbf75a046a0fa0216c729b64
+      internalID: -1867490061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81b4740980230d438369ab1efe1b582
+      internalID: 491788217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85810db6c11f0784ea6342f64e373053
+      internalID: 2053146006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4247188efff4ca3438f30b639386197b
+      internalID: -1928380155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a7de3254c01914bbb42d585974cf79
+      internalID: -126054329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4363765fd2f96a4daaa9ede38e4a45d
+      internalID: -1427795711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb0c222c2bc9f4fb58e24a1f296e78
+      internalID: 940712830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f1733463d59504ba699ffb38aae3e2
+      internalID: -854665063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56225919ab7a69546a49cb363aaf1e12
+      internalID: -2005434618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2db1625130d2504886945556e4032b3
+      internalID: 180730934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa7f63366e3aea42b01fdebe0d4824a
+      internalID: -347934072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d759abf6b4ae940409b152e13c0dc386
+      internalID: -752230287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ae2a56d16c48647830227ebec109f5
+      internalID: -316563646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee262d2fc39109468ba9165e7dcc4df
+      internalID: 1191629992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f6b43b44ef8b44b978dc643108154a
+      internalID: 206829152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_89
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e421168f015cbd45a282cbd567dfc72
+      internalID: -1034291316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a267d1d5ab273e43b1a5f4f6840eeb7
+      internalID: -993641955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985e51fb5631dd1479d3cf27597e857f
+      internalID: 656296590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_92
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1f6d1f048ec194d8bd805e777e9f40
+      internalID: 1349197950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_93
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278b4cddd5941d949a7d76f6b6e31e11
+      internalID: -903505935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_94
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d411331d4be7b8e40bf2d46ede6e9669
+      internalID: 2045877784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_95
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55f058bb033be947b8cbec8059b7507
+      internalID: 1218267337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db8665129b86454a80d2297acfab3ee
+      internalID: 1474075150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2143784da12d64840bfe807a0a90d417
+      internalID: -483444448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d67f598f2ea384a872bf4f5a31bb7e
+      internalID: -1589880575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde0c9b525c164142a1387265b2c4c4a
+      internalID: -251051967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_100
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d71150f80c89244a9327c53f31324eb
+      internalID: -356979672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_101
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ccf630b50f12f4a80fc78857e45b1c
+      internalID: 671725006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_102
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6819fe189a43544fbf6711bff729893
+      internalID: 1513385994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_103
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cbb6f6f57140045aebbd2c1cf2a841
+      internalID: -1943652403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_104
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ccb5e8c71054f43b8e30f5581c22ff
+      internalID: -2060141423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_105
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f637dc46aa1db4f8f545be64538b57
+      internalID: 1792134868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_106
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1310c9800eca6064fa61e47559a20917
+      internalID: 1703082443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_107
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ebf56620b3fdb4583b6cb54ba10451
+      internalID: -65024969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480b9c887c6974c40ab972d80db289b0
+      internalID: 1405692379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e61bd4033921248b55c1b0da6db9ae
+      internalID: 871974012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_110
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a07179dcba7aef45863bc6d6d11604e
+      internalID: 1068636206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada99485d34dcef4b8d91baa9dc53645
+      internalID: -1988583791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_112
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0757cc215185a6148a5c5865899dc386
+      internalID: -833830739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_113
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc990b81cdb2284cbf1787828a4b85f
+      internalID: 2040825554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_114
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d89ed7697be6b4e968aa374c9af82d
+      internalID: 351457603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_115
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feffadc44b515534a8152e32fba8fceb
+      internalID: -427833454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5741808b6cd42c409f101fbd8033475
+      internalID: -47902171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a2f786bbf99cb43af9f034e9d5e739
+      internalID: 295237481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_118
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76659355298970d409d02ca9d7b60124
+      internalID: -1346700356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_119
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda40291a4334594090e9756a598decb
+      internalID: -1184661439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_120
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1552,20 +2644,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49b9973776cb1f4896b0cf401df8edd
-      internalID: -1942187626
+      spriteID: 10dd53c96132eda4494dbc41598c8049
+      internalID: 1866395482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_69
+      name: DeathUpLeftNormalMap_121
       rect:
         serializedVersion: 2
-        x: 16
+        x: 128
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1573,20 +2665,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 544457f6f605eab43ae3e57e69600658
-      internalID: 1259147175
+      spriteID: 22867a7a72049e647a2c106b47c60bb3
+      internalID: 2077400370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_70
+      name: DeathUpLeftNormalMap_122
       rect:
         serializedVersion: 2
-        x: 32
+        x: 256
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,20 +2686,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c25dae6d4a6da4599798bc7a49628a
-      internalID: 2117886511
+      spriteID: 20b577f7d51cac148a5165b129d39492
+      internalID: 1997064197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_71
+      name: DeathUpLeftNormalMap_123
       rect:
         serializedVersion: 2
-        x: 80
+        x: 384
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1615,20 +2707,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 971e575e2b2d4cd4f9ab9f41542aff33
-      internalID: -2122362399
+      spriteID: 5f057a4b8bc6924439161fe11747d795
+      internalID: -369779169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_72
+      name: DeathUpLeftNormalMap_124
       rect:
         serializedVersion: 2
-        x: 96
+        x: 512
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1636,20 +2728,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4bb2666d983b424284f1655fd8051be
-      internalID: -1875437865
+      spriteID: 1f983b0f8aca2024cb10371109d0daf3
+      internalID: 434218329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_73
+      name: DeathUpLeftNormalMap_125
       rect:
         serializedVersion: 2
-        x: 144
+        x: 640
         y: 128
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1657,20 +2749,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cab88f2506914944ac77437facb491d
-      internalID: 786952576
+      spriteID: 14181c8d49c1f2144ad6f697d5581d05
+      internalID: 1161779952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_74
+      name: DeathUpLeftNormalMap_126
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
-        width: 16
-        height: 16
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1678,20 +2770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 389b58ecbd3a2d343aa4ce819796ede5
-      internalID: 1036918362
+      spriteID: 02400b354640beb458a3ff8116e5bb1e
+      internalID: -1415691428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_75
+      name: DeathUpLeftNormalMap_127
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
-        width: 16
-        height: 16
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1699,20 +2791,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 054d36457a34e84478da06b33a75dcfb
-      internalID: 1041682303
+      spriteID: 3006cac48e2935f4daac162170ac5dbd
+      internalID: 772971345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_76
+      name: DeathUpLeftNormalMap_128
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
-        width: 16
-        height: 16
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1720,20 +2812,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8502beb553a45064789dffe370442ee1
-      internalID: -1113670383
+      spriteID: a71fce00f7330ad469d49bb81cce2c14
+      internalID: -900033358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_77
+      name: DeathUpLeftNormalMap_129
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
-        width: 16
-        height: 16
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1741,20 +2833,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53d673cbef78e4140aacee1978226e8c
-      internalID: 51893568
+      spriteID: 322e4c42957fad44595f4440cdfad9a4
+      internalID: 999294635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_78
+      name: DeathUpLeftNormalMap_130
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
+        x: 1280
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1762,20 +2854,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1aae1c44ed95b5a42aab2f30fc76c50e
-      internalID: -459694530
+      spriteID: 971d29e82c8a1a64aa0d25948ef5871a
+      internalID: -440012107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_79
+      name: DeathUpLeftNormalMap_131
       rect:
         serializedVersion: 2
-        x: 144
-        y: 112
-        width: 16
-        height: 16
+        x: 1408
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1783,860 +2875,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a653759999bf39f43a6826e2295b03b6
-      internalID: -185753730
+      spriteID: 71f27cc9f5229fe4e836701448596e74
+      internalID: -1415666074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_80
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29fea20c6f07d964b81f6834a504b5e4
-      internalID: 1011046113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_81
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d6aa660ef998e45b2086d1ce7c07b3
-      internalID: -1097188043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_82
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67de2798d5198f64093952e6a69a5014
-      internalID: -481559935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_83
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81d4429f1c437874782fff0ffa84f193
-      internalID: -2051341931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_84
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cafa9afa0ce09344891e300192fec47
-      internalID: -1374783391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_85
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 860923ff4a7c5d44ca2d1a2020cef4a9
-      internalID: 143478034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_86
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73839ac61406f2c4f8ef9d5177b2e9e9
-      internalID: 1068812638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_87
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3363ec0f9bc10064089cfb13c6b5dc3c
-      internalID: 297408306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_88
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbab13b97354a064e9624e467ebf5d15
-      internalID: 388653017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_89
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35c223ce3310f5a43bebfd5cfe00a1c0
-      internalID: 1063004468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_90
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 287fcbd39ddcdf045ba93f0d854aa2fe
-      internalID: -229500558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_91
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5c96fc56288d534087b1db3b8bc7fde
-      internalID: -1336483460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_92
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42423857af20be34bb3f147f47e0e762
-      internalID: 719813885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_93
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8b1fa8a35f4f834a8caa874eb8cb04f
-      internalID: 347957835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_94
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21593e338b60ed243a141aafef63c3d7
-      internalID: 1510998667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_95
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97ba3c0e208f3584fa770218d81ec751
-      internalID: 1839923401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_96
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d5349f5631e7ed45ac96ed0ed9d3d58
-      internalID: -1056827927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_97
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8283ceea0b64ddc4c86399cbbe92fd55
-      internalID: -1936585169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_98
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 561e0013c474ada48b3b722da9b0a264
-      internalID: -1103388057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_99
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6743bd319d2efb64484238b17b09e4cc
-      internalID: -1625822268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_100
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a21cf7ed9e3d9b94ba0e3b0a2c5991c6
-      internalID: -628226090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_101
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b110203e2831014e95d467f52eddcb4
-      internalID: -737150954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_102
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2540bcfe4f78c2a4baf7e07309c7819a
-      internalID: 637331993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_103
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42f88a36b75c9bc4f8401c8c16ac56e2
-      internalID: 450015645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_104
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 777f0082f1c56a54f9259d27e65e97ec
-      internalID: -1654935887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_105
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f6169b4cf607ef4f9b2a133cad54ed1
-      internalID: 1445815550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_106
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c480c856ea2615478e4e173037900cf
-      internalID: -308691016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_107
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a3564a1f8a3c07438a3bea4360d6b7c
-      internalID: -1985346306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_108
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d9047eeaae66684dad1956dd7862570
-      internalID: -457697965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_109
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bbfbff66d3f75240ba4059a1ad78eb5
-      internalID: -853636178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_110
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd341760da5163d4ba039dd644d31fa1
-      internalID: 1440328877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_111
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d16cbc6eb5ec2a4082a56f1dcbda554
-      internalID: -389650116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_112
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9cbf95c78dcb4c45a08fef2ede74094
-      internalID: 159753814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_113
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31cc27330cca49b43a2ff76f8daaf95a
-      internalID: 1822952848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_114
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eab113b05317d74e8730b6dd3a8105d
-      internalID: 882519939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_115
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 485168bf712131b4b969c87a948bb038
-      internalID: -1674355739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_116
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c298cca6c0d456e4e81a4c9853aad57f
-      internalID: 2072405715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_117
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f9632e924c67ba4ab3be532461e2598
-      internalID: -717706263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_118
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fe0b24dc775c274eae42a8de0bc4ccb
-      internalID: 51850462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_119
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2bbe3cdbc4c5864fb4279c236cf1bc7
-      internalID: 521999528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_120
+      name: DeathUpLeftNormalMap_132
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2644,20 +2896,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffecd459e38ee644fbcc73468a2caee0
-      internalID: 76122486
+      spriteID: 5b4848370d59eff489c78e1baa287058
+      internalID: 746533979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_121
+      name: DeathUpLeftNormalMap_133
       rect:
         serializedVersion: 2
-        x: 16
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2665,20 +2917,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c75a32648e01b47add44c2cde9e75a
-      internalID: -28374231
+      spriteID: c359266be5f3cc94c819116782b90819
+      internalID: 2025402694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_122
+      name: DeathUpLeftNormalMap_134
       rect:
         serializedVersion: 2
-        x: 32
+        x: 256
         y: 0
-        width: 16
-        height: 16
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2686,8 +2938,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fbf0ee5317cea94d97b0bf9eea9a6b5
-      internalID: 1297657328
+      spriteID: 1d39311ade05aa842b56e472c393f6be
+      internalID: -728355162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_135
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c861ab95c84ca4d4988dbd40282621d2
+      internalID: -533937145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20aad6c3cf842194c997ba5ae587c315
+      internalID: -1892767276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathUpLeftNormalMap_137
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b5ee0759353804bbd8c8c5d2bc6f49
+      internalID: -1615362097
       vertices: []
       indices: 
       edges: []
@@ -2703,129 +3018,144 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      decorative_0: -1052977979
-      decorative_1: 1279521791
-      decorative_10: 251272518
-      decorative_100: -628226090
-      decorative_101: -737150954
-      decorative_102: 637331993
-      decorative_103: 450015645
-      decorative_104: -1654935887
-      decorative_105: 1445815550
-      decorative_106: -308691016
-      decorative_107: -1985346306
-      decorative_108: -457697965
-      decorative_109: -853636178
-      decorative_11: -1842962072
-      decorative_110: 1440328877
-      decorative_111: -389650116
-      decorative_112: 159753814
-      decorative_113: 1822952848
-      decorative_114: 882519939
-      decorative_115: -1674355739
-      decorative_116: 2072405715
-      decorative_117: -717706263
-      decorative_118: 51850462
-      decorative_119: 521999528
-      decorative_12: -1889159292
-      decorative_120: 76122486
-      decorative_121: -28374231
-      decorative_122: 1297657328
-      decorative_13: -334540043
-      decorative_14: 384906830
-      decorative_15: -833978371
-      decorative_16: 1503642898
-      decorative_17: 1468410331
-      decorative_18: 1078289021
-      decorative_19: -1310299446
-      decorative_2: 986246113
-      decorative_20: 1109424391
-      decorative_21: 1164866005
-      decorative_22: -247212280
-      decorative_23: -156009116
-      decorative_24: 1607810694
-      decorative_25: 1355061744
-      decorative_26: -1135328473
-      decorative_27: -1835188962
-      decorative_28: 390919791
-      decorative_29: -836215418
-      decorative_3: 389386129
-      decorative_30: -1623243338
-      decorative_31: 733682825
-      decorative_32: -1316936543
-      decorative_33: -544274005
-      decorative_34: -441239743
-      decorative_35: 1248431355
-      decorative_36: 1072821482
-      decorative_37: 1927680853
-      decorative_38: 2054076432
-      decorative_39: -1905869305
-      decorative_4: 731922578
-      decorative_40: -1545450436
-      decorative_41: -1880684732
-      decorative_42: 2013788268
-      decorative_43: 1446776384
-      decorative_44: 203272401
-      decorative_45: -1933589507
-      decorative_46: 943540733
-      decorative_47: 1855315862
-      decorative_48: -1965614895
-      decorative_49: 661974526
-      decorative_5: 135544300
-      decorative_50: -2128118825
-      decorative_51: 566466440
-      decorative_52: -80383401
-      decorative_53: -1958274656
-      decorative_54: 455740539
-      decorative_55: 1702146577
-      decorative_56: 528322873
-      decorative_57: -1144519659
-      decorative_58: 1070391872
-      decorative_59: 1691039085
-      decorative_6: -1868201045
-      decorative_60: -535094799
-      decorative_61: 213578653
-      decorative_62: 567938895
-      decorative_63: -1034656233
-      decorative_64: -1883760387
-      decorative_65: 561331112
-      decorative_66: -1140934110
-      decorative_67: 1209552379
-      decorative_68: -1942187626
-      decorative_69: 1259147175
-      decorative_7: -1452441231
-      decorative_70: 2117886511
-      decorative_71: -2122362399
-      decorative_72: -1875437865
-      decorative_73: 786952576
-      decorative_74: 1036918362
-      decorative_75: 1041682303
-      decorative_76: -1113670383
-      decorative_77: 51893568
-      decorative_78: -459694530
-      decorative_79: -185753730
-      decorative_8: -1910504428
-      decorative_80: 1011046113
-      decorative_81: -1097188043
-      decorative_82: -481559935
-      decorative_83: -2051341931
-      decorative_84: -1374783391
-      decorative_85: 143478034
-      decorative_86: 1068812638
-      decorative_87: 297408306
-      decorative_88: 388653017
-      decorative_89: 1063004468
-      decorative_9: -969107429
-      decorative_90: -229500558
-      decorative_91: -1336483460
-      decorative_92: 719813885
-      decorative_93: 347957835
-      decorative_94: 1510998667
-      decorative_95: 1839923401
-      decorative_96: -1056827927
-      decorative_97: -1936585169
-      decorative_98: -1103388057
-      decorative_99: -1625822268
+      DeathUpLeftNormalMap_0: 259587661
+      DeathUpLeftNormalMap_1: -1708796205
+      DeathUpLeftNormalMap_10: 1536880756
+      DeathUpLeftNormalMap_100: -356979672
+      DeathUpLeftNormalMap_101: 671725006
+      DeathUpLeftNormalMap_102: 1513385994
+      DeathUpLeftNormalMap_103: -1943652403
+      DeathUpLeftNormalMap_104: -2060141423
+      DeathUpLeftNormalMap_105: 1792134868
+      DeathUpLeftNormalMap_106: 1703082443
+      DeathUpLeftNormalMap_107: -65024969
+      DeathUpLeftNormalMap_108: 1405692379
+      DeathUpLeftNormalMap_109: 871974012
+      DeathUpLeftNormalMap_11: 335497005
+      DeathUpLeftNormalMap_110: 1068636206
+      DeathUpLeftNormalMap_111: -1988583791
+      DeathUpLeftNormalMap_112: -833830739
+      DeathUpLeftNormalMap_113: 2040825554
+      DeathUpLeftNormalMap_114: 351457603
+      DeathUpLeftNormalMap_115: -427833454
+      DeathUpLeftNormalMap_116: -47902171
+      DeathUpLeftNormalMap_117: 295237481
+      DeathUpLeftNormalMap_118: -1346700356
+      DeathUpLeftNormalMap_119: -1184661439
+      DeathUpLeftNormalMap_12: 2029339488
+      DeathUpLeftNormalMap_120: 1866395482
+      DeathUpLeftNormalMap_121: 2077400370
+      DeathUpLeftNormalMap_122: 1997064197
+      DeathUpLeftNormalMap_123: -369779169
+      DeathUpLeftNormalMap_124: 434218329
+      DeathUpLeftNormalMap_125: 1161779952
+      DeathUpLeftNormalMap_126: -1415691428
+      DeathUpLeftNormalMap_127: 772971345
+      DeathUpLeftNormalMap_128: -900033358
+      DeathUpLeftNormalMap_129: 999294635
+      DeathUpLeftNormalMap_13: -756350832
+      DeathUpLeftNormalMap_130: -440012107
+      DeathUpLeftNormalMap_131: -1415666074
+      DeathUpLeftNormalMap_132: 746533979
+      DeathUpLeftNormalMap_133: 2025402694
+      DeathUpLeftNormalMap_134: -728355162
+      DeathUpLeftNormalMap_135: -533937145
+      DeathUpLeftNormalMap_136: -1892767276
+      DeathUpLeftNormalMap_137: -1615362097
+      DeathUpLeftNormalMap_14: -1634484753
+      DeathUpLeftNormalMap_15: -659774191
+      DeathUpLeftNormalMap_16: -878118790
+      DeathUpLeftNormalMap_17: 142047408
+      DeathUpLeftNormalMap_18: 208561716
+      DeathUpLeftNormalMap_19: 1342930392
+      DeathUpLeftNormalMap_2: -1291546335
+      DeathUpLeftNormalMap_20: 41707317
+      DeathUpLeftNormalMap_21: 201434348
+      DeathUpLeftNormalMap_22: -949176704
+      DeathUpLeftNormalMap_23: 850677710
+      DeathUpLeftNormalMap_24: 2050545038
+      DeathUpLeftNormalMap_25: -662899205
+      DeathUpLeftNormalMap_26: 179363780
+      DeathUpLeftNormalMap_27: 1991677534
+      DeathUpLeftNormalMap_28: 256879167
+      DeathUpLeftNormalMap_29: -548229743
+      DeathUpLeftNormalMap_3: 493815967
+      DeathUpLeftNormalMap_30: 1144117231
+      DeathUpLeftNormalMap_31: 445819770
+      DeathUpLeftNormalMap_32: 760545752
+      DeathUpLeftNormalMap_33: -682341678
+      DeathUpLeftNormalMap_34: 104076847
+      DeathUpLeftNormalMap_35: -1979160898
+      DeathUpLeftNormalMap_36: 338364257
+      DeathUpLeftNormalMap_37: -178794215
+      DeathUpLeftNormalMap_38: -987838227
+      DeathUpLeftNormalMap_39: -1559488757
+      DeathUpLeftNormalMap_4: -950688696
+      DeathUpLeftNormalMap_40: -325357852
+      DeathUpLeftNormalMap_41: 1793277394
+      DeathUpLeftNormalMap_42: -1888679701
+      DeathUpLeftNormalMap_43: 1837952052
+      DeathUpLeftNormalMap_44: -971468142
+      DeathUpLeftNormalMap_45: -1461790933
+      DeathUpLeftNormalMap_46: -86872556
+      DeathUpLeftNormalMap_47: -1877970648
+      DeathUpLeftNormalMap_48: -325216823
+      DeathUpLeftNormalMap_49: -2141838473
+      DeathUpLeftNormalMap_5: -49200519
+      DeathUpLeftNormalMap_50: 1745008405
+      DeathUpLeftNormalMap_51: 1969024187
+      DeathUpLeftNormalMap_52: 423945374
+      DeathUpLeftNormalMap_53: -815339620
+      DeathUpLeftNormalMap_54: 1985355412
+      DeathUpLeftNormalMap_55: 1417336302
+      DeathUpLeftNormalMap_56: -1517077433
+      DeathUpLeftNormalMap_57: 1315116074
+      DeathUpLeftNormalMap_58: 1379277519
+      DeathUpLeftNormalMap_59: -2090778542
+      DeathUpLeftNormalMap_6: 903658152
+      DeathUpLeftNormalMap_60: 823956187
+      DeathUpLeftNormalMap_61: 1208501482
+      DeathUpLeftNormalMap_62: -1080930159
+      DeathUpLeftNormalMap_63: -7260467
+      DeathUpLeftNormalMap_64: -505109540
+      DeathUpLeftNormalMap_65: -1888838188
+      DeathUpLeftNormalMap_66: -387178072
+      DeathUpLeftNormalMap_67: -1688700416
+      DeathUpLeftNormalMap_68: -2052016358
+      DeathUpLeftNormalMap_69: 1584683619
+      DeathUpLeftNormalMap_7: 1078340081
+      DeathUpLeftNormalMap_70: 1104538571
+      DeathUpLeftNormalMap_71: -1936217964
+      DeathUpLeftNormalMap_72: 729849480
+      DeathUpLeftNormalMap_73: 2013709145
+      DeathUpLeftNormalMap_74: -1867490061
+      DeathUpLeftNormalMap_75: 491788217
+      DeathUpLeftNormalMap_76: 2053146006
+      DeathUpLeftNormalMap_77: -1928380155
+      DeathUpLeftNormalMap_78: -126054329
+      DeathUpLeftNormalMap_79: -1427795711
+      DeathUpLeftNormalMap_8: 160513591
+      DeathUpLeftNormalMap_80: 940712830
+      DeathUpLeftNormalMap_81: -854665063
+      DeathUpLeftNormalMap_82: -2005434618
+      DeathUpLeftNormalMap_83: 180730934
+      DeathUpLeftNormalMap_84: -347934072
+      DeathUpLeftNormalMap_85: -752230287
+      DeathUpLeftNormalMap_86: -316563646
+      DeathUpLeftNormalMap_87: 1191629992
+      DeathUpLeftNormalMap_88: 206829152
+      DeathUpLeftNormalMap_89: -1034291316
+      DeathUpLeftNormalMap_9: -1731603933
+      DeathUpLeftNormalMap_90: -993641955
+      DeathUpLeftNormalMap_91: 656296590
+      DeathUpLeftNormalMap_92: 1349197950
+      DeathUpLeftNormalMap_93: -903505935
+      DeathUpLeftNormalMap_94: 2045877784
+      DeathUpLeftNormalMap_95: 1218267337
+      DeathUpLeftNormalMap_96: 1474075150
+      DeathUpLeftNormalMap_97: -483444448
+      DeathUpLeftNormalMap_98: -1589880575
+      DeathUpLeftNormalMap_99: -251051967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
