@@ -4244,10 +4244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a2fca3db1b7c44f8e21d7228921a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1274090965}
   spriterenderer: {fileID: 1274090958}
   EnemyHealth: {fileID: 1274090962}
-  Speed: 5
+  Speed: 1
   PlayerLocation: {fileID: 1446839777}
   EnemyDamage: 1
   EnemyKnockback: 0
@@ -4373,7 +4373,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.3
-  m_Speed: 3.5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -10421,7 +10421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterenderer: {fileID: 1446839776}
   animator: {fileID: 1446839779}
-  Speed: 10
+  Speed: 8
   RollingPower: 1.25
   RollingTime: 0.95
   RollingCooldown: 1.25

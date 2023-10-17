@@ -30,7 +30,10 @@ public class EnemyNavAI : MonoBehaviour {
 
     void Update() {
         Agent.SetDestination(PlayerLocation.position);
-        //Vector2 Direction = PlayerLocation.position - transform.position;
+        Vector2 Direction = PlayerLocation.position - transform.position;
+
+        //Velocity.x = Direction.x * Speed;
+        //Velocity.y = Direction.y * Speed;
 
         float Distance = (PlayerLocation.position - transform.position).magnitude;
         if (Distance <= 2) {
@@ -42,21 +45,11 @@ public class EnemyNavAI : MonoBehaviour {
         //Velocity = Direction * Speed;
 
         // Move character
-        RB.velocity = Velocity;
-
-        // Rotate character to face direction of movement
-        if (Velocity.x > 0 && !FaceRight) Flip();
-        if (Velocity.x < 0 && FaceRight) Flip();
+        //RB.velocity = Velocity;
 
         // Update the animator
-        //animator.SetFloat("Speed", Mathf.Abs(Velocity.x));
-    }
-
-    private void Flip() {
-        Vector3 CurrentScale = gameObject.transform.localScale;
-        CurrentScale.x *= -1;
-        gameObject.transform.localScale = CurrentScale;
-
-        FaceRight = !FaceRight;
+        animator.SetFloat("Horizontal", Direction.x);
+        animator.SetFloat("Vertical", Direction.y);
+        animator.SetFloat("Speed", Direction.sqrMagnitude);
     }
 }
