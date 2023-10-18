@@ -29,6 +29,8 @@ public class EnemyNavAI : MonoBehaviour {
     }
 
     void Update() {
+        if (EnemyHealth.CurrentHealth <= 0) StartCoroutine(Death());
+
         Agent.SetDestination(PlayerLocation.position);
         Vector2 Direction = PlayerLocation.position - transform.position;
 
@@ -36,9 +38,9 @@ public class EnemyNavAI : MonoBehaviour {
         //Velocity.y = Direction.y * Speed;
 
         float Distance = (PlayerLocation.position - transform.position).magnitude;
-        if (Distance <= 2) {
+        if (Distance <= 3.25f) {
             // Attack
-            //Debug.Log("Attack");
+            animator.SetTrigger("Attack1");
         }
 
         //Direction.Normalize();
@@ -51,5 +53,10 @@ public class EnemyNavAI : MonoBehaviour {
         animator.SetFloat("Horizontal", Direction.x);
         animator.SetFloat("Vertical", Direction.y);
         animator.SetFloat("Speed", Direction.sqrMagnitude);
+    }
+
+    IEnumerator Death() {
+        yield return new WaitForSeconds(3.75f);
+        Destroy(gameObject);
     }
 }

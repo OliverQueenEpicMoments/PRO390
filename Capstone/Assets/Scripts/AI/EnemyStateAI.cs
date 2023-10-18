@@ -124,7 +124,7 @@ public class EnemyStateAI : MonoBehaviour {
         if (Velocity.x < 0 && FaceRight) Flip();
 
         // Update the animator
-        //animator.SetFloat("Speed", Mathf.Abs(Velocity.x));
+        animator.SetFloat("Speed", Mathf.Abs(Velocity.x));
     }
 
     private void Flip() {
