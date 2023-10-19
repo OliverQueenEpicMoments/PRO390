@@ -41,14 +41,14 @@ public class Health : MonoBehaviour {
         if (!Invulnerable) CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
 
         if (CurrentHealth > 0) {
-            //animator.SetTrigger("IsHit");
+            animator.SetTrigger("IsHit");
             StartCoroutine(Invulnerability());
-            //SoundManager.Instance.PlaySound(HurtSound);
+            SoundManager.Instance.PlaySound(HurtSound);
         } else {
             foreach (Behaviour component in Components) component.enabled = false;
 
             animator.SetTrigger("Death");
-            //SoundManager.Instance.PlaySound(DeathSound);
+            SoundManager.Instance.PlaySound(DeathSound);
         }
     }
 

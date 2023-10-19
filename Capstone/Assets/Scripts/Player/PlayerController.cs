@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float RollingTime = 0.8f;
     [SerializeField] private float RollingCooldown = 1.25f;
     [SerializeField] private AudioClip RollSound;
+    [SerializeField] private AudioClip Footsteps;
 
     Rigidbody2D RB;
     Vector2 Velocity = Vector2.zero;
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour {
         // Rolling
         if (Input.GetKeyDown(KeyCode.LeftShift) && CanRoll) {
             animator.SetTrigger("Roll");
-            //SoundManager.Instance.PlaySound(RollSound);
+            SoundManager.Instance.PlaySound(RollSound);
             StartCoroutine(Roll());
         }
 
