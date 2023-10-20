@@ -38,7 +38,6 @@ public class EnemyNavAI : MonoBehaviour {
         //Velocity.y = Direction.y * Speed;
 
         float Distance = (PlayerLocation.position - transform.position).magnitude;
-        Debug.Log(Distance);
         if (Distance <= 4) {
             // Attack
             animator.SetTrigger("Attack1");
