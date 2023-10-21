@@ -8,16 +8,12 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     public static GameManager gameManager;
 
-    [SerializeField] SubMenu titleUI;
-    [SerializeField] SubMenu gameWinUI;
-    [SerializeField] SubMenu pauseUI;
-    [SerializeField] SubMenu controlsUI;
+    [SerializeField] SubMenu TitleUI;
+    [SerializeField] SubMenu GameWinUI;
+    [SerializeField] SubMenu PauseUI;
+    [SerializeField] SubMenu ControlsUI;
 
-    //[SerializeField] AudioSource gameMusic;
-    //[SerializeField] AudioSource playerJump;
-
-    public enum State
-    {
+    public enum State {
         TITLE,
         START_GAME,
         PLAY_GAME,
@@ -29,55 +25,46 @@ public class GameManager : MonoBehaviour {
     float stateTimer = 0;
     public float timer = 0;
 
-	private void Awake()
-	{
-        if (gameManager != null && gameManager != this)
-        {
+	private void Awake() {
+        if (gameManager != null && gameManager != this) {
             Destroy(this);
             return;
-        }
-        else
-        {
+        } else {
             gameManager = this;
         }
 
         DontDestroyOnLoad(gameObject);
 	}
 
-	private void Start()
-    {
+	private void Start() {
         timer = 0;
     }
 
-    private void Update()
-    {
-        switch (state)
-        { 
+    private void Update() {
+        switch (state) { 
             case State.TITLE:
-                titleUI.MakeActive();
+                TitleUI.MakeActive();
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 //gameMusic.Stop();
                 break;
             case State.START_GAME:
                 Cursor.lockState = CursorLockMode.Locked;
-                titleUI.MakeInactive();
-                controlsUI.MakeInactive();
+                TitleUI.MakeInactive();
+                ControlsUI.MakeInactive();
                 //gameMusic.Play();
                 state = State.PLAY_GAME;
                 break;
             case State.PLAY_GAME:
-                if (Input.GetKeyDown(KeyCode.Tab))
-                {
+                if (Input.GetKeyDown(KeyCode.Tab)) {
                     SetPause();
                 }
                 break;
             case State.GAME_WIN:
                 timer = 0;
                 stateTimer -= Time.deltaTime;
-                if (stateTimer <= 0)
-                {
-                    gameWinUI.MakeActive();
+                if (stateTimer <= 0) {
+                    GameWinUI.MakeActive();
                     state = State.TITLE;
                 }
                 break;
@@ -89,47 +76,41 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void StartGame()
-    {
+    public void StartGame() {
         state = State.START_GAME;
     }
 
-    public void SetPause()
-    {
+    public void SetPause()  {
         state = State.PAUSE_GAME;
 
-		pauseUI.MakeActive();
-		controlsUI.MakeActive();
+		PauseUI.MakeActive();
+        ControlsUI.MakeActive();
 
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;
         Time.timeScale = Mathf.Epsilon;
 	}
 
-    public void ResumeGame()
-    {
+    public void ResumeGame(){
         state = State.PLAY_GAME;
         Time.timeScale = 1;
 		Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-		pauseUI.MakeInactive();
-		controlsUI.MakeInactive();
+		PauseUI.MakeInactive();
+        ControlsUI.MakeInactive();
 	}
 
-    public void QuitGame()
-    {
+    public void QuitGame() {
         Application.Quit();
     }
 
     [Serializable]
-    public struct SubMenu
-    {
+    public struct SubMenu {
         public GameObject parentObject;
         public GameObject defaultSelect;
         public bool setDefault;
 
-        public void MakeActive()
-        {
+        public void MakeActive() {
             if (parentObject is null) return;
 
             parentObject.SetActive(true);
@@ -137,8 +118,7 @@ public class GameManager : MonoBehaviour {
                 EventSystem.current.SetSelectedGameObject(defaultSelect);
         }
 
-        public void MakeInactive()
-        {
+        public void MakeInactive() {
 			if (parentObject is null) return;
 
 			parentObject.SetActive(false);
