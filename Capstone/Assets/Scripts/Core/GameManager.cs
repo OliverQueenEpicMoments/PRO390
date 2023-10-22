@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour {
     }
 
     public State state = State.START_GAME;
-    float stateTimer = 0;
-    public float timer = 0;
+    float StateTimer = 0;
+    public float Timer = 0;
 
 	private void Awake() {
         if (gameManager != null && gameManager != this) {
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void Start() {
-        timer = 0;
+        Timer = 0;
     }
 
     private void Update() {
@@ -46,13 +46,13 @@ public class GameManager : MonoBehaviour {
                 TitleUI.MakeActive();
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                //gameMusic.Stop();
+                //GameMusic.Stop();
                 break;
             case State.START_GAME:
                 Cursor.lockState = CursorLockMode.Locked;
                 TitleUI.MakeInactive();
                 ControlsUI.MakeInactive();
-                //gameMusic.Play();
+                //GameMusic.Play();
                 state = State.PLAY_GAME;
                 break;
             case State.PLAY_GAME:
@@ -61,9 +61,9 @@ public class GameManager : MonoBehaviour {
                 }
                 break;
             case State.GAME_WIN:
-                timer = 0;
-                stateTimer -= Time.deltaTime;
-                if (stateTimer <= 0) {
+                Timer = 0;
+                StateTimer -= Time.deltaTime;
+                if (StateTimer <= 0) {
                     GameWinUI.MakeActive();
                     state = State.TITLE;
                 }
@@ -106,22 +106,22 @@ public class GameManager : MonoBehaviour {
 
     [Serializable]
     public struct SubMenu {
-        public GameObject parentObject;
-        public GameObject defaultSelect;
-        public bool setDefault;
+        public GameObject ParentObject;
+        public GameObject DefaultSelect;
+        public bool SetDefault;
 
         public void MakeActive() {
-            if (parentObject is null) return;
+            if (ParentObject == null) return;
 
-            parentObject.SetActive(true);
-            if (defaultSelect is not null && setDefault)
-                EventSystem.current.SetSelectedGameObject(defaultSelect);
+            ParentObject.SetActive(true);
+            if (DefaultSelect != null && SetDefault)
+                EventSystem.current.SetSelectedGameObject(DefaultSelect);
         }
 
         public void MakeInactive() {
-			if (parentObject is null) return;
+			if (ParentObject == null) return;
 
-			parentObject.SetActive(false);
+			ParentObject.SetActive(false);
 		}
     }
 }
