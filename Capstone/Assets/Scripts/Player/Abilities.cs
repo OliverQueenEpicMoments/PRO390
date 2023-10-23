@@ -54,9 +54,7 @@ public class Abilities : MonoBehaviour {
     private float CurrentAbility3Cooldown;
     private float CurrentAbility4Cooldown;
 
-    private Vector3 Position;
-    private RaycastHit raycasthit;
-    private Ray ray;
+    private Vector3 MousePosition;
 
     void Start() {
         AbilityImage1.fillAmount = 0;
@@ -81,7 +79,8 @@ public class Abilities : MonoBehaviour {
     }
 
     void Update() {
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        MousePosition.z = 0;
 
         Ability1Input();
         Ability2Input();
@@ -100,42 +99,26 @@ public class Abilities : MonoBehaviour {
 
     private void ShowAbility1Canvas() { 
         if (Ability1Targeter.enabled) {
-            if (Physics.Raycast(ray, out raycasthit, Mathf.Infinity)) {
-                Position = new Vector3(raycasthit.point.x, raycasthit.point.y, raycasthit.point.z);
-            }
+            Vector2 Direction = new(MousePosition.x - Ability4Canvas.transform.position.x, MousePosition.y - Ability4Canvas.transform.position.y);
 
-            Quaternion Ab1Canvas = Quaternion.LookRotation(Position - transform.position);
-            Ab1Canvas.eulerAngles = new Vector3(0, Ab1Canvas.eulerAngles.y, Ab1Canvas.eulerAngles.y);
-
-            Ability1Canvas.transform.rotation = Quaternion.Lerp(Ab1Canvas, Ability1Canvas.transform.rotation, 0);
+            Ability1Canvas.transform.up = Direction;
         }
     }
 
     private void ShowAbility3Canvas() {
-        //int LayerMaskNum = ~LayerMask.GetMask("Player");
-
-        if (Physics.Raycast(ray, out raycasthit, Mathf.Infinity)) {
-            if (raycasthit.collider.gameObject != this.gameObject) Position = raycasthit.point;
-        }
-
-        var HitPosDir = (raycasthit.point - transform.position).normalized;
-        float Distance = Vector3.Distance(raycasthit.point, transform.position);
+        var HitPosDir = (MousePosition - transform.position).normalized;
+        float Distance = Vector3.Distance(MousePosition, transform.position);
         Distance = Mathf.Min(Distance, MaxAbility3Range);
 
         var NewHitPos = transform.position + HitPosDir * Distance;
-        Ability3Canvas.transform.position = NewHitPos;
+        Ability3Canvas.transform.position = NewHitPos + (Vector3.down * 1.3f);
     }
 
     private void ShowAbility4Canvas() {
         if (Ability4Targeter.enabled) {
-            if (Physics.Raycast(ray, out raycasthit, Mathf.Infinity)) {
-                Position = new Vector3(raycasthit.point.x, raycasthit.point.y, raycasthit.point.z);
-            }
+            Vector2 Direction = new(MousePosition.x - Ability4Canvas.transform.position.x, MousePosition.y - Ability4Canvas.transform.position.y);
 
-            Quaternion Ab4Canvas = Quaternion.LookRotation(Position - transform.position);
-            Ab4Canvas.eulerAngles = new Vector3(0, Ab4Canvas.eulerAngles.z, Ab4Canvas.eulerAngles.y);
-
-            Ability4Canvas.transform.rotation = Quaternion.Lerp(Ab4Canvas, Ability4Canvas.transform.rotation, 0);
+            Ability4Canvas.transform.up = Direction;
         }
     }
 
@@ -218,8 +201,7 @@ public class Abilities : MonoBehaviour {
         if (IsCooldown) {
             CurrentCooldown -= Time.deltaTime;
 
-            if (CurrentCooldown <= 0)
-            {
+            if (CurrentCooldown <= 0) {
                 IsCooldown = false;
                 CurrentCooldown = 0;
 

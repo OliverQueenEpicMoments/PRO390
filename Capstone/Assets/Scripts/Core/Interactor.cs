@@ -11,9 +11,9 @@ public class Interactor : MonoBehaviour {
     [SerializeField] float InteractRange;
 
     void Update() {
-        Debug.DrawRay(InteractorSource.position, Vector2.down * InteractRange, Color.red);
-        Debug.DrawRay(InteractorSource.position, Vector2.left * InteractRange, Color.red);
-        if (Input.GetKeyUp(KeyCode.E)) {
+        Debug.DrawRay(InteractorSource.position + Vector3.up, Vector2.down * InteractRange, Color.red);
+        Debug.DrawRay(InteractorSource.position + Vector3.right, Vector2.left * InteractRange, Color.red);
+        if (Input.GetKeyDown(KeyCode.E)) {
             RaycastHit2D HitInfo = Physics2D.Raycast(InteractorSource.position, Vector2.down, InteractRange);
             if (HitInfo.collider.gameObject.TryGetComponent(out IInteractable InteractObj)) {
                 InteractObj.Interact();

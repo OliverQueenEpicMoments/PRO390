@@ -8,6 +8,7 @@ public class EnemyStateAI : MonoBehaviour {
     [SerializeField] SpriteRenderer spriterenderer;
     [SerializeField] Health EnemyHealth;
     [SerializeField] float Speed;
+
     [Header("AI")]
     [SerializeField] Transform PlayerLocation;
     [SerializeField] Transform RaycastLocation;
