@@ -35,6 +35,8 @@ public class Abilities : MonoBehaviour {
     [SerializeField] Image Ability3Targeter;
     [SerializeField] float MaxAbility3Range;
 
+    [SerializeField] GameObject Eye;
+
     [Header("Ability 4")]
     [SerializeField] Image AbilityImage4;
     [SerializeField] TMP_Text Ability4Text;
@@ -112,6 +114,9 @@ public class Abilities : MonoBehaviour {
 
         var NewHitPos = transform.position + HitPosDir * Distance;
         Ability3Canvas.transform.position = NewHitPos + (Vector3.down * 1.3f);
+
+        // Cast ability
+        //Instantiate(Eye, Ability3Canvas.transform.position, Quaternion.identity);
     }
 
     private void ShowAbility4Canvas() {
@@ -172,6 +177,8 @@ public class Abilities : MonoBehaviour {
             Ability3Targeter.enabled = false;
 
             Cursor.visible = true;
+
+            Instantiate(Eye, Ability3Canvas.transform.position, Quaternion.identity);
         }
     }
 

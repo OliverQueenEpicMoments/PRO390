@@ -10,15 +10,18 @@ public class ExplosionBuildup : MonoBehaviour {
     [SerializeField] private float Acceleration = 0.01f;
     [SerializeField] private float CurrentSpeed;
     [SerializeField] private GameObject Explosion;
+    [SerializeField] private AudioClip SummonSound;
 
     Vector3 InitialPosition;
 
     void Start() {
         InitialPosition = transform.position;
-        StartCoroutine(Explode());
+        SoundManager.Instance.PlaySound(SummonSound);
     }
 
     void Update() {
+        Timer -= Time.deltaTime;
+
         if (Rise) {
             Vector3 Offset = CurrentSpeed * Time.deltaTime * Vector2.up;
             CurrentSpeed += Acceleration * Time.deltaTime;
@@ -27,10 +30,10 @@ public class ExplosionBuildup : MonoBehaviour {
 
             transform.position += Offset;
         }
-    }
 
-    IEnumerator Explode() {
-        yield return new WaitForSeconds(Timer);
-        Instantiate(Explosion, transform.position, Quaternion.identity);
+        if (Timer <= 0) {
+            Destroy(this.gameObject);
+            Instantiate(Explosion, transform.position, Quaternion.identity);
+        }
     }
 }
