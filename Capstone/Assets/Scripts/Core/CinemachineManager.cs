@@ -14,7 +14,6 @@ public class CinemachineManager : MonoBehaviour, IInteractable {
 
     private void OnTriggerStay2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Player")) Player = collision.gameObject;
-        Debug.Log("Player Set");
     }
 
     private void SwitchPriority() {

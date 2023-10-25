@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1179816784946194002}
   - component: {fileID: 5590385147284183541}
   - component: {fileID: 8188960441849647154}
+  - component: {fileID: 5897167997758133929}
   - component: {fileID: 7895145437744557380}
   - component: {fileID: 6625517599439660907}
   m_Layer: 0
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: b27e82cc8ba67f2479ce471578defe26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,6 +122,24 @@ MonoBehaviour:
   CurrentSpeed: 0
   Explosion: {fileID: 6650321346688565773, guid: 7701775c15b9b234a995501419e4debe, type: 3}
   SummonSound: {fileID: 8300000, guid: bb34a30effbc92d4b9a65f63ede62cb6, type: 3}
+--- !u!114 &5897167997758133929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294115388286958286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480dfdb4022231c4a8a841750055d2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: 0
+  ObjectFadeSpeed: 0.025
+  Light: 0
+  LightFadeSpeed: 0.025
+  Shader: 1
+  ShaderFadeSpeed: 0.06
 --- !u!70 &7895145437744557380
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
