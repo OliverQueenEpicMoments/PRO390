@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     [Header("Rolling")]
     private bool CanRoll = true;
     private bool IsRolling;
+    private bool IsAttacking;
     [SerializeField] private float RollingPower = 1.5f;
     [SerializeField] private float RollingTime = 0.8f;
     [SerializeField] private float RollingCooldown = 1.25f;
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        if (IsRolling) return;
+        if (IsRolling || IsAttacking) return;
 
         Vector2 Direction = Vector2.zero;
         Direction.x = Input.GetAxis("Horizontal");
@@ -44,12 +45,14 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(Roll());
         }
 
+        // Dance
+        if (Input.GetKeyDown(KeyCode.LeftControl)) {
+            animator.SetTrigger("Dance");
+            //SoundManager.Instance.PlaySound(RollSound);
+        }
+
         // Move player
         RB.velocity = Velocity;
-
-        // Rotate character to face direction of movement
-        if (Velocity.x > 0 && !FaceRight) Flip();
-        if (Velocity.x < 0 && FaceRight) Flip();
 
         animator.SetFloat("Horizontal", Direction.x);
         animator.SetFloat("Vertical", Direction.y);
@@ -66,13 +69,5 @@ public class PlayerController : MonoBehaviour {
         Physics2D.IgnoreLayerCollision(3, 6, false);
         yield return new WaitForSeconds(RollingCooldown);
         CanRoll = true;
-    }
-
-    private void Flip() {
-        Vector3 CurrentScale = gameObject.transform.localScale;
-        CurrentScale.x *= -1;
-        gameObject.transform.localScale = CurrentScale;
-
-        FaceRight = !FaceRight;
     }
 }
