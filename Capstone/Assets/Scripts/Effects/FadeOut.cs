@@ -7,9 +7,11 @@ public class FadeOut : MonoBehaviour {
     [SerializeField] private bool Object = false;
     [SerializeField, Range(0, 1)] private float ObjectFadeSpeed = 0.025f;
 
+    [Header("Light")]
     [SerializeField] private bool Light = false;
     [SerializeField, Range(0, 1)] private float LightFadeSpeed = 0.025f;
 
+    [Header("Shader")]
     [SerializeField] private bool Shader = false;
     [SerializeField, Range(0, 1)] private float ShaderFadeSpeed = 0.075f;
 

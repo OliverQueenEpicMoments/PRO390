@@ -50,7 +50,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c905d3d9e493fde47935cc1bd0669076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Object: 1
+  ObjectFadeSpeed: 0.05
   Light: 0
+  LightFadeSpeed: 0.05
+  Shader: 0
+  ShaderFadeSpeed: 0.075
 --- !u!212 &5590385147284183541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -241,7 +246,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c905d3d9e493fde47935cc1bd0669076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Object: 0
+  ObjectFadeSpeed: 0.05
   Light: 1
+  LightFadeSpeed: 0.05
+  Shader: 0
+  ShaderFadeSpeed: 0.075
 --- !u!114 &9028870490617051901
 MonoBehaviour:
   m_ObjectHideFlags: 0
