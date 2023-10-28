@@ -21,10 +21,30 @@ public class Mana : MonoBehaviour {
     }
 
     void Update() {
-        
+        RegenMana();
+    }
+
+    private void RegenMana() { 
+        if (CurrentMana < MaxMana) {
+            CurrentMana += ManaRegenRate * Time.deltaTime;
+            CurrentMana = Mathf.Clamp(CurrentMana, 0f, MaxMana);
+            UpdateManaUI();
+        }
     }
 
     public void UpdateManaUI() { 
-        
+        if (ManaBar2D != null) ManaBar2D.value = CurrentMana / MaxMana;
+        if (ManaBar2D != null) ManaText2D.text = Mathf.RoundToInt(CurrentMana).ToString() + " / " + MaxMana;
+        if (ManaBar3D != null) ManaBar3D.value = CurrentMana / MaxMana;
+    }
+
+    public bool CanAffordAbility(float abilitycost) {
+        return CurrentMana >= abilitycost;
+    }
+
+    public void UseAbility(float abilitycost) { 
+        CurrentMana -= abilitycost;
+        CurrentMana = Mathf.Clamp(CurrentMana, 0f, MaxMana);
+        UpdateManaUI();
     }
 }

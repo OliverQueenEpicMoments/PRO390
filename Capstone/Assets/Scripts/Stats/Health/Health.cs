@@ -32,7 +32,7 @@ public class Health : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)) {
-            TakeDamage(1);
+            TakeDamage(10);
             Debug.Log(CurrentHealth);
         }
     }
