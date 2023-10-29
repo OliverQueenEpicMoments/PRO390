@@ -16,7 +16,6 @@ public class EnemyNavAI : MonoBehaviour {
     NavMeshAgent Agent;
     Rigidbody2D RB;
     Vector2 Velocity = Vector2.zero;
-    bool FaceRight = true;
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
@@ -31,7 +30,7 @@ public class EnemyNavAI : MonoBehaviour {
     void Update() {
         if (EnemyHealth.CurrentHealth <= 0) StartCoroutine(Death());
 
-        Agent.SetDestination(PlayerLocation.position);
+        if (EnemyHealth.CurrentHealth > 0) Agent.SetDestination(PlayerLocation.position);
         Vector2 Direction = PlayerLocation.position - transform.position;
 
         //Velocity.x = Direction.x * Speed;

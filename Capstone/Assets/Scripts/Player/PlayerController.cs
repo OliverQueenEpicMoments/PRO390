@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D RB;
     Vector2 Velocity = Vector2.zero;
     bool FaceRight = true;
+    Vector3 MousePosition;
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour {
 
     void Update() {
         if (IsRolling || IsAttacking) return;
+        MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 MouseDirection = (MousePosition - transform.position).normalized;
 
         Vector2 Direction = Vector2.zero;
         Direction.x = Input.GetAxis("Horizontal");
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour {
         // Dance
         if (Input.GetKeyDown(KeyCode.LeftControl)) {
             animator.SetTrigger("Dance");
-            //SoundManager.Instance.PlaySound(RollSound);
+            //SoundManager.Instance.PlaySound(DanceMusic);
         }
 
         // Move player
@@ -57,6 +60,9 @@ public class PlayerController : MonoBehaviour {
         animator.SetFloat("Horizontal", Direction.x);
         animator.SetFloat("Vertical", Direction.y);
         animator.SetFloat("Speed", Direction.sqrMagnitude);
+
+        //animator.SetFloat("MouseXPos", MouseDirection.x);
+        //animator.SetFloat("MouseYPos", MouseDirection.y);
     }
 
     IEnumerator Roll() {

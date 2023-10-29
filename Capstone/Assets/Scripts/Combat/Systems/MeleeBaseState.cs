@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class MeleeBaseState : State {
     public float Duration;
@@ -10,6 +11,9 @@ public class MeleeBaseState : State {
     protected AudioClip Attack1Sound;
     protected AudioClip Attack2Sound;
     protected AudioClip Attack3Sound;
+    protected Vector3 PlayerPosition;
+    protected Vector3 MousePosition;
+    protected Vector3 MouseDirection;
 
     protected Collider2D HitCollider;
     private List<Collider2D> CollidersDamaged;
@@ -25,6 +29,9 @@ public class MeleeBaseState : State {
         Attack1Sound = GetComponent<ComboCharacter>().Attack1Sound;
         Attack2Sound = GetComponent<ComboCharacter>().Attack2Sound;
         Attack3Sound = GetComponent<ComboCharacter>().Attack3Sound;
+        PlayerPosition = GetComponent<ComboCharacter>().transform.position;
+        MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        MouseDirection = (MousePosition - PlayerPosition).normalized;
     }
 
     public override void OnUpdate() {
@@ -54,7 +61,6 @@ public class MeleeBaseState : State {
                 if (HitTeamComponent && HitTeamComponent.TeamIndex == TeamIndex.Enemy) {
                     if (HitEffectPrefab != null) GameObject.Instantiate(HitEffectPrefab, CollidersToDamage[i].transform);
                     HitTeamComponent.GetComponent<Health>().TakeDamage(AttackIndex);
-                    Debug.Log("Enemy health " + HitTeamComponent.GetComponent<Health>().CurrentHealth);
                     CollidersDamaged.Add(CollidersToDamage[i]);
                 }
             }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour {
     [Header("Health")]
     [SerializeField] private float StartingHealth;
+    public float MaxHealth { get; private set; }
     public float CurrentHealth { get; private set; }
     private Animator animator;
     private Rigidbody2D RB;
@@ -27,13 +28,14 @@ public class Health : MonoBehaviour {
         animator = GetComponent<Animator>();
         spriterenderer = GetComponent<SpriteRenderer>();
         RB = GetComponent<Rigidbody2D>();
+        MaxHealth = StartingHealth;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)) {
             TakeDamage(10);
-            Debug.Log(CurrentHealth);
+            //Debug.Log(CurrentHealth);
         }
     }
 

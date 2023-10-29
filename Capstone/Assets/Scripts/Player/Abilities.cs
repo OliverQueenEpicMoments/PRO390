@@ -8,43 +8,53 @@ using UnityEngine.UI;
 
 public class Abilities : MonoBehaviour {
     [Header("Ability 1")]
-    [SerializeField] Image AbilityImage1;
-    [SerializeField] TMP_Text Ability1Text;
-    [SerializeField] KeyCode Ability1Key;
-    [SerializeField] float Ability1Cooldown;
+    [SerializeField] private Image AbilityImage1;
+    [SerializeField] private TMP_Text Ability1Text;
+    [SerializeField] private KeyCode Ability1Key;
+    [SerializeField] private float Ability1Cooldown;
+    [SerializeField] private float Ability1Cost = 25;
 
-    [SerializeField] Canvas Ability1Canvas;
-    [SerializeField] Image Ability1Targeter;
+    [SerializeField] private Canvas Ability1Canvas;
+    [SerializeField] private Image Ability1Targeter;
 
     [Header("Ability 2")]
-    [SerializeField] Image AbilityImage2;
-    [SerializeField] TMP_Text Ability2Text;
-    [SerializeField] int Ability2Button;
-    [SerializeField] float Ability2Cooldown;
+    [SerializeField] private Image AbilityImage2;
+    [SerializeField] private TMP_Text Ability2Text;
+    [SerializeField] private int Ability2Button;
+    [SerializeField] private float Ability2Cooldown;
+    [SerializeField] private float Ability2Cost = 15;
 
-    [SerializeField] Canvas Ability2Canvas;
-    [SerializeField] Image Ability2Targeter;
+    [SerializeField] private Canvas Ability2Canvas;
+    [SerializeField] private Image Ability2Targeter;
+
+    [SerializeField] private AudioClip EmpowerSound;
+    public bool EmpoweredAuto = false;
+    [SerializeField] private float EmpoweredDuration = 2;
 
     [Header("Ability 3")]
-    [SerializeField] Image AbilityImage3;
-    [SerializeField] TMP_Text Ability3Text;
-    [SerializeField] KeyCode Ability3Key;
-    [SerializeField] float Ability3Cooldown;
+    [SerializeField] private Image AbilityImage3;
+    [SerializeField] private TMP_Text Ability3Text;
+    [SerializeField] private KeyCode Ability3Key;
+    [SerializeField] private float Ability3Cooldown;
+    [SerializeField] private float Ability3Cost = 30;
 
-    [SerializeField] Canvas Ability3Canvas;
-    [SerializeField] Image Ability3Targeter;
-    [SerializeField] float MaxAbility3Range;
+    [SerializeField] private Canvas Ability3Canvas;
+    [SerializeField] private Image Ability3Targeter;
+    [SerializeField] private float MaxAbility3Range;
 
-    [SerializeField] GameObject Eye;
+    [SerializeField] private GameObject Eye;
 
     [Header("Ability 4")]
-    [SerializeField] Image AbilityImage4;
-    [SerializeField] TMP_Text Ability4Text;
-    [SerializeField] KeyCode Ability4Key;
-    [SerializeField] float Ability4Cooldown;
+    [SerializeField] private Image AbilityImage4;
+    [SerializeField] private TMP_Text Ability4Text;
+    [SerializeField] private KeyCode Ability4Key;
+    [SerializeField] private float Ability4Cooldown;
+    [SerializeField] private float Ability4Cost = 40;
 
-    [SerializeField] Canvas Ability4Canvas;
-    [SerializeField] Image Ability4Targeter;
+    [SerializeField] private Canvas Ability4Canvas;
+    [SerializeField] private Image Ability4Targeter;
+
+    [SerializeField] private AudioClip ShockSound;
 
     private bool IsAbility1Cooldown = false;
     private bool IsAbility2Cooldown = false;
@@ -57,8 +67,11 @@ public class Abilities : MonoBehaviour {
     private float CurrentAbility4Cooldown;
 
     private Vector3 MousePosition;
+    private Mana ManaSystem;
 
     void Start() {
+        ManaSystem = GetComponent<Mana>();
+
         AbilityImage1.fillAmount = 0;
         AbilityImage2.fillAmount = 0;
         AbilityImage3.fillAmount = 0;
@@ -89,10 +102,10 @@ public class Abilities : MonoBehaviour {
         Ability3Input();
         Ability4Input();
 
-        AbilityCooldown(ref CurrentAbility1Cooldown, Ability1Cooldown, ref IsAbility1Cooldown, AbilityImage1, Ability1Text);
-        AbilityCooldown(ref CurrentAbility2Cooldown, Ability2Cooldown, ref IsAbility2Cooldown, AbilityImage2, Ability2Text);
-        AbilityCooldown(ref CurrentAbility3Cooldown, Ability3Cooldown, ref IsAbility3Cooldown, AbilityImage3, Ability3Text);
-        AbilityCooldown(ref CurrentAbility4Cooldown, Ability4Cooldown, ref IsAbility4Cooldown, AbilityImage4, Ability4Text);
+        AbilityCooldown(Ability1Cooldown, Ability1Cost, ref CurrentAbility1Cooldown, ref IsAbility1Cooldown, AbilityImage1, Ability1Text);
+        AbilityCooldown(Ability2Cooldown, Ability2Cost, ref CurrentAbility2Cooldown, ref IsAbility2Cooldown, AbilityImage2, Ability2Text);
+        AbilityCooldown(Ability3Cooldown, Ability3Cost, ref CurrentAbility3Cooldown, ref IsAbility3Cooldown, AbilityImage3, Ability3Text);
+        AbilityCooldown(Ability4Cooldown, Ability4Cost, ref CurrentAbility4Cooldown, ref IsAbility4Cooldown, AbilityImage4, Ability4Text);
 
         ShowAbility1Canvas();
         ShowAbility3Canvas();
@@ -114,9 +127,6 @@ public class Abilities : MonoBehaviour {
 
         var NewHitPos = transform.position + HitPosDir * Distance;
         Ability3Canvas.transform.position = NewHitPos + (Vector3.down * 1.3f);
-
-        // Cast ability
-        //Instantiate(Eye, Ability3Canvas.transform.position, Quaternion.identity);
     }
 
     private void ShowAbility4Canvas() {
@@ -128,7 +138,7 @@ public class Abilities : MonoBehaviour {
     }
 
     private void Ability1Input() {
-        if (Input.GetKeyDown(Ability1Key) && !IsAbility1Cooldown) { 
+        if (Input.GetKeyDown(Ability1Key) && !IsAbility1Cooldown && ManaSystem.CanAffordAbility(Ability1Cost)) { 
             Ability1Canvas.enabled = true;
             Ability1Targeter.enabled = true;
 
@@ -141,23 +151,33 @@ public class Abilities : MonoBehaviour {
         }
 
         if (Ability1Targeter.enabled && Input.GetMouseButtonDown(0)) {
-            IsAbility1Cooldown = true;
-            CurrentAbility1Cooldown = Ability1Cooldown;
+            if (ManaSystem.CanAffordAbility(Ability1Cost)) {
+                ManaSystem.UseAbility(Ability1Cost);
+                IsAbility1Cooldown = true;
+                CurrentAbility1Cooldown = Ability1Cooldown;
 
-            Ability1Canvas.enabled = false;
-            Ability1Targeter.enabled = false;
+                Ability1Canvas.enabled = false;
+                Ability1Targeter.enabled = false;
+            }   
         }
     }
 
     private void Ability2Input() {
-        if (Input.GetMouseButtonDown(Ability2Button) && !IsAbility2Cooldown) {
-            IsAbility2Cooldown = true;
-            CurrentAbility2Cooldown = Ability2Cooldown;
+        if (Input.GetMouseButtonDown(Ability2Button) && !IsAbility2Cooldown && ManaSystem.CanAffordAbility(Ability2Cost)) {
+            if (ManaSystem.CanAffordAbility(Ability2Cost)) {
+                ManaSystem.UseAbility(Ability2Cost);
+                IsAbility2Cooldown = true;
+                CurrentAbility2Cooldown = Ability2Cooldown;
+
+                // Actual Ability
+                SoundManager.Instance.PlaySound(EmpowerSound);
+                StartCoroutine(Empower(EmpoweredDuration));
+            }
         }
     }
 
     private void Ability3Input() {
-        if (Input.GetKeyDown(Ability3Key) && !IsAbility3Cooldown) {
+        if (Input.GetKeyDown(Ability3Key) && !IsAbility3Cooldown && ManaSystem.CanAffordAbility(Ability3Cost)) {
             Ability3Canvas.enabled = true;
             Ability3Targeter.enabled = true;
 
@@ -170,20 +190,24 @@ public class Abilities : MonoBehaviour {
         }
 
         if (Ability3Canvas.enabled && Input.GetMouseButtonDown(0)) {
-            IsAbility3Cooldown = true;
-            CurrentAbility3Cooldown = Ability3Cooldown;
+            if (ManaSystem.CanAffordAbility(Ability3Cost)) {
+                ManaSystem.UseAbility(Ability3Cost);
+                IsAbility3Cooldown = true;
+                CurrentAbility3Cooldown = Ability3Cooldown;
 
-            Ability3Canvas.enabled = false;
-            Ability3Targeter.enabled = false;
+                Ability3Canvas.enabled = false;
+                Ability3Targeter.enabled = false;
 
-            Cursor.visible = true;
+                Cursor.visible = true;
 
-            Instantiate(Eye, Ability3Canvas.transform.position, Quaternion.identity);
+                // Actual ability
+                Instantiate(Eye, Ability3Canvas.transform.position, Quaternion.identity);
+            }
         }
     }
 
     private void Ability4Input() {
-        if (Input.GetKeyDown(Ability4Key) && !IsAbility4Cooldown) {
+        if (Input.GetKeyDown(Ability4Key) && !IsAbility4Cooldown && ManaSystem.CanAffordAbility(Ability4Cost)) {
             Ability4Canvas.enabled = true;
             Ability4Targeter.enabled = true;
 
@@ -196,28 +220,58 @@ public class Abilities : MonoBehaviour {
         }
 
         if (Ability4Targeter.enabled && Input.GetMouseButtonDown(0)) {
-            IsAbility4Cooldown = true;
-            CurrentAbility4Cooldown = Ability4Cooldown;
+            if (ManaSystem.CanAffordAbility(Ability4Cost)) {
+                ManaSystem.UseAbility(Ability4Cost);
+                IsAbility4Cooldown = true;
+                CurrentAbility4Cooldown = Ability4Cooldown;
 
-            Ability4Canvas.enabled = false;
-            Ability4Targeter.enabled = false;
+                Ability4Canvas.enabled = false;
+                Ability4Targeter.enabled = false;
+            }
         }
     }
 
-    private void AbilityCooldown(ref float CurrentCooldown, float MaxCooldown, ref bool IsCooldown, Image AbilityImage, TMP_Text AbilityText) { 
+    private void AbilityCooldown(float AbilityCooldown, float AbilityCost, ref float CurrentCooldown, ref bool IsCooldown, Image AbilityImage, TMP_Text AbilityText) {
         if (IsCooldown) {
             CurrentCooldown -= Time.deltaTime;
 
             if (CurrentCooldown <= 0) {
                 IsCooldown = false;
                 CurrentCooldown = 0;
+            }
 
-                if (AbilityImage != null) AbilityImage.fillAmount = 0;
-                if (AbilityText != null) AbilityText.text = "";
+            if (AbilityImage != null) {
+                AbilityImage.color = Color.grey;
+                AbilityImage.fillAmount = 1;
+            }
+
+            if (AbilityText != null) AbilityText.text = Mathf.Ceil(CurrentCooldown).ToString();
+        } else {
+            if (ManaSystem.CanAffordAbility(AbilityCost)) {
+                if (AbilityImage != null) {
+                    AbilityImage.color = Color.grey;
+                    AbilityImage.fillAmount = 0;
+                }
+
+                if (AbilityText != null) AbilityText.text = " ";
             } else {
-                if (AbilityImage != null) AbilityImage.fillAmount = CurrentCooldown / MaxCooldown;
-                if (AbilityText != null) AbilityText.text = Mathf.Ceil(CurrentCooldown).ToString();
+                if (AbilityImage != null) {
+                    AbilityImage.color = Color.red;
+                    AbilityImage.fillAmount = 1;
+                }
+
+                if (AbilityText != null) AbilityText.text = "X";
             }
         }
+    }
+
+    IEnumerator Empower(float Duration) {
+        for (float Timer = Duration; Timer >= 0; Timer -= Time.deltaTime) {
+            Debug.Log(Timer);
+            EmpoweredAuto = true;
+            yield return new WaitForSeconds(.01f);
+        }
+        EmpoweredAuto = false;
+        Debug.Log(EmpoweredAuto);
     }
 }
