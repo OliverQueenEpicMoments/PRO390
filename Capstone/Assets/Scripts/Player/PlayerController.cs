@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour {
 
     Rigidbody2D RB;
     Vector2 Velocity = Vector2.zero;
-    bool FaceRight = true;
     Vector3 MousePosition;
 
     void Start() {

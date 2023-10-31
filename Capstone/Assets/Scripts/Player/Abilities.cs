@@ -17,6 +17,10 @@ public class Abilities : MonoBehaviour {
     [SerializeField] private Canvas Ability1Canvas;
     [SerializeField] private Image Ability1Targeter;
 
+    [SerializeField] private GameObject Projectile;
+    [SerializeField] private float Force;
+    private Transform Aim;
+
     [Header("Ability 2")]
     [SerializeField] private Image AbilityImage2;
     [SerializeField] private TMP_Text Ability2Text;
@@ -115,6 +119,7 @@ public class Abilities : MonoBehaviour {
     private void ShowAbility1Canvas() { 
         if (Ability1Targeter.enabled) {
             Vector2 Direction = new(MousePosition.x - Ability4Canvas.transform.position.x, MousePosition.y - Ability4Canvas.transform.position.y);
+            Direction.Normalize();
 
             Ability1Canvas.transform.up = Direction;
         }
@@ -132,6 +137,7 @@ public class Abilities : MonoBehaviour {
     private void ShowAbility4Canvas() {
         if (Ability4Targeter.enabled) {
             Vector2 Direction = new(MousePosition.x - Ability4Canvas.transform.position.x, MousePosition.y - Ability4Canvas.transform.position.y);
+            Direction.Normalize();
 
             Ability4Canvas.transform.up = Direction;
         }
@@ -158,6 +164,16 @@ public class Abilities : MonoBehaviour {
 
                 Ability1Canvas.enabled = false;
                 Ability1Targeter.enabled = false;
+
+                // Actual ability
+                Vector3 Direction = new(MousePosition.x - transform.position.x, MousePosition.y - transform.position.y);
+                Direction.Normalize();
+                Debug.Log(Direction);
+
+                GameObject Fireball = Instantiate(Projectile, transform.position, Quaternion.identity);
+                Fireball.transform.rotation = Quaternion.LookRotation(Direction);
+                //Fireball.transform.rotation = Quaternion.LookRotation(MousePosition);
+                Fireball.GetComponent<Rigidbody2D>().AddForce(Direction * Force, ForceMode2D.Impulse);
             }   
         }
     }
