@@ -7,8 +7,7 @@ public class Health : MonoBehaviour {
     [SerializeField] private float StartingHealth;
     public float MaxHealth { get; private set; }
     public float CurrentHealth { get; private set; }
-    private Animator animator;
-    private Rigidbody2D RB;
+    [SerializeField] private GameObject GoreEffect;
 
     [Header("IFrames")]
     [SerializeField] private float IFrameDuration;
@@ -22,6 +21,9 @@ public class Health : MonoBehaviour {
     [Header("Audio")]
     [SerializeField] private AudioClip HurtSound;
     [SerializeField] private AudioClip DeathSound;
+
+    private Animator animator;
+    private Rigidbody2D RB;
 
     public void Awake() {
         CurrentHealth = StartingHealth;
@@ -49,6 +51,7 @@ public class Health : MonoBehaviour {
         } else {
             foreach (Behaviour component in Components) component.enabled = false;
 
+            Instantiate(GoreEffect, transform.position, Quaternion.identity);
             animator.SetTrigger("Death");
             SoundManager.Instance.PlaySound(DeathSound);
         }

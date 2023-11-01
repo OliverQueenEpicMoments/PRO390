@@ -10,6 +10,8 @@ public class EntryState : MeleeBaseState {
         AttackIndex = 1;
         Duration = 1f;
         animator.SetTrigger("Attack" + AttackIndex);
+        animator.SetFloat("MouseXPos", MouseDirection.x);
+        animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(AttackSound);
     }
 

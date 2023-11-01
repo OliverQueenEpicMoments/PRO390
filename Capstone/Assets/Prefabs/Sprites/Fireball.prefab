@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3811547994305739431}
-  - component: {fileID: 397947976132191976}
+  - component: {fileID: 3066380715278646603}
   - component: {fileID: 8268412260974425814}
   - component: {fileID: 2031100262735288614}
   - component: {fileID: 8598688483401469540}
@@ -120,7 +120,7 @@ Transform:
   - {fileID: 613513737427167510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &397947976132191976
+--- !u!114 &3066380715278646603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,16 +129,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876160357372684411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2dbcd7e089bf54a9ed4360ae55f237, type: 3}
+  m_Script: {fileID: 11500000, guid: e068c654b643c4b409ff62d1468973d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rise: 0
   Timer: 5
-  MaxSpeed: 0
-  Acceleration: 0.01
-  CurrentSpeed: 0
-  Explosion: {fileID: 6650321346688565773, guid: 7701775c15b9b234a995501419e4debe, type: 3}
-  SummonSound: {fileID: 0}
+  Explosion: {fileID: 6650321346688565773, guid: 9252819bc0078cd439292236e784ada8, type: 3}
+  SummonSound: {fileID: 8300000, guid: f822ce922917555458f7c109138859e0, type: 3}
 --- !u!212 &8268412260974425814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -291,7 +287,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 50
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000

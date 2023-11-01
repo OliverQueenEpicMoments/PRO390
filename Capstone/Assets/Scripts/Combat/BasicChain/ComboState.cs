@@ -10,6 +10,8 @@ public class ComboState : MeleeBaseState {
         AttackIndex = 2;
         Duration = 1.5f;
         animator.SetTrigger("Attack" + AttackIndex);
+        animator.SetFloat("MouseXPos", MouseDirection.x);
+        animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(AttackSound);
     }
 

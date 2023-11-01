@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Abilities : MonoBehaviour {
@@ -19,7 +20,6 @@ public class Abilities : MonoBehaviour {
 
     [SerializeField] private GameObject Projectile;
     [SerializeField] private float Force;
-    private Transform Aim;
 
     [Header("Ability 2")]
     [SerializeField] private Image AbilityImage2;
@@ -72,9 +72,11 @@ public class Abilities : MonoBehaviour {
 
     private Vector3 MousePosition;
     private Mana ManaSystem;
+    private Animator animator;
 
     void Start() {
         ManaSystem = GetComponent<Mana>();
+        animator = GetComponent<Animator>();
 
         AbilityImage1.fillAmount = 0;
         AbilityImage2.fillAmount = 0;
@@ -166,14 +168,14 @@ public class Abilities : MonoBehaviour {
                 Ability1Targeter.enabled = false;
 
                 // Actual ability
-                Vector3 Direction = new(MousePosition.x - transform.position.x, MousePosition.y - transform.position.y);
-                Direction.Normalize();
-                Debug.Log(Direction);
+                Vector2 Direction = (MousePosition - transform.position).normalized;
 
                 GameObject Fireball = Instantiate(Projectile, transform.position, Quaternion.identity);
-                Fireball.transform.rotation = Quaternion.LookRotation(Direction);
-                //Fireball.transform.rotation = Quaternion.LookRotation(MousePosition);
                 Fireball.GetComponent<Rigidbody2D>().AddForce(Direction * Force, ForceMode2D.Impulse);
+
+                //animator.SetTrigger("Fireball");
+                //animator.SetFloat("MouseXPos", Direction.x);
+                //animator.SetFloat("MouseYPos", Direction.y);
             }   
         }
     }
@@ -289,5 +291,10 @@ public class Abilities : MonoBehaviour {
         }
         EmpoweredAuto = false;
         Debug.Log(EmpoweredAuto);
+    }
+
+    float AngleBetweenPoints(Vector2 a, Vector2 b)
+    {
+        return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }

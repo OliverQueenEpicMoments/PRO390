@@ -12,10 +12,8 @@ public class ExplosionBuildup : MonoBehaviour {
     [SerializeField] private GameObject Explosion;
     [SerializeField] private AudioClip SummonSound;
 
-    Vector3 InitialPosition;
 
     void Start() {
-        InitialPosition = transform.position;
         SoundManager.Instance.PlaySound(SummonSound);
     }
 
