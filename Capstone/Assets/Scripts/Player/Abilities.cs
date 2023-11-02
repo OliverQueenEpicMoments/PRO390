@@ -58,7 +58,8 @@ public class Abilities : MonoBehaviour {
     [SerializeField] private Canvas Ability4Canvas;
     [SerializeField] private Image Ability4Targeter;
 
-    [SerializeField] private AudioClip ShockSound;
+    [SerializeField] private AudioClip UltimateSound;
+    [SerializeField] private GameObject UltField;
 
     private bool IsAbility1Cooldown = false;
     private bool IsAbility2Cooldown = false;
@@ -173,9 +174,9 @@ public class Abilities : MonoBehaviour {
                 GameObject Fireball = Instantiate(Projectile, transform.position, Quaternion.identity);
                 Fireball.GetComponent<Rigidbody2D>().AddForce(Direction * Force, ForceMode2D.Impulse);
 
-                //animator.SetTrigger("Fireball");
-                //animator.SetFloat("MouseXPos", Direction.x);
-                //animator.SetFloat("MouseYPos", Direction.y);
+                animator.SetTrigger("Fireball");
+                animator.SetFloat("MouseXPos", Direction.x);
+                animator.SetFloat("MouseYPos", Direction.y);
             }   
         }
     }
@@ -245,6 +246,10 @@ public class Abilities : MonoBehaviour {
 
                 Ability4Canvas.enabled = false;
                 Ability4Targeter.enabled = false;
+
+                // Actual ultimate
+                SoundManager.Instance.PlaySound(UltimateSound);
+                Instantiate(UltField, Ability4Canvas.transform.position, Quaternion.identity);
             }
         }
     }
