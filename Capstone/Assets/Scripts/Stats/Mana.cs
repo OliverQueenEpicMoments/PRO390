@@ -7,13 +7,14 @@ using UnityEngine.UI;
 public class Mana : MonoBehaviour {
     [SerializeField] private float MaxMana = 100;
     [SerializeField] private float StartingMana = 100;
-    [SerializeField] private float ManaRegenRate = 100;
+    [SerializeField] private float ManaRegenRate = 3;
 
     [SerializeField] private Slider ManaBar2D;
     [SerializeField] private Slider EaseManaBar2D;
     [SerializeField] private Slider ManaBar3D;
     [SerializeField] private Slider EaseManaBar3D;
     [SerializeField] private TMP_Text ManaText2D;
+    [SerializeField] private TMP_Text ManaRegenText2D;
     [SerializeField] float LerpSpeed = 0.05f;
 
     private float CurrentMana;
@@ -39,6 +40,7 @@ public class Mana : MonoBehaviour {
         if (ManaBar2D != null) ManaBar2D.value = CurrentMana;
         if (ManaBar3D != null) ManaBar3D.value = CurrentMana;
         if (ManaBar2D != null) ManaText2D.text = Mathf.RoundToInt(CurrentMana).ToString() + " / " + MaxMana;
+        if (ManaRegenText2D != null) ManaRegenText2D.text = "+" + ManaRegenRate;
 
         if (ManaBar2D.value != EaseManaBar2D.value) {
             EaseManaBar2D.value = Mathf.Lerp(EaseManaBar2D.value, CurrentMana, LerpSpeed);

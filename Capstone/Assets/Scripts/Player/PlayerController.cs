@@ -12,19 +12,23 @@ public class PlayerController : MonoBehaviour {
     private bool CanRoll = true;
     private bool IsRolling;
     private bool IsAttacking;
+    private bool IsRooted;
     [SerializeField] private float RollingPower = 1.5f;
     [SerializeField] private float RollingTime = 0.8f;
     [SerializeField] private float RollingCooldown = 1.25f;
     [SerializeField] private AudioClip RollSound;
     [SerializeField] private AudioClip Footsteps;
 
-    Rigidbody2D RB;
-    Vector2 Velocity = Vector2.zero;
-    Vector3 MousePosition;
+    private Rigidbody2D RB;
+    private Health PlayerHealth;
+    private Vector2 Velocity = Vector2.zero;
+    private Vector3 MousePosition;
+    private int EstusFlasks = 3;
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
         spriterenderer = GetComponent<SpriteRenderer>();
+        PlayerHealth = GetComponent<Health>();
     }
 
     void Update() {
@@ -39,6 +43,16 @@ public class PlayerController : MonoBehaviour {
 
         Velocity.x = Direction.x * Speed;
         Velocity.y = Direction.y * Speed;
+
+        // Estus flask chug
+        if (Input.GetKeyDown(KeyCode.Z) && EstusFlasks > 0) {
+            animator.SetTrigger("IsHealing");
+            StartCoroutine(Root(2));
+            PlayerHealth.AddHealth(50);
+            EstusFlasks--;
+        }
+
+        if (IsRooted) return;
 
         // Rolling
         if (Input.GetKeyDown(KeyCode.LeftShift) && CanRoll) {
@@ -66,6 +80,7 @@ public class PlayerController : MonoBehaviour {
 
     IEnumerator Roll() {
         IsRolling = true;
+        PlayerHealth.Invulnerable = true;
         CanRoll = false;
         Physics2D.IgnoreLayerCollision(3, 6, true);
         Velocity = RB.velocity * RollingPower;
@@ -73,6 +88,15 @@ public class PlayerController : MonoBehaviour {
         IsRolling = false;
         Physics2D.IgnoreLayerCollision(3, 6, false);
         yield return new WaitForSeconds(RollingCooldown);
+        PlayerHealth.Invulnerable = false;
         CanRoll = true;
+    }
+
+    IEnumerator Root(float duration) {
+        IsRooted = true;
+        RB.velocity = Vector2.zero;
+        animator.SetFloat("Speed", 0);
+        yield return new WaitForSeconds(duration);
+        IsRooted = false;
     }
 }

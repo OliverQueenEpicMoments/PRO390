@@ -290,7 +290,6 @@ public class Abilities : MonoBehaviour {
 
     IEnumerator Empower(float Duration) {
         for (float Timer = Duration; Timer >= 0; Timer -= Time.deltaTime) {
-            Debug.Log(Timer);
             EmpoweredAuto = true;
             yield return new WaitForSeconds(.01f);
         }

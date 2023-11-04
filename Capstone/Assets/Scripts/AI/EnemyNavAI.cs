@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -35,11 +36,10 @@ public class EnemyNavAI : MonoBehaviour {
         Velocity = Direction * Speed;
 
         if (EnemyHealth.CurrentHealth <= 0) {
-            StartCoroutine(Death());
             Agent.SetDestination(transform.position);
+            StartCoroutine(Death());
         }
 
-        Debug.Log(Velocity.magnitude);
         if (IsStunned) return;
 
         Agent.SetDestination(Player.transform.position);
@@ -50,9 +50,9 @@ public class EnemyNavAI : MonoBehaviour {
         //Velocity.y = Direction.y * Speed;
 
         float Distance = (Player.transform.position - transform.position).magnitude;
-        if (Distance <= 4 && !IsStunned) {
+        if (Distance <= 4.5f && !IsStunned) {
             StartCoroutine(Attack(AttackSwap));
-            StartCoroutine(Stun(0));
+            StartCoroutine(Stun(1));
         }
 
 
@@ -66,25 +66,22 @@ public class EnemyNavAI : MonoBehaviour {
     }
 
     IEnumerator Attack(bool chain) {
-        Vector2 Direction = (Player.transform.position - transform.position).normalized;
-        Vector2 Knockback = Direction * EnemyKnockback;
 
         if (chain) {
             animator.SetTrigger("Attack1");
-            yield return new WaitForSeconds(0.5f);
-            Player.GetComponent<Health>().TakeDamage(EnemyDamage, Knockback);
+            yield return new WaitForSeconds(0.75f);
             AttackSwap = false;
-            StartCoroutine(Stun(5));
+            StartCoroutine(Stun(0.5f));
         } else {
             animator.SetTrigger("Attack2");
-            yield return new WaitForSeconds(2f);
-            Player.GetComponent<Health>().TakeDamage(EnemyDamage, Knockback);
+            yield return new WaitForSeconds(0.75f);
             AttackSwap = true;
-            StartCoroutine(Stun(5));
+            StartCoroutine(Stun(0.5f));
         }
     }
 
     IEnumerator Death() {
+        IsStunned =  true;
         Agent.enabled = false;
         yield return new WaitForSeconds(3.75f);
         Destroy(gameObject);
@@ -94,5 +91,15 @@ public class EnemyNavAI : MonoBehaviour {
         IsStunned = true;
         yield return new WaitForSeconds(duration);
         IsStunned = false;
+    }
+
+    public void DamagePlayer(float damagemultiplier) {
+        float Distance = (Player.transform.position - transform.position).magnitude;
+        Vector2 Direction = (Player.transform.position - transform.position).normalized;
+        Vector2 Knockback = Direction * EnemyKnockback;
+
+        Debug.Log("Attempting to damage");
+
+        if (Distance <= 4.5f) Player.GetComponent<Health>().TakeDamage(EnemyDamage * damagemultiplier, Knockback); Debug.Log("Damaged");
     }
 }

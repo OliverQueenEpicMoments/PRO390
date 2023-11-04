@@ -16,11 +16,12 @@ public class Health : MonoBehaviour {
 
     [Header("Components")]
     [SerializeField] private Behaviour[] Components;
-    private bool Invulnerable = false;
+    public bool Invulnerable = false;
 
     [Header("Audio")]
     [SerializeField] private AudioClip HurtSound;
     [SerializeField] private AudioClip DeathSound;
+    [SerializeField] private AudioClip HealSound;
 
     private Animator animator;
     private Rigidbody2D RB;
@@ -42,7 +43,8 @@ public class Health : MonoBehaviour {
     }
 
     public void TakeDamage(float damage) {
-        if (!Invulnerable) CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
+        if (Invulnerable) return;
+        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
 
         if (CurrentHealth > 0) {
             animator.SetTrigger("IsHit");
@@ -58,7 +60,8 @@ public class Health : MonoBehaviour {
     }
 
     public void TakeDamage(float damage, Vector2 knockback) {
-        if (!Invulnerable) CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
+        if (Invulnerable) return;
+        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
 
         if (CurrentHealth > 0) {
             animator.SetTrigger("IsHit");
@@ -75,6 +78,8 @@ public class Health : MonoBehaviour {
 
     public void AddHealth(float heal) {
         CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, StartingHealth);
+        SoundManager.Instance.PlaySound(HealSound);
+
     }
 
     public void Respawn() {
