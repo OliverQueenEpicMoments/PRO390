@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
     void Update() {
         if (IsRolling || IsAttacking) return;
         MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 MouseDirection = (MousePosition - transform.position).normalized;
+        //Vector3 MouseDirection = (MousePosition - transform.position).normalized;
 
         Vector2 Direction = Vector2.zero;
         Direction.x = Input.GetAxis("Horizontal");
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
         Velocity.y = Direction.y * Speed;
 
         // Estus flask chug
-        if (Input.GetKeyDown(KeyCode.Z) && EstusFlasks > 0) {
+        if (Input.GetKeyDown(KeyCode.Q) && EstusFlasks > 0) {
             animator.SetTrigger("IsHealing");
             StartCoroutine(Root(2));
             PlayerHealth.AddHealth(50);

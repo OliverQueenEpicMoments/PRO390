@@ -24,7 +24,7 @@ public class Abilities : MonoBehaviour {
     [Header("Ability 2")]
     [SerializeField] private Image AbilityImage2;
     [SerializeField] private TMP_Text Ability2Text;
-    [SerializeField] private int Ability2Button;
+    [SerializeField] private KeyCode Ability2Key;
     [SerializeField] private float Ability2Cooldown;
     [SerializeField] private float Ability2Cost = 15;
 
@@ -159,7 +159,7 @@ public class Abilities : MonoBehaviour {
             Cursor.visible = true;
         }
 
-        if (Ability1Targeter.enabled && Input.GetMouseButtonDown(0)) {
+        if (Ability1Targeter.enabled && Input.GetMouseButtonDown(1)) {
             if (ManaSystem.CanAffordAbility(Ability1Cost)) {
                 ManaSystem.UseAbility(Ability1Cost);
                 IsAbility1Cooldown = true;
@@ -182,7 +182,7 @@ public class Abilities : MonoBehaviour {
     }
 
     private void Ability2Input() {
-        if (Input.GetMouseButtonDown(Ability2Button) && !IsAbility2Cooldown && ManaSystem.CanAffordAbility(Ability2Cost)) {
+        if (Input.GetKeyDown(Ability2Key) && !IsAbility2Cooldown && ManaSystem.CanAffordAbility(Ability2Cost)) {
             if (ManaSystem.CanAffordAbility(Ability2Cost)) {
                 ManaSystem.UseAbility(Ability2Cost);
                 IsAbility2Cooldown = true;
@@ -208,7 +208,7 @@ public class Abilities : MonoBehaviour {
             Cursor.visible = false;
         }
 
-        if (Ability3Canvas.enabled && Input.GetMouseButtonDown(0)) {
+        if (Ability3Canvas.enabled && Input.GetMouseButtonDown(1)) {
             if (ManaSystem.CanAffordAbility(Ability3Cost)) {
                 ManaSystem.UseAbility(Ability3Cost);
                 IsAbility3Cooldown = true;
@@ -238,7 +238,7 @@ public class Abilities : MonoBehaviour {
             Cursor.visible = true;
         }
 
-        if (Ability4Targeter.enabled && Input.GetMouseButtonDown(0)) {
+        if (Ability4Targeter.enabled && Input.GetMouseButtonDown(1)) {
             if (ManaSystem.CanAffordAbility(Ability4Cost)) {
                 ManaSystem.UseAbility(Ability4Cost);
                 IsAbility4Cooldown = true;
@@ -248,6 +248,7 @@ public class Abilities : MonoBehaviour {
                 Ability4Targeter.enabled = false;
 
                 // Actual ultimate
+                animator.SetTrigger("Ultimate");
                 SoundManager.Instance.PlaySound(UltimateSound);
                 Instantiate(UltField, Ability4Canvas.transform.position, Quaternion.identity);
             }

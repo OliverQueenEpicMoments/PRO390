@@ -34,12 +34,8 @@ public class Health : MonoBehaviour {
         MaxHealth = StartingHealth;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F)) {
-            TakeDamage(10);
-            //Debug.Log(CurrentHealth);
-        }
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.F)) TakeDamage(10);
     }
 
     public void TakeDamage(float damage) {
@@ -79,7 +75,6 @@ public class Health : MonoBehaviour {
     public void AddHealth(float heal) {
         CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, StartingHealth);
         SoundManager.Instance.PlaySound(HealSound);
-
     }
 
     public void Respawn() {
