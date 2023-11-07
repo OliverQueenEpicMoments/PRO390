@@ -27,11 +27,11 @@ public class Health : MonoBehaviour {
     private Rigidbody2D RB;
 
     public void Awake() {
-        CurrentHealth = StartingHealth;
         animator = GetComponent<Animator>();
         spriterenderer = GetComponent<SpriteRenderer>();
         RB = GetComponent<Rigidbody2D>();
         MaxHealth = StartingHealth;
+        CurrentHealth = StartingHealth;
     }
 
     private void Update() {

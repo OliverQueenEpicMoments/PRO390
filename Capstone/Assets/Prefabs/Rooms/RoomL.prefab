@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3042e3a4a30e9409d2cd517c96f2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OpeningDirection: 4
 --- !u!61 &7312979592483561806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9425,7 +9426,7 @@ MonoBehaviour:
   - {x: 3.955079, y: -8.876994, z: 0}
   m_ShapePathHash: 1723634761
   m_Mesh: {fileID: 0}
-  m_InstanceId: -44256
+  m_InstanceId: 71046
   m_LocalBounds:
     m_Center: {x: 2.4958773, y: -6.4548063, z: 0}
     m_Extent: {x: 1.4666033, y: 2.4297915, z: 0}
@@ -9438,6 +9439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2159369186329296095}
+  - component: {fileID: -9174551790914337902}
   m_Layer: 0
   m_Name: RoomL
   m_TagString: Untagged
@@ -9462,6 +9464,18 @@ Transform:
   - {fileID: 6718811732114438778}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-9174551790914337902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868553474118159635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bce310a0e769904bb27e6984cce37d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5611425904665784476
 GameObject:
   m_ObjectHideFlags: 0
@@ -10078,7 +10092,7 @@ MonoBehaviour:
   - {x: 4.9924726, y: 4.504346, z: 0}
   m_ShapePathHash: 993660878
   m_Mesh: {fileID: 0}
-  m_InstanceId: -44244
+  m_InstanceId: 71042
   m_LocalBounds:
     m_Center: {x: 4.506133, y: 4.742879, z: 0}
     m_Extent: {x: 0.5014093, y: 0.2603221, z: 0}
@@ -12495,7 +12509,7 @@ MonoBehaviour:
   - {x: 4.9924726, y: 4.504346, z: 0}
   m_ShapePathHash: 993660878
   m_Mesh: {fileID: 0}
-  m_InstanceId: -44286
+  m_InstanceId: 70998
   m_LocalBounds:
     m_Center: {x: 4.506133, y: 4.742879, z: 0}
     m_Extent: {x: 0.5014093, y: 0.2603221, z: 0}

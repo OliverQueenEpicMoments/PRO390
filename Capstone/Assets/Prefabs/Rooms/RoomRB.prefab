@@ -283,7 +283,7 @@ MonoBehaviour:
   - {x: 3.955079, y: -8.876994, z: 0}
   m_ShapePathHash: 1723634761
   m_Mesh: {fileID: 0}
-  m_InstanceId: -54578
+  m_InstanceId: 60974
   m_LocalBounds:
     m_Center: {x: 2.4958773, y: -6.4548063, z: 0}
     m_Extent: {x: 1.4666033, y: 2.4297915, z: 0}
@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3042e3a4a30e9409d2cd517c96f2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OpeningDirection: 2
 --- !u!61 &8361870875245602981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10065,7 +10066,7 @@ MonoBehaviour:
   - {x: 4.9924726, y: 4.504346, z: 0}
   m_ShapePathHash: 993660878
   m_Mesh: {fileID: 0}
-  m_InstanceId: -54566
+  m_InstanceId: 60910
   m_LocalBounds:
     m_Center: {x: 4.506133, y: 4.742879, z: 0}
     m_Extent: {x: 0.5014093, y: 0.2603221, z: 0}
@@ -12462,7 +12463,7 @@ MonoBehaviour:
   - {x: 4.9924726, y: 4.504346, z: 0}
   m_ShapePathHash: 993660878
   m_Mesh: {fileID: 0}
-  m_InstanceId: -54608
+  m_InstanceId: 60980
   m_LocalBounds:
     m_Center: {x: 4.506133, y: 4.742879, z: 0}
     m_Extent: {x: 0.5014093, y: 0.2603221, z: 0}
@@ -12906,6 +12907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8707380505709457507}
+  - component: {fileID: 5646391736560630431}
   m_Layer: 0
   m_Name: RoomRB
   m_TagString: Untagged
@@ -12930,6 +12932,18 @@ Transform:
   - {fileID: 7049839097608553266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5646391736560630431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129547304781011139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bce310a0e769904bb27e6984cce37d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6483139496879472497
 GameObject:
   m_ObjectHideFlags: 0
@@ -12976,6 +12990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3042e3a4a30e9409d2cd517c96f2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OpeningDirection: 3
 --- !u!61 &3793623449760792229
 BoxCollider2D:
   m_ObjectHideFlags: 0
