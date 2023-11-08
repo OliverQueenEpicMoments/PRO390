@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
     private Vector2 Velocity = Vector2.zero;
     private Vector3 MousePosition;
     private int EstusFlasks = 3;
+    private bool DanceSwap = false;
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
@@ -63,7 +64,13 @@ public class PlayerController : MonoBehaviour {
 
         // Dance
         if (Input.GetKeyDown(KeyCode.LeftControl)) {
-            animator.SetTrigger("Dance");
+            if (!DanceSwap) {
+                animator.SetTrigger("Dance");
+                DanceSwap = true;
+            } else {
+                animator.SetTrigger("Dance2");
+                DanceSwap = false;
+            }
             //SoundManager.Instance.PlaySound(DanceMusic);
         }
 
