@@ -1240,7 +1240,7 @@ MonoBehaviour:
   Invulnerable: 0
   HurtSound: {fileID: 8300000, guid: 733ee9e6ffba7a548a58aea6cca6e25e, type: 3}
   DeathSound: {fileID: 8300000, guid: 28bc3ebb14a359242ba619aeb7394eed, type: 3}
-  HealSound: {fileID: 0}
+  HealSound: {fileID: 8300000, guid: 5a1a38e15fc4e3048842181741dd8cf8, type: 3}
 --- !u!114 &4509224515884713016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AbilityImage1: {fileID: 0}
   Ability1Text: {fileID: 0}
-  Ability1Key: 113
+  Ability1Key: 49
   Ability1Cooldown: 6
   Ability1Cost: 25
   Ability1Canvas: {fileID: 3151249887641343122}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   Force: 10
   AbilityImage2: {fileID: 0}
   Ability2Text: {fileID: 0}
-  Ability2Button: 1
+  Ability2Key: 50
   Ability2Cooldown: 10
   Ability2Cost: 15
   Ability2Canvas: {fileID: 0}
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   EmpoweredDuration: 1.5
   AbilityImage3: {fileID: 0}
   Ability3Text: {fileID: 0}
-  Ability3Key: 32
+  Ability3Key: 51
   Ability3Cooldown: 8
   Ability3Cost: 30
   Ability3Canvas: {fileID: 8151658928719058128}
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   Eye: {fileID: 1294115388286958286, guid: b0b0bbf24ed74cf4db14fcd0226c12de, type: 3}
   AbilityImage4: {fileID: 0}
   Ability4Text: {fileID: 0}
-  Ability4Key: 114
+  Ability4Key: 52
   Ability4Cooldown: 45
   Ability4Cost: 50
   Ability4Canvas: {fileID: 526521375392393406}

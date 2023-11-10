@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour, IShopCustomer {
     [SerializeField] SpriteRenderer spriterenderer;
     [SerializeField] Animator animator;
     [SerializeField] float Speed;
@@ -105,5 +105,9 @@ public class PlayerController : MonoBehaviour {
         animator.SetFloat("Speed", 0);
         yield return new WaitForSeconds(duration);
         IsRooted = false;
+    }
+
+    public void BoughtItem(string itemname) {
+        Debug.Log("Bought item " + itemname);
     }
 }

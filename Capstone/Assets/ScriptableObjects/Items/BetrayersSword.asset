@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb54516eab297154682a090911b6964d, type: 3}
-  m_Name: ItemScriptableObject
+  m_Name: BetrayersSword
   m_EditorClassIdentifier: 
-  ItemName: 
-  ItemDesc: 
-  ItemIcon: {fileID: 0}
-  ItemCost: 0
+  ItemName: Betrayers Sword
+  ItemDesc: After casting an ability your next basic attack deals extra damage
+  ItemIcon: {fileID: 2111562577, guid: 13d1e3c2588013247949f14be0f0e992, type: 3}
+  ItemCost: 3000
   ItemHealth: 0
   ItemMana: 0
   ItemManaRegen: 0
-  ItemCDR: 0
-  ItemPower: 0
+  ItemCDR: 10
+  ItemPower: 50
   ItemProtections: 0
   ItemAS: 0
-  ItemMS: 0
-  ItemPen: 0
+  ItemMS: 5
+  ItemPen: 10
   ItemPercentPen: 0
   ItemLifesteal: 0

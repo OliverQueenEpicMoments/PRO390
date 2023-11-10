@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item {
+    public static ItemScriptableObject Items;
+
     public enum ItemType { 
         Tank,
         Bruiser,
@@ -18,13 +20,15 @@ public class Item {
         }
     }
 
-    public static Sprite GetSprite(ItemType item) {
-        switch (item) {
-            default:
-            case ItemType.Tank: return GameAssets.Instance.Joe;
-            case ItemType.Bruiser: return GameAssets.Instance.Joe;
-            case ItemType.Assassin: return GameAssets.Instance.Joe;
-        }
+    public static Sprite GetSprite() {
+        //switch (item) {
+        //    default:
+        //    case ItemType.Tank: return GameAssets.Instance.Joe;
+        //    case ItemType.Bruiser: return GameAssets.Instance.Joe;
+        //    case ItemType.Assassin: return GameAssets.Instance.Joe;
+        //}
+
+        return Items.ItemIcon;
     }
 
     public static string GetString(ItemType item) {

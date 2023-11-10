@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de2e276205bd1e4785045c7b283af8b, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  AbilityName: Holy Fireball
+  AbilityDesc: Cast forth a powerfull fireball that explodes on contact, creating
+    a very powerfull explosion.
+  AbilityIcon: {fileID: 21300000, guid: cb8716dc8cfc7e545b30b8dd2d694ab3, type: 3}
+  AbilityText: {fileID: 0}
+  AbilityKey: 49
+  AbilityCooldown: 0
+  AbilityCost: 0
+  AbilityCanvas: {fileID: 0}
+  AbilityTargeter: {fileID: 0}
+  MaxAbilityRange: 0
+  AbilitySpeed: 0
+  EmpowerSound: {fileID: 0}
+  EmpoweredDuration: 0
+  AbilitySpawn: {fileID: 0}

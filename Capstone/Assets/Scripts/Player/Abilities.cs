@@ -295,11 +295,5 @@ public class Abilities : MonoBehaviour {
             yield return new WaitForSeconds(.01f);
         }
         EmpoweredAuto = false;
-        Debug.Log(EmpoweredAuto);
-    }
-
-    float AngleBetweenPoints(Vector2 a, Vector2 b)
-    {
-        return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
 }
