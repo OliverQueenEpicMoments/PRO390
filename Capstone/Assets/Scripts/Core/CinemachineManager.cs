@@ -4,7 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.Tilemaps;
 
-public class CinemachineManager : MonoBehaviour, IInteractable {
+public class CinemachineManager : MonoBehaviour {
     [SerializeField] private GameObject Player;
     [SerializeField] private BoxCollider2D HitBox;
     [SerializeField] private Transform TeleportLocation;
@@ -26,6 +26,7 @@ public class CinemachineManager : MonoBehaviour, IInteractable {
         }
     }
 
+    // Recode this
     public void Interact() {
         SwitchPriority();
         Player.SetActive(false);

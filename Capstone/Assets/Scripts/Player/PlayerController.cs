@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour, IShopCustomer {
-    [SerializeField] SpriteRenderer spriterenderer;
-    [SerializeField] Animator animator;
-    [SerializeField] float Speed;
+    [SerializeField] private SpriteRenderer spriterenderer;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float Speed;
 
     [Header("Rolling")]
     private bool CanRoll = true;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
     private Vector2 Velocity = Vector2.zero;
     private Vector3 MousePosition;
     private int EstusFlasks = 3;
+    private int GoldAmmount = 0;
     private bool DanceSwap = false;
 
     void Start() {
@@ -109,5 +110,9 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
 
     public void BoughtItem(string itemname) {
         Debug.Log("Bought item " + itemname);
+    }
+
+    public bool TrySpendGoldAmmount(int goldammount) {
+        throw new NotImplementedException();
     }
 }

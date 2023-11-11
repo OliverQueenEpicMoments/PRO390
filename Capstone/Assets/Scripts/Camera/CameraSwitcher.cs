@@ -4,7 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.Tilemaps;
 
-public class CameraSwitcher : MonoBehaviour, IInteractable {
+public class CameraSwitcher : MonoBehaviour {
     [SerializeField] string Name;
     [SerializeField] private GameObject Player;
     [SerializeField] private BoxCollider2D HitBox;
@@ -38,6 +38,7 @@ public class CameraSwitcher : MonoBehaviour, IInteractable {
         MainCamera = !MainCamera;
     }
 
+    // Recode this
     public void Interact() {
         SwitchState();
         Player.SetActive(false);
