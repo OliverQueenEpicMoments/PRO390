@@ -12,5 +12,9 @@ public class GameAssets : MonoBehaviour {
         }
     }
 
-    public Sprite Joe;
+    public Sprite SpikedShieldIcon;
+    public Sprite BruiserItem;
+    public Sprite BetrayersSwordIcon;
+
+    public Sprite EstusFlask;
 }

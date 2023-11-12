@@ -40,7 +40,7 @@ public class Health : MonoBehaviour {
 
     public void TakeDamage(float damage) {
         if (Invulnerable) return;
-        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
 
         if (CurrentHealth > 0) {
             animator.SetTrigger("IsHit");
@@ -57,7 +57,7 @@ public class Health : MonoBehaviour {
 
     public void TakeDamage(float damage, Vector2 knockback) {
         if (Invulnerable) return;
-        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, StartingHealth);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
 
         if (CurrentHealth > 0) {
             animator.SetTrigger("IsHit");
@@ -73,8 +73,12 @@ public class Health : MonoBehaviour {
     }
 
     public void AddHealth(float heal) {
-        CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, StartingHealth);
+        CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, MaxHealth);
         SoundManager.Instance.PlaySound(HealSound);
+    }
+
+    public void AddMaxHealth(float health) {
+        MaxHealth += health;
     }
 
     public void Respawn() {

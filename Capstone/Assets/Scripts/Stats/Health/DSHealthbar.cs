@@ -13,9 +13,9 @@ public class DSHealthbar : MonoBehaviour {
     [SerializeField] float LerpSpeed = 0.05f;
 
     void Update() {
-        if (HealthSlider.value != PlayerHealth.CurrentHealth) {
-            HealthSlider.value = PlayerHealth.CurrentHealth;
-        }
+        if (EaseHealthSlider.maxValue != PlayerHealth.MaxHealth) EaseHealthSlider.maxValue = PlayerHealth.MaxHealth;
+        if (HealthSlider.maxValue != PlayerHealth.MaxHealth) HealthSlider.maxValue = PlayerHealth.MaxHealth;
+        if (HealthSlider.value != PlayerHealth.CurrentHealth) HealthSlider.value = PlayerHealth.CurrentHealth;
 
         if (HealthSlider.value != EaseHealthSlider.value) {
             EaseHealthSlider.value = Mathf.Lerp(EaseHealthSlider.value, PlayerHealth.CurrentHealth, LerpSpeed);

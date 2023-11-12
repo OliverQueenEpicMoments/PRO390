@@ -24,17 +24,18 @@ public class ShopTriggerCollider : MonoBehaviour {
     }
 
     public void EnterShop() {
-        Istalking = true;
-
         var Player = GameObject.FindGameObjectWithTag("Player");
         var Templates = GameObject.FindGameObjectWithTag("Player").GetComponent<IShopCustomer>();
         var Direction = (Player.transform.position - transform.position).normalized;
 
         Shop.Show(Templates);
 
-        animator.SetFloat("XDirection", Direction.x);
-        animator.SetFloat("YDirection", Direction.y);
-        animator.SetTrigger("ShopEnter");
+        if (!Istalking) {
+            animator.SetFloat("XDirection", Direction.x);
+            animator.SetFloat("YDirection", Direction.y);
+            animator.SetTrigger("ShopEnter");
+        }
+        Istalking = true;
     }
 
     public void ExitShop() {

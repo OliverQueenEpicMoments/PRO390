@@ -6,8 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIShop : MonoBehaviour {
-    [SerializeField] private ItemScriptableObject Item1;
-    [SerializeField] private ItemScriptableObject Item2;
 
     private Transform Container;
     private Transform ShopItemTemplate;
@@ -20,13 +18,16 @@ public class UIShop : MonoBehaviour {
     }
 
     private void Start() {
-        CreateItemButton(Item1.ItemIcon, Item1.ItemName, Item1.ItemDesc, Item1.ItemCost, 0);
-        CreateItemButton(Item2.ItemIcon, Item2.ItemName, Item2.ItemDesc, Item2.ItemCost, 1);
+        CreateItemButton(Item.ItemType.SpikedShield, Item.GetSprite(Item.ItemType.SpikedShield), "Spiked Shield", Item.GetDescription(Item.ItemType.SpikedShield), Item.GetCost(Item.ItemType.SpikedShield), 0);
+        CreateItemButton(Item.ItemType.Bruiser, Item.GetSprite(Item.ItemType.Bruiser), "Bruiser item", Item.GetDescription(Item.ItemType.Bruiser), Item.GetCost(Item.ItemType.Bruiser), 1);
+        CreateItemButton(Item.ItemType.BetrayersSword, Item.GetSprite(Item.ItemType.BetrayersSword), "Betrayers Sword", Item.GetDescription(Item.ItemType.BetrayersSword), Item.GetCost(Item.ItemType.BetrayersSword), 2);
+
+        CreateItemButton(Item.ItemType.EstusFlask, Item.GetSprite(Item.ItemType.EstusFlask), "Healing vial", Item.GetDescription(Item.ItemType.EstusFlask), Item.GetCost(Item.ItemType.EstusFlask), 3);
 
         Hide();
     }
 
-    private void CreateItemButton(Sprite itemsprite, string itemname, string itemdesc, int itemcost, int position) {
+    private void CreateItemButton(Item.ItemType itemtype, Sprite itemsprite, string itemname, string itemdesc, int itemcost, int position) {
         Transform ShopItemTransform = Instantiate(ShopItemTemplate, Container);
         ShopItemTransform.gameObject.SetActive(true);
         RectTransform ShopItemRectTransform = ShopItemTransform.GetComponent<RectTransform>();
@@ -40,12 +41,12 @@ public class UIShop : MonoBehaviour {
         ShopItemTransform.Find("ItemIcon").GetComponent<Image>().sprite = itemsprite;
 
         ShopItemTransform.GetComponent<Button_UI>().ClickFunc = () => {
-            TryBuyItem(itemname);
+            TryBuyItem(itemtype);
         };
     }
 
-    private void TryBuyItem(string itemname) {
-        ShopCustomer.BoughtItem(itemname);
+    private void TryBuyItem(Item.ItemType itemtype) {
+        if (ShopCustomer.TrySpendGoldAmmount(Item.GetCost(itemtype))) ShopCustomer.BoughtItem(itemtype);
     }
 
     public void Show(IShopCustomer shopcustomer) { 

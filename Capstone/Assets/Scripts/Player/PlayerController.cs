@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Item;
+using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour, IShopCustomer {
     [SerializeField] private SpriteRenderer spriterenderer;
@@ -19,13 +21,22 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
     [SerializeField] private AudioClip RollSound;
     [SerializeField] private AudioClip Footsteps;
 
+    public static PlayerController Instance { get; private set; }
+
+    public event EventHandler OnGoldAmountChanged;
+    public event EventHandler OnEstusAmountChanged;
+
     private Rigidbody2D RB;
     private Health PlayerHealth;
     private Vector2 Velocity = Vector2.zero;
     private Vector3 MousePosition;
     private int EstusFlasks = 3;
-    private int GoldAmmount = 0;
+    private int GoldAmount = 0;
     private bool DanceSwap = false;
+
+    private void Awake() {
+        Instance = this;
+    }
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
@@ -47,11 +58,8 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
         Velocity.y = Direction.y * Speed;
 
         // Estus flask chug
-        if (Input.GetKeyDown(KeyCode.Q) && EstusFlasks > 0) {
-            animator.SetTrigger("IsHealing");
-            StartCoroutine(Root(2));
-            PlayerHealth.AddHealth(50);
-            EstusFlasks--;
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            TryDrinkEstus();
         }
 
         if (IsRooted) return;
@@ -107,12 +115,53 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
         yield return new WaitForSeconds(duration);
         IsRooted = false;
     }
-
-    public void BoughtItem(string itemname) {
-        Debug.Log("Bought item " + itemname);
+    public void TryDrinkEstus() {
+        if (EstusFlasks > 0) {
+            EstusFlasks--;
+            animator.SetTrigger("IsHealing");
+            StartCoroutine(Root(2));
+            PlayerHealth.AddHealth(50);
+            OnEstusAmountChanged?.Invoke(this, EventArgs.Empty);
+        }
     }
 
-    public bool TrySpendGoldAmmount(int goldammount) {
-        throw new NotImplementedException();
+    public int GetEstusAmount() {
+        return EstusFlasks;
+    }
+
+    private void AddEstusFlask() { 
+        EstusFlasks++;
+        OnEstusAmountChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void AddGoldAmount(int addgoldamount) {
+        GoldAmount += addgoldamount;
+        OnGoldAmountChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public int GetGoldAmount() {
+        return GoldAmount;
+    }
+
+    public void BoughtItem(ItemType itemtype) {
+        Debug.Log("Bought item " + itemtype);
+
+        switch (itemtype) {
+            default:
+            case ItemType.SpikedShield: break;
+            case ItemType.Bruiser: break;
+            case ItemType.BetrayersSword: break;
+
+            case ItemType.EstusFlask: AddEstusFlask(); break;
+        }
+    }
+
+    public bool TrySpendGoldAmmount(int spentgoldammount) {
+        if (GetGoldAmount() >= spentgoldammount) {
+            GoldAmount -= spentgoldammount;
+            OnGoldAmountChanged?.Invoke(this, EventArgs.Empty);
+            return true;
+        }
+        else return false;
     }
 }

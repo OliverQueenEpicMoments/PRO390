@@ -66,7 +66,6 @@ public class EnemyNavAI : MonoBehaviour {
     }
 
     IEnumerator Attack(bool chain) {
-
         if (chain) {
             animator.SetTrigger("Attack1");
             yield return new WaitForSeconds(0.75f);
@@ -84,6 +83,11 @@ public class EnemyNavAI : MonoBehaviour {
         IsStunned =  true;
         Agent.enabled = false;
         yield return new WaitForSeconds(3.75f);
+
+        int goldAmount = UnityEngine.Random.Range(10, 20);
+        //DamagePopup.Create(GetPosition(), goldAmount, true);
+        PlayerController.Instance.AddGoldAmount(goldAmount);
+
         Destroy(gameObject);
     }
 
