@@ -25,7 +25,7 @@ public class DamageField : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         TimeTickSystem.OnTick5 += delegate (object sender, TimeTickSystem.OnTickEventArgs e) {
-            if (collision.CompareTag("Enemy") && collision != null) collision.GetComponent<Health>().TakeDamage(1f);
+            if (collision.CompareTag("Enemy") && collision != null) collision.GetComponent<Health>().TakeTrueDamage(1f);
         };
     }
 }

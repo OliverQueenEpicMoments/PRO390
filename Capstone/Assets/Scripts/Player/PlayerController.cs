@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Item;
 using static UnityEditor.Progress;
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
     private Vector2 Velocity = Vector2.zero;
     private Vector3 MousePosition;
     private int EstusFlasks = 3;
-    private int GoldAmount = 0;
+    private int GoldAmount = 9990;
     private bool DanceSwap = false;
 
     private void Awake() {
@@ -143,14 +144,26 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
         return GoldAmount;
     }
 
+    private void BuySpikedShield() {
+        Instantiate(GameAssets.Instance.SpikedShieldStats.ItemPowerup, transform.position, Quaternion.identity);
+    }
+
+    private void BuyBruiserItem() {
+        Instantiate(GameAssets.Instance.BruiserStats.ItemPowerup, transform.position, Quaternion.identity);
+    }
+
+    private void BuyBetrayersSword() {
+        Instantiate(GameAssets.Instance.BetrayersSwordStats.ItemPowerup, transform.position, Quaternion.identity);
+    }
+
     public void BoughtItem(ItemType itemtype) {
         Debug.Log("Bought item " + itemtype);
 
         switch (itemtype) {
             default:
-            case ItemType.SpikedShield: break;
-            case ItemType.Bruiser: break;
-            case ItemType.BetrayersSword: break;
+            case ItemType.SpikedShield: BuySpikedShield(); break;
+            case ItemType.Bruiser: BuyBruiserItem(); break;
+            case ItemType.BetrayersSword: BuyBetrayersSword(); break;
 
             case ItemType.EstusFlask: AddEstusFlask(); break;
         }

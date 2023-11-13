@@ -60,7 +60,7 @@ public class MeleeBaseState : State {
 
                 if (HitTeamComponent && HitTeamComponent.TeamIndex == TeamIndex.Enemy) {
                     if (HitEffectPrefab != null) GameObject.Instantiate(HitEffectPrefab, CollidersToDamage[i].transform);
-                    HitTeamComponent.GetComponent<Health>().TakeDamage(AttackIndex);
+                    HitTeamComponent.GetComponent<Health>().TakeTrueDamage(AttackIndex);
                     CollidersDamaged.Add(CollidersToDamage[i]);
                 }
             }

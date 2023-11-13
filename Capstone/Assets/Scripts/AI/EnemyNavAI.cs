@@ -102,8 +102,6 @@ public class EnemyNavAI : MonoBehaviour {
         Vector2 Direction = (Player.transform.position - transform.position).normalized;
         Vector2 Knockback = Direction * EnemyKnockback;
 
-        Debug.Log("Attempting to damage");
-
-        if (Distance <= 4.5f) Player.GetComponent<Health>().TakeDamage(EnemyDamage * damagemultiplier, Knockback); Debug.Log("Damaged");
+        if (Distance <= 4.5f) Player.GetComponent<Health>().TakeTrueDamage(EnemyDamage * damagemultiplier, Knockback);
     }
 }

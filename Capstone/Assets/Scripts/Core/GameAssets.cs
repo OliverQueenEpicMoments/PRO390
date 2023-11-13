@@ -13,8 +13,12 @@ public class GameAssets : MonoBehaviour {
     }
 
     public Sprite SpikedShieldIcon;
-    public Sprite BruiserItem;
+    public Sprite BruiserItemIcon;
     public Sprite BetrayersSwordIcon;
+
+    public ItemScriptableObject SpikedShieldStats;
+    public ItemScriptableObject BruiserStats;
+    public ItemScriptableObject BetrayersSwordStats;
 
     public Sprite EstusFlask;
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour {
     [Header("Health")]
     [SerializeField] private float StartingHealth;
+    [SerializeField] private float Protections;
     public float MaxHealth { get; private set; }
     public float CurrentHealth { get; private set; }
     [SerializeField] private GameObject GoreEffect;
@@ -35,10 +36,28 @@ public class Health : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.F)) TakeDamage(10);
+        if (Input.GetKeyDown(KeyCode.F)) TakeTrueDamage(10);
     }
 
     public void TakeDamage(float damage) {
+        if (Invulnerable) return;
+        float MitigatedDamage = 100 * damage / (Protections + 100);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - MitigatedDamage, 0, MaxHealth);
+
+        if (CurrentHealth > 0) {
+            animator.SetTrigger("IsHit");
+            StartCoroutine(Invulnerability());
+            SoundManager.Instance.PlaySound(HurtSound);
+        } else {
+            foreach (Behaviour component in Components) component.enabled = false;
+
+            Instantiate(GoreEffect, transform.position, Quaternion.identity);
+            animator.SetTrigger("Death");
+            SoundManager.Instance.PlaySound(DeathSound);
+        }
+    }
+
+    public void TakeTrueDamage(float damage) {
         if (Invulnerable) return;
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
 
@@ -55,7 +74,7 @@ public class Health : MonoBehaviour {
         }
     }
 
-    public void TakeDamage(float damage, Vector2 knockback) {
+    public void TakeTrueDamage(float damage, Vector2 knockback) {
         if (Invulnerable) return;
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
 

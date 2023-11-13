@@ -28,7 +28,7 @@ public class Fireball : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Enemy")) {
-            collision.GetComponent<Health>().TakeDamage(2);
+            collision.GetComponent<Health>().TakeTrueDamage(2);
             Destroy(this.gameObject);
             Instantiate(Explosion, transform.position, Quaternion.identity);
         }

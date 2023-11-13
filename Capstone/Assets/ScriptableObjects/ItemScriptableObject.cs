@@ -4,10 +4,13 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "ItemScriptableObject", menuName = "ScriptableObjects/ItemScriptableObject")]
 public class ItemScriptableObject : ScriptableObject {
+    public Item.ItemType ItemType;
     public string ItemName;
     public string ItemDesc;
     public Sprite ItemIcon;
     public int ItemCost;
+
+    public GameObject ItemPowerup;
 
     public float ItemHealth;
     public float ItemMana;

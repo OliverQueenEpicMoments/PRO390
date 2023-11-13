@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item {
-
     public enum ItemType { 
         SpikedShield,
         Bruiser,
@@ -25,7 +24,7 @@ public class Item {
         switch (item) {
             default:
             case ItemType.SpikedShield: return GameAssets.Instance.SpikedShieldIcon;
-            case ItemType.Bruiser: return GameAssets.Instance.BruiserItem;
+            case ItemType.Bruiser: return GameAssets.Instance.BruiserItemIcon;
             case ItemType.BetrayersSword: return GameAssets.Instance.BetrayersSwordIcon;
             case ItemType.EstusFlask: return GameAssets.Instance.EstusFlask;
         }
@@ -47,6 +46,15 @@ public class Item {
             case ItemType.SpikedShield: return 100;
             case ItemType.Bruiser: return 50;
             case ItemType.BetrayersSword: return 0;
+        }
+    }
+
+    public static float GetPower(ItemType item) {
+        switch (item) {
+            default:
+            case ItemType.SpikedShield: return 0;
+            case ItemType.Bruiser: return 10;
+            case ItemType.BetrayersSword: return 20;
         }
     }
 }
