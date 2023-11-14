@@ -7,9 +7,9 @@ public class FinisherState : MeleeBaseState {
         base.OnEnter(stateMachine);
 
         // Attack
-        AttackIndex = 2;
+        Damage = Power * 3;
         Duration = 1.7f;
-        animator.SetTrigger("Attack" + 3);
+        animator.SetTrigger("Attack3");
         animator.SetFloat("MouseXPos", MouseDirection.x);
         animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(AttackSound);

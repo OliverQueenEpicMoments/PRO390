@@ -6,6 +6,7 @@ public class ComboCharacter : MonoBehaviour {
     private StateMachine MeleeStateMachine;
     private Abilities AbilityStatus;
 
+    public float Power = 25;
     public AudioClip Attack1Sound;
     public AudioClip Attack2Sound;
     public AudioClip Attack3Sound;

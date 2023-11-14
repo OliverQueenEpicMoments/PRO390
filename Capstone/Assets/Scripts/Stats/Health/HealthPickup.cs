@@ -9,7 +9,7 @@ public class HealthPickup : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
             SoundManager.Instance.PlaySound(Heal);
-            collision.GetComponent<Health>().AddHealth(HealthRestore);
+            collision.GetComponent<Health>().Heal(HealthRestore);
             gameObject.SetActive(false);
         }
     }

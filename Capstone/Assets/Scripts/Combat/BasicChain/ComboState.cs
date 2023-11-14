@@ -7,9 +7,9 @@ public class ComboState : MeleeBaseState {
         base.OnEnter(stateMachine);
 
         // Attack
-        AttackIndex = 2;
+        Damage = Power * 2;
         Duration = 1.5f;
-        animator.SetTrigger("Attack" + AttackIndex);
+        animator.SetTrigger("Attack2");
         animator.SetFloat("MouseXPos", MouseDirection.x);
         animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(AttackSound);

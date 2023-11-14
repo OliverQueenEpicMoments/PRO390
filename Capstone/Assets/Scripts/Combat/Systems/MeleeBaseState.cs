@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class MeleeBaseState : State {
     public float Duration;
     public Animator animator;
     protected bool ShouldCombo;
-    protected int AttackIndex;
+    protected float Power;
+    protected float Damage;
     protected AudioClip Attack1Sound;
     protected AudioClip Attack2Sound;
     protected AudioClip Attack3Sound;
@@ -24,6 +24,7 @@ public class MeleeBaseState : State {
         base.OnEnter(stateMachine);
         animator = GetComponent<Animator>();
         CollidersDamaged = new List<Collider2D>();
+        Power = GetComponent<ComboCharacter>().Power;
         HitCollider = GetComponent<ComboCharacter>().Hitbox;
         HitEffectPrefab = GetComponent<ComboCharacter>().HitEffect;
         Attack1Sound = GetComponent<ComboCharacter>().Attack1Sound;
@@ -50,8 +51,10 @@ public class MeleeBaseState : State {
     protected void Attack() {
         //SoundManager.Instance.PlaySound(AttackSound);
         Collider2D[] CollidersToDamage = new Collider2D[10];
-        ContactFilter2D Filter = new();
-        Filter.useTriggers = true;
+        ContactFilter2D Filter = new() {
+            useTriggers = true
+        };
+
         int ColliderCount = Physics2D.OverlapCollider(HitCollider, Filter, CollidersToDamage);
 
         for (int i = 0; i < ColliderCount; i++) {
@@ -60,7 +63,8 @@ public class MeleeBaseState : State {
 
                 if (HitTeamComponent && HitTeamComponent.TeamIndex == TeamIndex.Enemy) {
                     if (HitEffectPrefab != null) GameObject.Instantiate(HitEffectPrefab, CollidersToDamage[i].transform);
-                    HitTeamComponent.GetComponent<Health>().TakeTrueDamage(AttackIndex);
+                    HitTeamComponent.GetComponent<Health>().TakeTrueDamage(Damage);
+                    Debug.Log(Damage + " true damage dealt");
                     CollidersDamaged.Add(CollidersToDamage[i]);
                 }
             }

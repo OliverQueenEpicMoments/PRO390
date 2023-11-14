@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour {
     [SerializeField] private float Timer;
+    [SerializeField] private float PowerScaling = 1;
     [SerializeField] private GameObject Explosion;
     [SerializeField] private AudioClip SummonSound;
 
+    private GameObject Player;
+    private float Damage;
+
     void Start() {
+        Player = GameObject.FindGameObjectWithTag("Player");
+
         SoundManager.Instance.PlaySound(SummonSound);
 
         Vector3 MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -21,20 +27,22 @@ public class Fireball : MonoBehaviour {
         Timer -= Time.deltaTime;
 
         if (Timer <= 0) {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             Instantiate(Explosion, transform.position, Quaternion.identity);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        Damage = Player.GetComponent<ComboCharacter>().Power * PowerScaling;
+
         if (collision.CompareTag("Enemy")) {
-            collision.GetComponent<Health>().TakeTrueDamage(2);
-            Destroy(this.gameObject);
+            collision.GetComponent<Health>().TakeDamage(Damage);
+            Destroy(gameObject);
             Instantiate(Explosion, transform.position, Quaternion.identity);
         }
 
         if (collision.CompareTag("Wall")) {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             Instantiate(Explosion, transform.position, Quaternion.identity);
         }
     }

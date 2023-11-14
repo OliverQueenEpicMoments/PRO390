@@ -7,9 +7,9 @@ public class EntryState : MeleeBaseState {
         base.OnEnter(stateMachine);
 
         // Attack
-        AttackIndex = 1;
+        Damage = Power;
         Duration = 1f;
-        animator.SetTrigger("Attack" + AttackIndex);
+        animator.SetTrigger("Attack1");
         animator.SetFloat("MouseXPos", MouseDirection.x);
         animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(AttackSound);

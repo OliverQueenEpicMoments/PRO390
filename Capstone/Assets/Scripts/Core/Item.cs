@@ -39,22 +39,4 @@ public class Item {
             case ItemType.EstusFlask: return "A singular but potent healing vial, expensive due to its rarity";
         }
     }
-
-    public static float GetHealth(ItemType item) {
-        switch (item) {
-            default:
-            case ItemType.SpikedShield: return 100;
-            case ItemType.Bruiser: return 50;
-            case ItemType.BetrayersSword: return 0;
-        }
-    }
-
-    public static float GetPower(ItemType item) {
-        switch (item) {
-            default:
-            case ItemType.SpikedShield: return 0;
-            case ItemType.Bruiser: return 10;
-            case ItemType.BetrayersSword: return 20;
-        }
-    }
 }

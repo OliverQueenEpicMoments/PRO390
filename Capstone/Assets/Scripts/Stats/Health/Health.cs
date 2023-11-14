@@ -57,6 +57,25 @@ public class Health : MonoBehaviour {
         }
     }
 
+    public void TakeDamage(float damage, Vector2 knockback) {
+        if (Invulnerable) return;
+        float MitigatedDamage = 100 * damage / (Protections + 100);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - MitigatedDamage, 0, MaxHealth);
+
+        if (CurrentHealth > 0) {
+            animator.SetTrigger("IsHit");
+            RB.AddForce(knockback, ForceMode2D.Impulse);
+            StartCoroutine(Invulnerability());
+            SoundManager.Instance.PlaySound(HurtSound);
+        } else {
+            foreach (Behaviour component in Components) component.enabled = false;
+
+            Instantiate(GoreEffect, transform.position, Quaternion.identity);
+            animator.SetTrigger("Death");
+            SoundManager.Instance.PlaySound(DeathSound);
+        }
+    }
+
     public void TakeTrueDamage(float damage) {
         if (Invulnerable) return;
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
@@ -91,17 +110,30 @@ public class Health : MonoBehaviour {
         }
     }
 
-    public void AddHealth(float heal) {
+    public void Heal(float heal) {
         CurrentHealth = Mathf.Clamp(CurrentHealth + heal, 0, MaxHealth);
         SoundManager.Instance.PlaySound(HealSound);
+        Debug.Log("Healed " + heal);
+    }
+
+    public void MaxHealthHeal(float percentage) {
+        float Heal = MaxHealth * percentage / 100;
+        CurrentHealth = Mathf.Clamp(CurrentHealth + Heal, 0, MaxHealth);
+        SoundManager.Instance.PlaySound(HealSound);
+        Debug.Log("Healed " + percentage + "% which is " + Heal);
     }
 
     public void AddMaxHealth(float health) {
         MaxHealth += health;
+        CurrentHealth = Mathf.Clamp(CurrentHealth + (health / 2), 0, MaxHealth);
+    }
+
+    public void AddProtections(float prots) {
+        Protections += prots;
     }
 
     public void Respawn() {
-        AddHealth(StartingHealth);
+        Heal(StartingHealth);
         animator.ResetTrigger("Death");
         animator.Play("KnightIdle");
         StartCoroutine(Invulnerability());

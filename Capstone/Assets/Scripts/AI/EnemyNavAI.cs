@@ -9,9 +9,11 @@ public class EnemyNavAI : MonoBehaviour {
     [SerializeField] SpriteRenderer spriterenderer;
     [SerializeField] Health EnemyHealth;
     [SerializeField] float Speed;
+    [SerializeField] int GoldMin = 10;
+    [SerializeField] int GoldMax = 25;
     [Header("AI")]
     [SerializeField] GameObject Player;
-    [SerializeField] float EnemyDamage = 1;
+    [SerializeField] float EnemyPower = 50;
     [SerializeField] float EnemyKnockback = 0;
 
     NavMeshAgent Agent;
@@ -84,7 +86,7 @@ public class EnemyNavAI : MonoBehaviour {
         Agent.enabled = false;
         yield return new WaitForSeconds(3.75f);
 
-        int goldAmount = UnityEngine.Random.Range(10, 20);
+        int goldAmount = Random.Range(GoldMin, GoldMax);
         //DamagePopup.Create(GetPosition(), goldAmount, true);
         PlayerController.Instance.AddGoldAmount(goldAmount);
 
@@ -102,6 +104,6 @@ public class EnemyNavAI : MonoBehaviour {
         Vector2 Direction = (Player.transform.position - transform.position).normalized;
         Vector2 Knockback = Direction * EnemyKnockback;
 
-        if (Distance <= 4.5f) Player.GetComponent<Health>().TakeTrueDamage(EnemyDamage * damagemultiplier, Knockback);
+        if (Distance <= 4.5f) Player.GetComponent<Health>().TakeDamage(EnemyPower * damagemultiplier, Knockback);
     }
 }

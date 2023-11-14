@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour {
     [SerializeField] private float Size = 1;
+    [SerializeField] private float PowerScaling = 1.25f;
     [SerializeField] private GameObject ParticleEffect;
     [SerializeField] private AudioClip ExplosionSound;
 
+    private GameObject Player;
     private CircleCollider2D Collider;
     private float Timer = 3;
+    private float Damage;
 
     void Start() {
+        Player = GameObject.FindGameObjectWithTag("Player");
         Collider = GetComponent<CircleCollider2D>();
 
         transform.localScale *= Size;
@@ -26,8 +30,10 @@ public class Explosion : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        Damage = Player.GetComponent<ComboCharacter>().Power * PowerScaling;
+
         if (collision.CompareTag("Enemy")) {
-            collision.GetComponent<Health>().TakeTrueDamage(3);
+            collision.GetComponent<Health>().TakeDamage(Damage);
         }
     }
 }

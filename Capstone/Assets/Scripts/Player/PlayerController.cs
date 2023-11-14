@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
             EstusFlasks--;
             animator.SetTrigger("IsHealing");
             StartCoroutine(Root(2));
-            PlayerHealth.AddHealth(50);
+            PlayerHealth.MaxHealthHeal(35);
             OnEstusAmountChanged?.Invoke(this, EventArgs.Empty);
         }
     }

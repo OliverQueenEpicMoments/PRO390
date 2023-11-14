@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2323120657042884149}
   - component: {fileID: 8062241588421565423}
+  - component: {fileID: 8582500878051462505}
+  - component: {fileID: 3875731363847537006}
   - component: {fileID: 8225290953161250754}
   m_Layer: 0
   m_Name: SpikedShield
@@ -46,6 +48,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StatEffect: {fileID: 11400000, guid: 21844229a51fb5b47bfea9f8a670f498, type: 2}
+--- !u!114 &8582500878051462505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442263759378460960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5ecc0fa63130e46bf7ff4bd7886655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatEffect: {fileID: 11400000, guid: d6fb997d0b3f3f34e83eb955b4486ab7, type: 2}
+--- !u!114 &3875731363847537006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442263759378460960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5ecc0fa63130e46bf7ff4bd7886655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatEffect: {fileID: 11400000, guid: aca45c7f703d99b4d84516f42ef00e25, type: 2}
 --- !u!61 &8225290953161250754
 BoxCollider2D:
   m_ObjectHideFlags: 0

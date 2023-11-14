@@ -7,9 +7,9 @@ public class EmpoweredEntryState : MeleeBaseState {
         base.OnEnter(stateMachine);
 
         // Attack
-        AttackIndex = 2;
+        Damage = Power * 2;
         Duration = 2f;
-        animator.SetTrigger("EmpoweredAttack" + 1);
+        animator.SetTrigger("EmpoweredAttack1");
         animator.SetFloat("MouseXPos", MouseDirection.x);
         animator.SetFloat("MouseYPos", MouseDirection.y);
         //SoundManager.Instance.PlaySound(Attack1Sound);
