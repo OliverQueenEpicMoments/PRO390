@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIShop : MonoBehaviour {
-
     private Transform Container;
     private Transform ShopItemTemplate;
     private IShopCustomer ShopCustomer;

@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour {
+    public static event Action OnPlayerDeath;
+
     [Header("Health")]
     [SerializeField] private float StartingHealth;
     [SerializeField] private float Protections;
@@ -54,6 +57,11 @@ public class Health : MonoBehaviour {
             Instantiate(GoreEffect, transform.position, Quaternion.identity);
             animator.SetTrigger("Death");
             SoundManager.Instance.PlaySound(DeathSound);
+
+            if (gameObject.CompareTag("Player")) {
+                OnPlayerDeath?.Invoke();
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -73,6 +81,11 @@ public class Health : MonoBehaviour {
             Instantiate(GoreEffect, transform.position, Quaternion.identity);
             animator.SetTrigger("Death");
             SoundManager.Instance.PlaySound(DeathSound);
+
+            if (gameObject.CompareTag("Player")) {
+                OnPlayerDeath?.Invoke();
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -90,6 +103,11 @@ public class Health : MonoBehaviour {
             Instantiate(GoreEffect, transform.position, Quaternion.identity);
             animator.SetTrigger("Death");
             SoundManager.Instance.PlaySound(DeathSound);
+
+            if (gameObject.CompareTag("Player")) {
+                OnPlayerDeath?.Invoke();
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -107,6 +125,11 @@ public class Health : MonoBehaviour {
 
             animator.SetTrigger("Death");
             SoundManager.Instance.PlaySound(DeathSound);
+
+            if (gameObject.CompareTag("Player")) {
+                OnPlayerDeath?.Invoke();
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -130,14 +153,6 @@ public class Health : MonoBehaviour {
 
     public void AddProtections(float prots) {
         Protections += prots;
-    }
-
-    public void Respawn() {
-        Heal(StartingHealth);
-        animator.ResetTrigger("Death");
-        animator.Play("KnightIdle");
-        StartCoroutine(Invulnerability());
-        foreach (Behaviour component in Components) component.enabled = true;
     }
 
     private IEnumerator Invulnerability() {
