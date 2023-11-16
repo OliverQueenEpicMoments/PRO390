@@ -1,9 +1,11 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
 public class FadeIn : MonoBehaviour {
+    [Header("Object")]
     [SerializeField] private bool Object = false;
     [SerializeField, Range(0, 1)] private float ObjectFadeSpeed = 0.05f;
 
@@ -14,6 +16,9 @@ public class FadeIn : MonoBehaviour {
     [Header("Shader")]
     [SerializeField] private bool Shader = false;
     [SerializeField, Range(0, 1)] private float ShaderFadeSpeed = 0.075f;
+
+    [Header("Camera")]
+    [SerializeField] private CinemachineVirtualCamera VirtualCamera;
 
     private SpriteRenderer Sprite;
     private Light2D CurrentLight;
@@ -57,5 +62,9 @@ public class FadeIn : MonoBehaviour {
             ShaderMaterial.SetFloat("_Fade", Fade);
             yield return new WaitForSeconds(.05f);
         }
+    }
+
+    public void ShakeScreen() { 
+        VirtualCamera.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
     }
 }
