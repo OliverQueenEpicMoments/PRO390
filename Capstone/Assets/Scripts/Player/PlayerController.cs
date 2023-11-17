@@ -158,6 +158,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
 
     public void BoughtItem(ItemType itemtype) {
         Debug.Log("Bought item " + itemtype);
+        SoundManager.Instance.PlaySound(GameAssets.Instance.ItemBought);
 
         switch (itemtype) {
             default:

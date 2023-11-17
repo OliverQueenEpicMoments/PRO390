@@ -12,13 +12,21 @@ public class GameAssets : MonoBehaviour {
         }
     }
 
+    [Header("Sprites")]
     public Sprite SpikedShieldIcon;
     public Sprite BruiserItemIcon;
     public Sprite BetrayersSwordIcon;
 
+    public Sprite EstusFlask;
+
+    [Header("Item Scriptables")]
     public ItemScriptableObject SpikedShieldStats;
     public ItemScriptableObject BruiserStats;
     public ItemScriptableObject BetrayersSwordStats;
 
-    public Sprite EstusFlask;
+    [Header("Audio")]
+    public AudioClip Explosion;
+    public AudioClip ItemBought;
+    public AudioClip SwordSlash;
+    public AudioClip Bashes;
 }

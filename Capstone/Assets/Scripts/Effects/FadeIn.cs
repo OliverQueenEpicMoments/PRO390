@@ -66,5 +66,6 @@ public class FadeIn : MonoBehaviour {
 
     public void ShakeScreen() { 
         VirtualCamera.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
+        SoundManager.Instance.PlaySound(GameAssets.Instance.Explosion);
     }
 }

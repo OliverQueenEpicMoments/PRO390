@@ -140,6 +140,7 @@ public class Health : MonoBehaviour {
     }
 
     public void MaxHealthHeal(float percentage) {
+        // Do some lerp stuff here
         float Heal = MaxHealth * percentage / 100;
         CurrentHealth = Mathf.Clamp(CurrentHealth + Heal, 0, MaxHealth);
         SoundManager.Instance.PlaySound(HealSound);
