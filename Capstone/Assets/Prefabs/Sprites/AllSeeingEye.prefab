@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6625517599439660907}
   m_Layer: 0
   m_Name: AllSeeingEye
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,6 +56,7 @@ MonoBehaviour:
   LightFadeSpeed: 0.05
   Shader: 0
   ShaderFadeSpeed: 0.075
+  VirtualCamera: {fileID: 0}
 --- !u!212 &5590385147284183541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -214,7 +215,7 @@ GameObject:
   - component: {fileID: 9028870490617051901}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -252,6 +253,7 @@ MonoBehaviour:
   LightFadeSpeed: 0.05
   Shader: 0
   ShaderFadeSpeed: 0.075
+  VirtualCamera: {fileID: 0}
 --- !u!114 &9028870490617051901
 MonoBehaviour:
   m_ObjectHideFlags: 0

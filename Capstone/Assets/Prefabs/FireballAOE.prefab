@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7753136088911857964}
   m_Layer: 0
   m_Name: FireballAOE
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 3584301439188335617}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,6 +291,10 @@ PrefabInstance:
     - target: {fileID: 4416709458939727743, guid: 652009153094ee04787e6db751f76dc6, type: 3}
       propertyPath: m_Name
       value: FireballParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416709458939727743, guid: 652009153094ee04787e6db751f76dc6, type: 3}
+      propertyPath: m_TagString
+      value: NoDestroy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
