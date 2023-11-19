@@ -5,20 +5,21 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyNavAI : MonoBehaviour {
-    [SerializeField] Animator animator;
-    [SerializeField] SpriteRenderer spriterenderer;
-    [SerializeField] Health EnemyHealth;
-    [SerializeField] float Speed;
-    [SerializeField] int GoldMin = 10;
-    [SerializeField] int GoldMax = 25;
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriterenderer;
+    [SerializeField] private Health EnemyHealth;
+    [SerializeField] private float Speed;
+    [SerializeField] private int GoldMin = 10;
+    [SerializeField] private int GoldMax = 25;
+
     [Header("AI")]
     [SerializeField] GameObject Player;
     [SerializeField] float EnemyPower = 50;
     [SerializeField] float EnemyKnockback = 0;
 
-    NavMeshAgent Agent;
-    Rigidbody2D RB;
-    Vector2 Velocity = Vector2.zero;
+    private NavMeshAgent Agent;
+    private Rigidbody2D RB;
+    private Vector2 Velocity = Vector2.zero;
     private bool AttackSwap = true;
     private bool IsStunned = false;
 

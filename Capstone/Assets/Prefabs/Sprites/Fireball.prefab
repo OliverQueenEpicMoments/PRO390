@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3854794609248813987}
   m_Layer: 0
   m_Name: Fireball
-  m_TagString: Untagged
+  m_TagString: NoDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 5
+  PowerScaling: 1
   Explosion: {fileID: 6650321346688565773, guid: 9252819bc0078cd439292236e784ada8, type: 3}
   SummonSound: {fileID: 8300000, guid: f822ce922917555458f7c109138859e0, type: 3}
 --- !u!212 &8268412260974425814
