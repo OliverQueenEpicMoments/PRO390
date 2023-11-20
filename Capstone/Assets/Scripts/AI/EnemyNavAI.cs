@@ -91,7 +91,7 @@ public class EnemyNavAI : MonoBehaviour {
         //DamagePopup.Create(GetPosition(), goldAmount, true);
         PlayerController.Instance.AddGoldAmount(goldAmount);
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     IEnumerator Stun(float duration) {

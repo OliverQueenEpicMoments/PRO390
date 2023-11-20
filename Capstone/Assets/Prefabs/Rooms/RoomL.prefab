@@ -128,8 +128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5963955571491217913}
-  - component: {fileID: 3476808287560644297}
-  - component: {fileID: 565054948985110161}
+  - component: {fileID: 9059358489703139683}
+  - component: {fileID: 5245542814725265936}
   m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
@@ -152,7 +152,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2159369186329296095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3476808287560644297
+--- !u!114 &9059358489703139683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025143731199682919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d80969680a3d24980ab6fbf5af3597, type: 3}
+  m_Script: {fileID: 11500000, guid: bb9c5ec6c1ccf334c9f2083180058732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
@@ -181,8 +181,8 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 9b88e811c7728624b965b8ff696f7eab, type: 2}
---- !u!114 &565054948985110161
+  m_NavMeshData: {fileID: 23800000, guid: d1d74a3671ba5e74895541bac9ebf3f6, type: 2}
+--- !u!114 &5245542814725265936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025143731199682919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0bb1abd656f22c45b865eea0cccf7f8, type: 3}
+  m_Script: {fileID: 11500000, guid: dc042f8c593a2de47958037e86dd9817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideByGrid: 0
@@ -4943,16 +4943,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 105
-      m_TileSpriteIndex: 99
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -8905,7 +8895,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 580eeaa3c46292d429c2b8df87a5c91c, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 41a03473d12989340943baddb9ccbbfa, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: bdc9cf87accbf7244b5a9f6cb2d9fa12, type: 2}
@@ -9108,7 +9098,7 @@ Tilemap:
     m_Data: {fileID: -1361029314, guid: a8c69462922e0aa4aaa2a1cdaa3072a6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1079264499, guid: a8c69462922e0aa4aaa2a1cdaa3072a6, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 823685855, guid: 108ae08bfe8ef1c4085becdd5d8e35ad, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1433436976, guid: a8c69462922e0aa4aaa2a1cdaa3072a6, type: 3}
@@ -9125,7 +9115,7 @@ Tilemap:
   - m_RefCount: 340
     m_Data: {fileID: -2012678895, guid: 108ae08bfe8ef1c4085becdd5d8e35ad, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 842
+  - m_RefCount: 841
     m_Data:
       e00: 1
       e01: 0
@@ -9180,7 +9170,7 @@ Tilemap:
       e32: 3.38e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 842
+  - m_RefCount: 841
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -9264,7 +9254,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3227385657003843083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998b7c52b2172594191f3798fee53459, type: 3}
+  m_Script: {fileID: 11500000, guid: 6db091ea14e4d0d40ba5aa9e24467fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 0
@@ -9837,7 +9827,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3228851809217975911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998b7c52b2172594191f3798fee53459, type: 3}
+  m_Script: {fileID: 11500000, guid: 6db091ea14e4d0d40ba5aa9e24467fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
@@ -12066,7 +12056,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6451567921022959313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998b7c52b2172594191f3798fee53459, type: 3}
+  m_Script: {fileID: 11500000, guid: 6db091ea14e4d0d40ba5aa9e24467fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
