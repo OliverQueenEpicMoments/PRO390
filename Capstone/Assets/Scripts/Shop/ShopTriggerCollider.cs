@@ -8,21 +8,6 @@ public class ShopTriggerCollider : MonoBehaviour {
 
     private bool Istalking = false;
 
-    public void OnTriggerExit2D(Collider2D collision) {
-        if (collision.TryGetComponent<IShopCustomer>(out _)) {
-            var Direction = (collision.transform.position - transform.position).normalized;
-
-            Shop.Hide();
-
-            if (Istalking) {
-                animator.SetFloat("XDirection", Direction.x);
-                animator.SetFloat("YDirection", Direction.y);
-                animator.SetTrigger("ShopExit");
-            }
-        }
-        Istalking = false;
-    }
-
     public void EnterShop() {
         var Player = GameObject.FindGameObjectWithTag("Player");
         var Templates = GameObject.FindGameObjectWithTag("Player").GetComponent<IShopCustomer>();
@@ -48,6 +33,21 @@ public class ShopTriggerCollider : MonoBehaviour {
             animator.SetFloat("XDirection", Direction.x);
             animator.SetFloat("YDirection", Direction.y);
             animator.SetTrigger("ShopExit");
+        }
+        Istalking = false;
+    }
+
+    public void OnTriggerExit2D(Collider2D collision) {
+        if (collision.TryGetComponent<IShopCustomer>(out _)) {
+            var Direction = (collision.transform.position - transform.position).normalized;
+
+            Shop.Hide();
+
+            if (Istalking) {
+                animator.SetFloat("XDirection", Direction.x);
+                animator.SetFloat("YDirection", Direction.y);
+                animator.SetTrigger("ShopExit");
+            }
         }
         Istalking = false;
     }

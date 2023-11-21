@@ -49,7 +49,7 @@ public class UIShop : MonoBehaviour {
     }
 
     public void Show(IShopCustomer shopcustomer) { 
-        this.ShopCustomer = shopcustomer;
+        ShopCustomer = shopcustomer;
         gameObject.SetActive(true);
     }
 

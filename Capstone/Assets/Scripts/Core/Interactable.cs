@@ -8,10 +8,6 @@ public class Interactable : MonoBehaviour {
     public KeyCode InteractButton;
     public UnityEvent InteractAction;
 
-    void Start() {
-        
-    }
-
     void Update() {
         if (IsInRange) {
             if (Input.GetKeyDown(InteractButton)) {
