@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BattleSystem : MonoBehaviour {
+    [SerializeField] private ColliderTrigger Trigger;
+    [SerializeField] private Wave[] Waves;
+    [SerializeField] private GameObject[] Doors;
+
     private enum State { 
         Idle,
         Active,
         BattleOver
     }
-
-    [SerializeField] private ColliderTrigger Trigger;
-    [SerializeField] private Wave[] Waves;
 
     private State state;
 
@@ -50,7 +51,8 @@ public class BattleSystem : MonoBehaviour {
             if (AreWavesOver()) {
                 state = State.BattleOver;
                 Debug.Log("Battle is over");
-                // Enable doors here
+
+                foreach (var Door in Doors) Door.SetActive(true);
             }
         }
     }

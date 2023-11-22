@@ -13,15 +13,19 @@ public class EnemyNavAI : MonoBehaviour {
     [SerializeField] private int GoldMax = 25;
 
     [Header("AI")]
-    [SerializeField] GameObject Player;
     [SerializeField] float EnemyPower = 50;
     [SerializeField] float EnemyKnockback = 0;
 
+    private GameObject Player;
     private NavMeshAgent Agent;
     private Rigidbody2D RB;
     private Vector2 Velocity = Vector2.zero;
     private bool AttackSwap = true;
     private bool IsStunned = false;
+
+    private void Awake() {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     void Start() {
         RB = GetComponent<Rigidbody2D>();
