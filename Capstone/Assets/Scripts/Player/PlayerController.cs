@@ -8,6 +8,7 @@ using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour, IShopCustomer {
     [SerializeField] private SpriteRenderer spriterenderer;
+    [SerializeField] private UIInventory UIinventory;
     [SerializeField] private Animator animator;
     [SerializeField] private float Speed;
 
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
 
     private Rigidbody2D RB;
     private Health PlayerHealth;
+    private Inventory PlayerInventory;
     private Vector2 Velocity = Vector2.zero;
     private Vector3 MousePosition;
     private int EstusFlasks = 3;
@@ -43,6 +45,9 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
         RB = GetComponent<Rigidbody2D>();
         spriterenderer = GetComponent<SpriteRenderer>();
         PlayerHealth = GetComponent<Health>();
+
+        PlayerInventory = new Inventory();
+        UIinventory.SetInventory(PlayerInventory);
     }
 
     void Update() {
@@ -93,6 +98,13 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
 
         //animator.SetFloat("MouseXPos", MouseDirection.x);
         //animator.SetFloat("MouseYPos", MouseDirection.y);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.TryGetComponent<ItemWorld>(out var worlditem)) {
+            PlayerInventory.AddItem(worlditem.GetItem());
+            Destroy(collision.gameObject);
+        }
     }
 
     IEnumerator Roll() {
@@ -157,7 +169,6 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
     }
 
     public void BoughtItem(ItemType itemtype) {
-        Debug.Log("Bought item " + itemtype);
         SoundManager.Instance.PlaySound(GameAssets.Instance.ItemBought);
 
         switch (itemtype) {

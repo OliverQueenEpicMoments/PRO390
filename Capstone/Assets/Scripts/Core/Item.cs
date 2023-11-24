@@ -1,8 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class Item {
+    public ItemType itemtype;
+    public int Amount;
+
     public enum ItemType { 
         SpikedShield,
         Bruiser,
@@ -20,6 +25,16 @@ public class Item {
         }
     }
 
+    public static string GetDescription(ItemType item) {
+        switch (item) {
+            default:
+            case ItemType.SpikedShield: return "Getting damaged by enemies deals a portion of it back to them";
+            case ItemType.Bruiser: return "Deals damage around you based on max health";
+            case ItemType.BetrayersSword: return "Your next basic attack after an ability does extra damage";
+            case ItemType.EstusFlask: return "A singular but potent healing vial, expensive due to its rarity";
+        }
+    }
+
     public static Sprite GetSprite(ItemType item) {
         switch (item) {
             default:
@@ -30,13 +45,13 @@ public class Item {
         }
     }
 
-    public static string GetDescription(ItemType item) {
-        switch (item) {
+    public Sprite GetSprite() {
+        switch (itemtype) {
             default:
-            case ItemType.SpikedShield: return "Getting damaged by enemies deals a portion of it back to them";
-            case ItemType.Bruiser: return "Deals damage around you based on max health";
-            case ItemType.BetrayersSword: return "Your next basic attack after an ability does extra damage";
-            case ItemType.EstusFlask: return "A singular but potent healing vial, expensive due to its rarity";
+            case ItemType.SpikedShield: return GameAssets.Instance.SpikedShieldIcon;
+            case ItemType.Bruiser: return GameAssets.Instance.BruiserItemIcon;
+            case ItemType.BetrayersSword: return GameAssets.Instance.BetrayersSwordIcon;
+            case ItemType.EstusFlask: return GameAssets.Instance.EstusFlask;
         }
     }
 }

@@ -6,7 +6,9 @@ public class StatIncrease : MonoBehaviour {
     public ItemStatEffect StatEffect;
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Player")) {
+            StatEffect.Apply(collision.gameObject);
+        }
         Destroy(gameObject);
-        StatEffect.Apply(collision.gameObject);
     }
 }

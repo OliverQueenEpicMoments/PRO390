@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8225290953161250754}
   - component: {fileID: 8009648458581552121}
   m_Layer: 0
-  m_Name: SpikedShield
+  m_Name: BetrayersSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,9 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c437d93692ca4ee4ca10d015cc2dcdc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemStats: {fileID: 11400000, guid: c7c7af497db079d429969a7e77f23887, type: 2}
+  ItemStats: {fileID: 11400000, guid: f9998f4493a818a44aaefdd8a61759b7, type: 2}
   item:
-    itemtype: 0
+    itemtype: 2
     Amount: 0
 --- !u!114 &8062241588421565423
 MonoBehaviour:
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5ecc0fa63130e46bf7ff4bd7886655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatEffect: {fileID: 11400000, guid: d6fb997d0b3f3f34e83eb955b4486ab7, type: 2}
+  StatEffect: {fileID: 11400000, guid: aca45c7f703d99b4d84516f42ef00e25, type: 2}
 --- !u!61 &8225290953161250754
 BoxCollider2D:
   m_ObjectHideFlags: 0

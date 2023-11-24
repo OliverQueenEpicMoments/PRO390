@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb54516eab297154682a090911b6964d, type: 3}
   m_Name: SpikedShield
   m_EditorClassIdentifier: 
+  item:
+    itemtype: 0
+    Amount: 1
   ItemType: 0
   ItemName: Spiked shield
   ItemDesc: Enemies that damage you take a percentage of the damage back
   ItemIcon: {fileID: 21300000, guid: 6e9b5ebd7e788f847a59a04f1c5a6c90, type: 3}
   ItemCost: 2750
   ItemPowerup: {fileID: 8442263759378460960, guid: b11562aecff8f694bac02b8f31d2a3c4, type: 3}
-  ItemHealth: 300
+  ItemHealth: 100
   ItemMana: 10
   ItemManaRegen: 0
   ItemCDR: 0
