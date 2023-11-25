@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShopTriggerCollider : MonoBehaviour {
-    [SerializeField] private UIShop Shop;
     [SerializeField] private Animator animator;
+    [SerializeField] private UIShop Shop;
 
     private bool Istalking = false;
 

@@ -9,6 +9,7 @@ public class ColliderTrigger : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.TryGetComponent<PlayerController>(out var Player)) {
             OnPlayerEnterTrigger?.Invoke(this, EventArgs.Empty);
+            Debug.Log("Collider Trigger Scrip Tripped");
         }
     }
 }

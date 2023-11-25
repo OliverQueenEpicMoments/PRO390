@@ -137,7 +137,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &8018473046519494634
 MonoBehaviour:
@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriterenderer: {fileID: 764131944736155506}
+  UIinventory: {fileID: 0}
   animator: {fileID: 1395387102141657411}
   Speed: 8
   RollingPower: 1.2
@@ -2134,7 +2135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.05, g: 0.05, b: 0.05, a: 0.2509804}
   m_FlipX: 0

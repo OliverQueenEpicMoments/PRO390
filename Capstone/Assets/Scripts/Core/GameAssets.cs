@@ -29,4 +29,10 @@ public class GameAssets : MonoBehaviour {
     public AudioClip ItemBought;
     public AudioClip SwordSlash;
     public AudioClip Bashes;
+
+    [Header("Game Objects")]
+    public GameObject Merchant;
+
+    [Header("Misc")]
+    public UIShop Shop;
 }
