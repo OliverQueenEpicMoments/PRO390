@@ -10,21 +10,15 @@ public class Interactable : MonoBehaviour {
 
     void Update() {
         if (IsInRange) {
-            if (Input.GetKeyDown(InteractButton)) {
-                InteractAction.Invoke();
-            }
+            if (Input.GetKeyDown(InteractButton)) InteractAction.Invoke();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.CompareTag("Player")) { 
-            IsInRange = true;
-        }
+        if (collision.gameObject.CompareTag("Player")) IsInRange = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.CompareTag("Player")) {
-            IsInRange = false;
-        }
+        if (collision.gameObject.CompareTag("Player")) IsInRange = false;
     }
 }

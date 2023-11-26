@@ -26,10 +26,6 @@ public class MeleeBaseState : State {
         CollidersDamaged = new List<Collider2D>();
         Power = GetComponent<ComboCharacter>().Power;
         HitCollider = GetComponent<ComboCharacter>().Hitbox;
-        HitEffectPrefab = GetComponent<ComboCharacter>().HitEffect;
-        Attack1Sound = GetComponent<ComboCharacter>().Attack1Sound;
-        Attack2Sound = GetComponent<ComboCharacter>().Attack2Sound;
-        Attack3Sound = GetComponent<ComboCharacter>().Attack3Sound;
         PlayerPosition = GetComponent<ComboCharacter>().transform.position;
         MousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         MouseDirection = (MousePosition - PlayerPosition).normalized;
@@ -62,7 +58,7 @@ public class MeleeBaseState : State {
                 TeamComponent HitTeamComponent = CollidersToDamage[i].GetComponentInChildren<TeamComponent>();
 
                 if (HitTeamComponent && HitTeamComponent.TeamIndex == TeamIndex.Enemy) {
-                    if (HitEffectPrefab != null) GameObject.Instantiate(HitEffectPrefab, CollidersToDamage[i].transform);
+                    if (HitEffectPrefab != null) Object.Instantiate(HitEffectPrefab, CollidersToDamage[i].transform);
                     HitTeamComponent.GetComponent<Health>().TakeTrueDamage(Damage);
                     Debug.Log(Damage + " true damage dealt");
                     CollidersDamaged.Add(CollidersToDamage[i]);

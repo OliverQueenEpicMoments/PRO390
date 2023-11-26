@@ -1,10 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using static Item;
-using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour, IShopCustomer {
     [SerializeField] private SpriteRenderer spriterenderer;

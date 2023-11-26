@@ -22,14 +22,17 @@ public class DamageField : MonoBehaviour {
         Timer -= Time.deltaTime;
         transform.position = Player.transform.position - new Vector3(0, 1.25f, 0);
 
-        if (Timer <= 0) Destroy(gameObject);
+        if (Timer <= 0) {
+            Destroy(gameObject);
+            TimeTickSystem.OnTick5 -= null;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         Damage = Player.GetComponent<ComboCharacter>().Power * PowerScaling;
 
         TimeTickSystem.OnTick5 += delegate (object sender, TimeTickSystem.OnTickEventArgs e) {
-            if (collision.CompareTag("Enemy") && collision != null) collision.GetComponent<Health>().TakeDamage(Damage);
+            if (collision.CompareTag("Enemy") && collision.gameObject.activeSelf) collision.GetComponent<Health>().TakeDamage(Damage);
         };
     }
 }
