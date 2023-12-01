@@ -18,7 +18,7 @@ public class UIShop : MonoBehaviour {
 
     private void Start() {
         CreateItemButton(Item.ItemType.SpikedShield, Item.GetSprite(Item.ItemType.SpikedShield), "Spiked Shield", Item.GetDescription(Item.ItemType.SpikedShield), Item.GetCost(Item.ItemType.SpikedShield), 0);
-        CreateItemButton(Item.ItemType.Bruiser, Item.GetSprite(Item.ItemType.Bruiser), "Bruiser item", Item.GetDescription(Item.ItemType.Bruiser), Item.GetCost(Item.ItemType.Bruiser), 1);
+        CreateItemButton(Item.ItemType.Bruiser, Item.GetSprite(Item.ItemType.Bruiser), "Hammer of ruin", Item.GetDescription(Item.ItemType.Bruiser), Item.GetCost(Item.ItemType.Bruiser), 1);
         CreateItemButton(Item.ItemType.BetrayersSword, Item.GetSprite(Item.ItemType.BetrayersSword), "Betrayers Sword", Item.GetDescription(Item.ItemType.BetrayersSword), Item.GetCost(Item.ItemType.BetrayersSword), 2);
 
         CreateItemButton(Item.ItemType.EstusFlask, Item.GetSprite(Item.ItemType.EstusFlask), "Healing vial", Item.GetDescription(Item.ItemType.EstusFlask), Item.GetCost(Item.ItemType.EstusFlask), 3);
@@ -31,7 +31,7 @@ public class UIShop : MonoBehaviour {
         ShopItemTransform.gameObject.SetActive(true);
         RectTransform ShopItemRectTransform = ShopItemTransform.GetComponent<RectTransform>();
 
-        float ShopItemHeight = 200;
+        float ShopItemHeight = 250;
         ShopItemRectTransform.anchoredPosition = new Vector2(0, -ShopItemHeight * position);
 
         ShopItemTransform.Find("ItemNameText").GetComponent<TextMeshProUGUI>().SetText(itemname);

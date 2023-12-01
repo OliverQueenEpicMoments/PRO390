@@ -34,6 +34,14 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
     private int GoldAmount = 9990;
     private bool DanceSwap = false;
 
+    public enum Attacks {
+        Primary,
+        Secondary,
+        Tertiary,
+        Punch,
+        Bash
+    }
+
     private void Awake() {
         Instance = this;
     }
@@ -185,5 +193,16 @@ public class PlayerController : MonoBehaviour, IShopCustomer {
             return true;
         }
         else return false;
+    }
+
+    public void PlayAttackSound(Attacks attack) {
+        switch (attack) {
+            case Attacks.Primary: SoundManager.Instance.PlaySound(GameAssets.Instance.SwordStun); break;
+            case Attacks.Secondary: SoundManager.Instance.PlaySound(GameAssets.Instance.SwordSlash); break;
+            case Attacks.Tertiary: SoundManager.Instance.PlaySound(GameAssets.Instance.SwordSlash2); break;
+
+            case Attacks.Punch: SoundManager.Instance.PlaySound(GameAssets.Instance.Punch); break;
+            case Attacks.Bash: SoundManager.Instance.PlaySound(GameAssets.Instance.Bash); break;
+        }
     }
 }

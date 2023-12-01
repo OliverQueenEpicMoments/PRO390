@@ -27,8 +27,11 @@ public class GameAssets : MonoBehaviour {
     [Header("Audio")]
     public AudioClip Explosion;
     public AudioClip ItemBought;
+    public AudioClip SwordStun;
     public AudioClip SwordSlash;
-    public AudioClip Bashes;
+    public AudioClip SwordSlash2;
+    public AudioClip Punch;
+    public AudioClip Bash;
 
     [Header("Game Objects")]
     public GameObject Merchant;
